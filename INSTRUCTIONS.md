@@ -70,13 +70,13 @@ To build a responsive page we are using the scss functions `@include media-break
 
 ```
 $grid-breakpoints: (
-  sm: 0, // 4 collumns
-  md: 640px, // 10 collumns
-  sd: 960px, // 10 collumns
-  lg: 1280px, // 20 collumns
-  xlg: 1440px, // 20 collumns
-  slg: 1600px, // 20 collumns
-  max: 1920px, // 20 collumns
+    sm: 0, // 4 collumns
+    md: 640px, // 10 collumns
+    sd: 960px, // 10 collumns
+    lg: 1280px, // 20 collumns
+    xlg: 1440px, // 20 collumns
+    slg: 1600px, // 20 collumns
+    max: 1920px, // 20 collumns
 ) !default;
 ```
 
