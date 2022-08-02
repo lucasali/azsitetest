@@ -118,3 +118,18 @@ Below we have an example of the usage of methods you will use! This example it i
     });
 }
 ```
+
+## AVAILABLE PAGES
+
+Localhost you will be able to study the available pages, they are!
+
+- http://localhost:4000/en
+    - The home of website
+- http://localhost:4000/en/careers
+    - The careers portal home
+
+Use this page to understand:
+- Jekyll Front-Matters
+- Jekyll includes files
+- Jekyll page generation
+- CSS and JS files includes

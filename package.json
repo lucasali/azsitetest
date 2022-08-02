@@ -15,7 +15,7 @@
     "clean": "npm run clean-site && npm run clean-static",
     "jekyll-server": "npm run clean-site; bundle exec jekyll serve --watch --trace",
     "jekyll-server-future": "npm run clean-site; bundle exec jekyll serve --watch --trace --future",
-    "jekyll-build": "npm run clean-site; bundle exec jekyll build --watch --trace",
+    "jekyll-build": "npm run clean-site; bundle exec jekyll build --watch --trace"
   },
   "repository": {
     "type": "git",
