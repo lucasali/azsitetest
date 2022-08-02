@@ -1,7 +1,7 @@
 {
-  "name": "foundation-sites-template",
+  "name": "azsitetest",
   "version": "1.0.0",
-  "description": "Azion Website using the Basic template for a new Foundation for Sites project.",
+  "description": "Test template",
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp",
@@ -13,40 +13,14 @@
     "clean-site": "rm -rf _site",
     "clean-static": "rm -rf static/css static/font static/js static/templates stastic/trd3",
     "clean": "npm run clean-site && npm run clean-static",
-    "clean-doc-en": "rm -rf _i18n/en/_posts/documentation/products/*",
-    "clean-doc-ptbr": "rm -rf _i18n/pt-br/_posts/documentation/products/*",
-    "clean-doc": "npm run clean-doc-en; npm run clean-doc-ptbr",
-    "cp-doc-en": "cp -R ../docs_en/* _i18n/en/_posts/documentation/products/",
-    "cp-doc-ptbr": "cp -R ../docs_pt/* _i18n/pt-br/_posts/documentation/products/",
-    "cp-doc": "npm run cp-doc-en; npm run cp-doc-ptbr",
     "jekyll-server": "npm run clean-site; bundle exec jekyll serve --watch --trace",
     "jekyll-server-future": "npm run clean-site; bundle exec jekyll serve --watch --trace --future",
     "jekyll-build": "npm run clean-site; bundle exec jekyll build --watch --trace",
-    "purge-js": "ruby backend/api/azion/purge/js.rb",
-    "purge-css": "ruby backend/api/azion/purge/css.rb",
-    "purge-assets": "ruby backend/api/azion/purge/assets.rb",
-    "purge-sitemap": "ruby backend/api/azion/purge/sitemap.rb",
-    "purge-doc": "ruby backend/api/azion/purge/doc.rb",
-
-    "algolia-rw-site-en": "clialgmanager index=site lang=en",
-    "algolia-rw-site-es": "clialgmanager index=site lang=es",
-    "algolia-rw-site-ptbr": "clialgmanager index=site lang=ptbr",
-    "algolia-rw-site": "npm run algolia-rw-site-ptbr && npm run algolia-rw-site-en && algolia-rw-site-es",
-
-    "algolia-rw-doc-en": "clialgmanager index=doc lang=en",
-    "algolia-rw-doc-es": "clialgmanager index=doc lang=es",
-    "algolia-rw-doc-ptbr": "clialgmanager index=doc lang=ptbr",
-    "algolia-rw-doc": "npm run algolia-rw-doc-ptbr && npm run algolia-rw-doc-en && algolia-rw-doc-es"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:aziontech/azion-site.git"
+    "url": "git@github.com:robsongajunior/azsitetest.git"
   },
-  "bugs": {
-    "url": "https://github.com/aziontech/azion-site/issues",
-    "email": "marketing@azion.com"
-  },
-  "author": "marketing@azion.com",
   "license": "MIT",
   "private": true,
   "devDependencies": {

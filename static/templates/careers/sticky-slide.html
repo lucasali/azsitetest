@@ -1,0 +1,66 @@
+<div id="stickynav" class="nav-counter">
+    <div class="row">
+        <div class="col-lg-16 col-md-10 col-sm-4 offset-lg-2">
+            <div class="box-wrap">
+                <h3>{{ title }}</h3>
+                <div class="counter">
+                    <button class="btn-prev">
+                        <i class="icon icon-arrow-prev">
+                            <svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 1.35L1.77498 9L7.5 16.65L6.75 18L1.54378e-06 9L6.75 -8.74229e-08L7.5 1.35Z" fill="#1E1E1E"/>
+                            </svg>
+                        </i>
+                    </button>
+
+                    <span class="current-number">xx</span>
+                    <span class="slash">/</span>
+                    <span class="total-number">xx</span>
+
+                    <button class="btn-next">
+                        <i class="icon icon-arrow-next">
+                            <svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 16.65L6.22503 9L0.5 1.35L1.25 0L8 9L1.25 18L0.5 16.65Z" fill="#1E1E1E"/>
+                            </svg>
+                        </i>
+                    </button>
+                </div>
+            </div>
+            <div class="bar orange-bar"></div>
+        </div>
+    </div>
+</div>
+
+{% for item in data %}
+<div class="sticky-item group-{{forloop.index}}">
+    <div class="row value-content">
+        <div class="col-lg-16 col-md-10 col-sm-4 offset-lg-2">
+            <div class="box-wrap">
+                <h3 class="primary-super-large">{{ item.title }}</h3>
+                <figure class="box-image">
+                    <img src="{{ item.image }}" alt="{{ item.title }}">
+                </figure>
+                <div class="box-description">
+                    <p>{{ item.description }}</p>
+                </div>
+                <div class="box-btn">
+                    <a href="{{ button.see_jobs.href }}" class="btn btn-icon btn-primary-dark">
+                        {{ button.see_jobs.text }}
+                        <i class="icon icon-right-arrow icon-animation-secondary">
+                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.51256 5.28044C6.46375 5.16006 6.39052 5.04726 6.29289 4.94963L2.05025 0.706995C1.65972 0.316471 1.02656 0.316471 0.636034 0.706995C0.24551 1.09752 0.245509 1.73068 0.636034 2.12121L4.17157 5.65674L0.636035 9.19227C0.245511 9.58279 0.245511 10.216 0.636035 10.6065C1.02656 10.997 1.65973 10.997 2.05025 10.6065L6.29289 6.36385L6.29289 6.36384C6.58579 6.07095 6.65901 5.64157 6.51256 5.28044Z"></path>
+                            </svg>
+                        </i>
+                        <i class="icon icon-right-arrow icon-animation-primary">
+                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.51256 5.28044C6.46375 5.16006 6.39052 5.04726 6.29289 4.94963L2.05025 0.706995C1.65972 0.316471 1.02656 0.316471 0.636034 0.706995C0.24551 1.09752 0.245509 1.73068 0.636034 2.12121L4.17157 5.65674L0.636035 9.19227C0.245511 9.58279 0.245511 10.216 0.636035 10.6065C1.02656 10.997 1.65973 10.997 2.05025 10.6065L6.29289 6.36385L6.29289 6.36384C6.58579 6.07095 6.65901 5.64157 6.51256 5.28044Z"></path>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<div class="sticky-item sticky-item-transparent"></div>

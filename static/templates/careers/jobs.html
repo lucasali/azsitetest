@@ -1,0 +1,108 @@
+{% if lang == 'pt-br'%}
+    {% assign path_job = "carreiras/vaga" %}
+    {% assign path_jobs = "carreiras/vagas" %}
+
+
+    {% if categorie == 'Engineering'%}
+        {% assign categorieTitle = "Engenharia" %}
+    {% endif %}
+
+    {% if categorie == 'Operations'%}
+        {% assign categorieTitle = "Operações" %}
+    {% endif %}
+
+    {% if categorie == 'Revenue'%}
+        {% assign categorieTitle = "Revenue" %}
+    {% endif %}
+
+    {% if categorie == 'Products'%}
+        {% assign categorieTitle = "Produtos" %}
+    {% endif %}
+
+    {% if categorie == 'Security'%}
+        {% assign categorieTitle = "Segurança" %}
+    {% endif %}
+{% elsif lang == 'es'%}
+    {% assign path_job = "trabaja-en-azion/vacante" %}
+    {% assign path_jobs = "trabaja-en-azion/vacantes" %}
+
+    {% if categorie == 'Engineering'%}
+        {% assign categorieTitle = "Ingeniería" %}
+    {% endif %}
+
+    {% if categorie == 'Operations'%}
+        {% assign categorieTitle = "Operaciones" %}
+    {% endif %}
+
+    {% if categorie == 'Revenue'%}
+        {% assign categorieTitle = "Revenue" %}
+    {% endif %}
+
+    {% if categorie == 'Products'%}
+        {% assign categorieTitle = "Productos" %}
+    {% endif %}
+
+    {% if categorie == 'Security'%}
+        {% assign categorieTitle = "Seguridad" %}
+    {% endif %}
+{% else %}
+    {% assign categorieTitle = categorie %}
+    {% assign path_job = "careers/job" %}
+    {% assign path_jobs = "careers/jobs" %}
+{% endif %}
+
+<div class="wrap-list">
+    <p class="bd_sub">{{ categorieTitle }}</p>
+    {% if jobList.size == 0 %}
+        {% if lang == 'pt-br'%}
+        <p>
+            Altere os termos de pesquisa ou remova os filtros selecionados para ver os resultados.
+        </p>
+        {% elsif lang == 'es'%}
+        <p>
+            Cambie sus términos de búsqueda o elimine los filtros seleccionados para ver los resultados.
+        </p>
+        {% else %}
+        <p>
+            Please change the search terms or remove selected filters to see results.
+        </p>
+        {% endif %}
+    {% else %}
+        {% if error %}
+        <div class="error-message">
+             <p>{{ error }}</p>
+        </div>
+        {% else %}
+        <ul class="list">
+            {% for item in jobList %}
+            <li class="item">
+                <a href="/{{ lang }}/{{path_job}}?id={{ item.id }}" title="{{ item.title }}">
+                    <h4>
+                        {{ item.title }}
+                        <small>{{ item.internal_code }} | {{ item.city }} | {{ item.type }}</small>
+                    </h4>
+                    <button class="btn btn-icon btn-tertiary-light">
+                        read more
+                        <i class="icon icon-right-arrow icon-animation-secondary">
+                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.51256 5.28044C6.46375 5.16006 6.39052 5.04726 6.29289 4.94963L2.05025 0.706995C1.65972 0.316471 1.02656 0.316471 0.636034 0.706995C0.24551 1.09752 0.245509 1.73068 0.636034 2.12121L4.17157 5.65674L0.636035 9.19227C0.245511 9.58279 0.245511 10.216 0.636035 10.6065C1.02656 10.997 1.65973 10.997 2.05025 10.6065L6.29289 6.36385L6.29289 6.36384C6.58579 6.07095 6.65901 5.64157 6.51256 5.28044Z" />
+                            </svg>
+                        </i>
+                        <i class="icon icon-right-arrow icon-animation-primary">
+                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.51256 5.28044C6.46375 5.16006 6.39052 5.04726 6.29289 4.94963L2.05025 0.706995C1.65972 0.316471 1.02656 0.316471 0.636034 0.706995C0.24551 1.09752 0.245509 1.73068 0.636034 2.12121L4.17157 5.65674L0.636035 9.19227C0.245511 9.58279 0.245511 10.216 0.636035 10.6065C1.02656 10.997 1.65973 10.997 2.05025 10.6065L6.29289 6.36385L6.29289 6.36384C6.58579 6.07095 6.65901 5.64157 6.51256 5.28044Z" />
+                            </svg>
+                        </i>
+                    </button>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endif %}
+</div>
+

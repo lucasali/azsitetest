@@ -1,0 +1,29 @@
+<div class="umbrella-products">
+    <div id="umbrellaArrow" class="arrow-content">
+        <div class="arrow-up"></div>
+        <div class="shadow shadow-left"></div>
+        <div class="shadow shadow-right"></div>
+    </div>
+
+    {% for umbrella in data %}
+        <div class="box-title">
+            <h3 class="third-title">{{ umbrella.category }}</h3>
+            <small>{{ umbrella.description }}</small>
+        </div>
+
+        <ul class="item-content clearfix">
+            {% for item in umbrella.itens %}
+            <li class="item">
+                <a href="{{ item.href }}">
+                    <i class="icon"> {{ item.icon }} </i>
+                    <div class="box-title">
+                        <h4 class="fourth-title">{{ item.title }}</h4>
+                    </div>
+                    <p>{{ item.description }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+
+</div>

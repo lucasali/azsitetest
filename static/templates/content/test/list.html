@@ -1,0 +1,10 @@
+<ul class="square-brand-list">
+    {% for item in itens %}
+    <li>
+        <div class="box-title">
+            <h3 class="third-title">{{ item.title }}</h3>
+        </div>
+        <p> {{ item.description }} </p>
+    </li>
+    {% endfor %}
+</ul>
