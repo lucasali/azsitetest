@@ -16,6 +16,8 @@ The object of test is:
 - HTML, CSS em JavaScript habilities
 - Hability to work on existing production project
 
+You will server the following URL: http://localhost:4000/en/careers/jobs/
+
 
 ## CHALLENGE
 
