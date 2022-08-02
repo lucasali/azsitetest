@@ -71,6 +71,13 @@ $grid-breakpoints: (
 
 ## HELPERS
 
+You can use this URL: https://52082s.ha.azioncdn.net/en/careers/jobs
+to use to reverse engineering to look the API requests commented above!
+
+> TIP: In this enviroment the JS are not minified!
+
+
+
 Below we have an example of the usage of methods you will use! This example it is a part of production code, I suggest just use to study to start your own code!
 
 ``` javascript
