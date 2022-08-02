@@ -16,7 +16,16 @@ The object of test is:
 - HTML, CSS em JavaScript habilities
 - Hability to work on existing production project
 
-You will server the following URL: http://localhost:4000/en/careers/jobs/
+You will server the following URL:
+- main page: `http://localhost:4000/[lang]/careers/jobs/`
+- filters page:
+    - `http://localhost:4000/[lang]/careers/jobs/?area=Engineering`
+    - `http://localhost:4000/[lang]/careers/jobs/?area=Products`
+    - `http://localhost:4000/[lang]/careers/jobs/?area=Operations`
+    - `http://localhost:4000/[lang]/careers/jobs/?area=Revenue`
+    - `http://localhost:4000/[lang]/careers/jobs/?area=Security`
+
+You will need just to code 1 page and reuse after you use the filter search!
 
 
 ## CHALLENGE
@@ -61,15 +70,22 @@ To build a responsive page we are using the scss functions `@include media-break
 
 ```
 $grid-breakpoints: (
-  sm: 0,
-  md: 640px,
-  sd: 960px,
-  lg: 1280px,
-  xlg: 1440px,
-  slg: 1600px,
-  max: 1920px,
+  sm: 0, // 4 collumns
+  md: 640px, // 10 collumns
+  sd: 960px, // 10 collumns
+  lg: 1280px, // 20 collumns
+  xlg: 1440px, // 20 collumns
+  slg: 1600px, // 20 collumns
+  max: 1920px, // 20 collumns
 ) !default;
 ```
+
+> Into https://www.azion.com/en?azg=1 you can use to understand how the grid it is working
+
+Use use:
+- 4 collumns to mobile viewport
+- 10 collumns to middle/tablet viewport
+- 20 collumns to desktop
 
 ## HELPERS
 
