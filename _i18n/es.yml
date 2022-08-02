@@ -1,0 +1,1350 @@
+---
+work: Work
+azion: Azion
+noticias: Notícias
+Panvel: Panvel
+place_holder:
+  url: http://32082s.ha.azioncdn.net/pt-br/
+  learn_more: Leia mais
+  code_examples: Code Examples
+  support: Support
+  resources: Resources
+  other_documents: Other Documents
+  server_status: System Status
+  pricing: Preços
+  edge_services: Edge Services
+  data_services: Data Services
+  origin_services: Origin Services
+  profissional_services: Profissional Services
+  network_modules: Networking Modules
+  compute_modules: Compute Modules
+  security_modules: Security Modules
+  login: Login
+  user_team: Usuários e Times
+  work_at_azion: Trabalhe na Azion
+  privacy_policy: Política de Privacidade
+  phone_sale: "+55 51 3083 8111"
+  phone_support: "+55 51 3083 8111"
+  contact_sales: contato
+  personalize_plans: Personalize seu plano!
+  free_account: Cuenta gratuita
+  services: servicios
+  back_menu: Voltar para o menu
+contact:
+  empty_field: Este campo deve ser preenchido!
+  invalid_mail: Endereço de e-mail inválido!
+search:
+  back: Voltar
+  more: Anterior
+  nothing_found: Nenhum resultado encontrado
+  approximately: Aproximadamente
+  see_more: Veja Mais
+  result: resultado
+  results: resultados
+  placeholder: Pesquisar
+  placeholder_doc: Tem uma dúvida? Pesquise aqui
+footer:
+  for_sales: Para suporte, entre em contato no
+  support: Se você precisa de suporte não hesite em nos ligar no
+  copyright: Copyright © 2021, Azion Technologies, Inc. ou suas afiliadas. Todos os
+    direitos reservados.
+pages:
+  documentation_CLI:
+    title: Azion CLI
+  documentation_accounts_social_login:
+    title: Social Login
+  docs_use_case_jamstack_using_flareact:
+    title: JAMStack Azion Cells com framework Flareact
+  documentation_accounts_delete:
+    title: Deleção de Conta
+  documentation_accounts_clients:
+    title: Clients
+  documentation_accounts_federated_authentication:
+    title: "Autenticación federada"
+  documentation_products_credentials:
+    title: Credenciais
+  contact:
+    title: Contacto Ventas
+    description: Solicite contato de um dos nossos consultores para testar nossas
+      soluçōes.
+    meta_tags: Contato Azion, Teste Azion, Testar Plataforma Azion
+  about_us:
+    title: Edge Computing Platform | Sobre Nós
+    description: Azion way of Life é a tradução da nossa essência, valores e princípios.
+      Conheça nossa missão, cultura e código de ética.
+    meta_tags: Missão da Azion, Cultura Azion, O que é Azion
+  for_developers:
+    title: Edge Computing Platform | Documentação
+    description: Reunimos tudo o que você precisa para desenvolver suas aplicaçōes
+      Serverless, desde APIs a documentaçōes.
+    meta_tags: Aplicaçōes Serverless, Documentaçōes
+    og_image: static/images/v3/open-graph/og-documentation.png
+  documentation_cloud_storage:
+    title: Cloud Storage
+    description: Cloud Storage
+    meta_tags: Cloud Storage
+  docs_intelligent_dns:
+    title: Intelligent DNS
+    description: Intelligent DNS
+    meta_tags: Intelligent DNS
+  api:
+    title: API
+    description: API
+    meta_tags: API
+  api_v1:
+    title: API v1
+    description: API
+    meta_tags: API
+  api_v1_real_time_analytics:
+    title: Real-Time Metrics
+    description: Real-Time Metrics
+    meta_tags: Real-Time Metrics
+  api_v1_authentication:
+    title: Authentication
+    description: Authentication
+    meta_tags: Authentication
+  api_v1_cloud_security:
+    title: Cloud Security
+    description: Cloud Security
+    meta_tags: Cloud Security
+  api_v1_digital_certificates:
+    title: Digital Certificates
+    description: Digital Certificates
+    meta_tags: Digital Certificates
+  api_v1_edge_firewall:
+    title: Edge Firewall
+    description: Edge Firewall
+    meta_tags: Edge Firewall
+  api_v1_web_app_firewall:
+    title: Web Application Firewall
+    description: Web Application Firewall
+    meta_tags: Web Application Firewall
+  api_code_examples:
+    title: Code Examples
+    description: Code Examples
+    meta_tags: Code Examples
+  api_v1_content_delivery:
+    title: Content Delivery
+    description: Content Delivery
+    meta_tags: Content Delivery
+  api_v1_cache_settings:
+    title: Cache Settings
+    description: Cache Settings
+    meta_tags: Cache Settings
+  api_v1_device_groups:
+    title: Device Groups
+    description: Device Groups
+    meta_tags: Device Groups
+  api_v1_error_responses:
+    title: Error Responses
+    description: Error Responses
+    meta_tags: Error Responses
+  api_v1_main_settings:
+    title: Main Settings
+    description: Main Settings
+    meta_tags: Main Settings
+  api_v1_origins:
+    title: Origins
+    description: Origins
+    meta_tags: Origins
+  api_v1_rules_engine:
+    title: Rules Engine
+    description: Rules Engine
+    meta_tags: Rules Engine
+  api_v1_real_time_purge:
+    title: Real-Time Purge
+    description: Real-Time Purge
+    meta_tags: Real-Time Purge
+  api_support:
+    title: Support
+    description: Support
+    meta_tags: Support
+  api_v2:
+    title: API v2
+    description: API
+    meta_tags: API
+  api_v2_real_time_analytics:
+    title: Real-Time Metrics
+    description: Real-Time Metrics
+    meta_tags: Real-Time Metrics
+  api_v2_authentication:
+    title: Authentication
+    description: Authentication
+    meta_tags: Authentication
+  api_v2_cloud_security:
+    title: Cloud Security
+    description: Cloud Security
+    meta_tags: Cloud Security
+  api_v2_digital_certificates:
+    title: Digital Certificates
+    description: Digital Certificates
+    meta_tags: Digital Certificates
+  api_v2_edge_firewall:
+    title: Edge Firewall
+    description: Edge Firewall
+    meta_tags: Edge Firewall
+  api_v2_web_app_firewall:
+    title: Web Application Firewall
+    description: Web Application Firewall
+    meta_tags: Web Application Firewall
+  api_v2_content_delivery:
+    title: Content Delivery
+    description: Content Delivery
+    meta_tags: Content Delivery
+  api_v2_cache_settings:
+    title: Cache Settings
+    description: Cache Settings
+    meta_tags: Cache Settings
+  api_v2_device_groups:
+    title: Device Groups
+    description: Device Groups
+    meta_tags: Device Groups
+  api_v2_error_responses:
+    title: Error Responses
+    description: Error Responses
+    meta_tags: Error Responses
+  api_v2_main_settings:
+    title: Main Settings
+    description: Main Settings
+    meta_tags: Main Settings
+  api_v2_origins:
+    title: Origins
+    description: Origins
+    meta_tags: Origins
+  api_v2_rules_engine:
+    title: Rules Engine
+    description: Rules Engine
+    meta_tags: Rules Engine
+  api_v2_real_time_purge:
+    title: Real-Time Purge
+    description: Real-Time Purge
+    meta_tags: Real-Time Purge
+  api_v2_support:
+    title: Support
+    description: Support
+    meta_tags: Support
+  api_v3:
+    title: API v3
+    description: API v3
+    meta_tags: API v3
+  api_v3_authentication:
+    title: Authentication
+    description: Authentication
+    meta_tags: Authentication
+  api_v3_digital_certificates:
+    title: Digital Certificates
+    description: Digital Certificates
+    meta_tags: Digital Certificates
+  api_v3_domains:
+    title: Domains
+    description: Domains
+    meta_tags: Domains
+  api_v3_edge_applications:
+    title: Edge Applications
+    description: Edge Applications
+    meta_tags: Edge Applications
+  api_v3_edge_firewall:
+    title: Edge Firewall
+    description: Edge Firewall
+    meta_tags: Edge Firewall
+  api_v3_real_time_purge:
+    title: Real-Time Purge
+    description: Real-Time Purge
+    meta_tags: Real-Time Purge
+  api_v3_real_time_metrics:
+    title: Real-Time Metrics
+    description: Real-Time Metrics
+    meta_tags: Real-Time Metrics
+  api_v3_network_lists:
+    title: Network Lists
+    description: Network Lists
+    meta_tags: Network Lists
+  page_documentation:
+    title: Documentação
+    description: Documentation
+    meta_tags: Documentation
+  docs_marketplace:
+    title: Marketplace
+    description: Marketplace
+    meta_tags: Marketplace
+  docs_agreements_marketplace_agreement:
+    title: Marketplace Agreement
+    description: Marketplace Agreement
+    meta_tags: Marketplace Agreement
+  docs_marketplace_marketplace_seller_guide:
+    title: Marketplace Seller Guide
+    description: Marketplace Seller Guide
+    meta_tags: Marketplace Seller Guide
+  docs_accounts:
+    title: Gestão de Contas
+    description: Adicione uma camada extra de segurança para sua conta na Azion, utilizando
+      a autenticação em duas etapas, por meio do seu smartphone.
+    meta_tags: Camada de segurança, segurança de acesso, autenticação em duas etapas
+  docs_accounts_multi:
+    title: Multi-Factor Authentication
+    description: Adicione uma camada extra de segurança para sua conta na Azion, utilizando
+      a autenticação em duas etapas, por meio do seu smartphone.
+    meta_tags: Camada de segurança, segurança de acesso, autenticação em duas etapas
+  docs_accounts_users_and_teams:
+    title: Usuários e times
+    description: Conheça o passo a passo para gerenciar equipe na plataforma da Azion,
+      desde remover ou adicionar usuários ao time, até gerenciar permissōes.
+    meta_tags: Gerenciar equipe plataforma da Azion, Adicionar usuário na plataforma
+      da Azion, Remover usuário na plataforma da Azion
+  docs_agreements:
+    title: Contratos
+    description: Contratos
+    meta_tags: Contratos
+  docs_agreements_acceptable_use_policy:
+    title: Política de Uso Aceitável
+    description: Ao utilizar as soluçōes da Azion, você concorda em cumprir a política
+      de uso aceitável. Confira a política de uso na íntegra.
+    meta_tags: Política de uso Azion, Política de uso aceitável da Azion, Política
+      de uso aceitável
+  docs_customer_agreement:
+    title: Contrato de Cliente
+    description: Acesse os detalhes de vigência, recisão, suspensão temporária, entre
+      outros detalhes sobre os serviços da Azion.
+    meta_tags: Suspensão Temporária Serviços Azion, Vigência serviços Azion, Recisão
+      serviços Azion
+  docs_privacy_policy:
+    title: Política de Privacidade
+    description: A política de privacidade da Azion rege a maneira como as informaçōes
+      são coletadas, armazenadas e divulgadas.
+    meta_tags: Política de privacidade, Política de privacidade da Azion
+  docs_sla:
+    title: Acordo de Nível de Serviço
+    description: Confira todas as métricas de disponibilidade da Azion e o Acordo
+      de Nível de Serviço.
+    meta_tags: SLA Azion, Métricas de disponiblidade Azion
+  docs_service_terms:
+    title: Termos de serviço
+    description: Acesse os termos de serviço de todos os produtos da Azion.
+    meta_tags: Termos de serviço, Termos de serviço Azion
+  docs_changelog:
+    title: Changelog
+    description: Acompanhe todas as mudanças e atualizações dos produtos e serviços
+      da Azion.
+    meta_tags: Mudanças nos produtos e serviços, Mudanças nos produtos e serviços
+      da Azion, Atualização dos serviços da Azion
+  developers_details:
+    title: Developers Details
+    description: Developers Details
+    meta_tags: Developers Details
+  docs_first_steps:
+    title: Primeiros Passos
+    description: Confira os primeiros passos para criar conta Azion, desenvolver um
+      novo Edge Application e alterar o DNS de sua aplicação.
+    meta_tags: DNS, Criar conta Azion
+  docs_how_to:
+    title: How To
+    description: Aprenda a usar nossos produtos para fins específicos e construa em
+      cima da Plataforma Azion.
+    meta_tags: How To
+  docs_configurations:
+    title: Configurations
+    description: Acesse instruções detalhadas das configurações utilizadas na plataforma
+      de Edge Computing da Azion.
+    meta_tags: Configurations
+  docs_cors:
+    title: Cross Origin Resource Sharing Cors
+    description: Configure o Cross-Origin Resource Sharing (CORS) para dar acesso
+      para um User Agent a recursos que estão em uma origem diferente do documento
+      em uso.
+    meta_tags: Cross Origin Resource Sharing Cors
+  docs_http2:
+    title: HTTP2
+    description: Veja como configurar o padrão HTTP/2 e aproveitar os benefícios para
+      a performance de seus sites.
+    meta_tags: HTTP2
+  docs_mitigating:
+    title: Mitigating a vulnerability httpoxy
+    description: Confira como configurar um Custom Header e aplicar à configuração
+      que possuir a vulnerabilidade HTTPOxy para mitigar ataques.
+    meta_tags: Mitigating a vulnerability httpoxy
+  docs_config_storage:
+    title: Publish and manage content in storage
+    description: Publish and manage content in storage
+    meta_tags: Publish and manage content in storage
+  docs_websocket:
+    title: Websocket
+    description: Confira nossa documentação Troubleshooting e saiba como proceder
+      diante de cada possível problema.
+    meta_tags: Websocket
+  troubleshoot:
+    title: Troubleshooting
+    description: Confira nossa documentação Troubleshooting e saiba como proceder
+      diante de cada possível problema.
+    meta_tags: Troubleshooting
+  troubleshoot_cache:
+    title: Cache Time
+    description: Veja como verificar o tempo de cache da página/objeto e tempo estabelecido
+      para a próxima expiração.
+    meta_tags: Troubleshooting Cache Time
+  troubleshoot_crossdomain:
+    title: Crossdomain
+    description: Confira como solucionar o erro de crossdomain no JW Player com passos
+      simples.
+    meta_tags: Troubleshooting Crossdomain
+  troubleshoot_dig:
+    title: Dig
+    description: Veja como instalar a Instalar a ferramenta Dig e passe a utilizá-la
+      para para consultar os servidores DNS.
+    meta_tags: Troubleshooting Dig
+  troubleshoot_traceroute:
+    title: Traceroute
+    description: Confira como usar o comando Traceroute para diagnosticar problemas
+      de desempenho e de entrega.
+    meta_tags: Troubleshooting Traceroute
+  code_of_ethics:
+    title: Code of ethics
+    description: Code of ethics
+    meta_tags: Code of ethics
+  our_values:
+    title: Our values
+    description: Our values
+    meta_tags: Our values
+  security:
+    title: Security
+    description: Security
+    meta_tags: Security
+  software_principles:
+    title: Software principles
+    description: Software principles
+    meta_tags: Software principles
+  peering:
+    title: Peering
+    description: Confira a política de Peering da Azion e acesse o número do sistema
+      autônomo.
+    meta_tags: Política de Peering da Azion, Número do sistema autônomo da Azion
+  docs_products:
+    title: Produtos
+    description: Aqui no Azion for Developers, você pode acessar a documentação e
+      Apis de todos os produtos e serviços da Azion.
+    meta_tags: Documentação dos produtos da Azion, Documentação dos serviços da Azion,
+      Documentação da Azion, Azion for developers
+  docs_adaptative_delivery:
+    title: Adaptive Delivery
+    description: Veja a documentação completa do serviço Adaptative Delivery da Azion.
+    meta_tags: Documentação Adaptive Delivery,  Documentação Adaptive Delivery Azion
+  docs_real_time_analytics:
+    title: Real-Time Metrics
+    description: Acesse a documentação completa do serviço Real-Time Metrics da Azion.
+    meta_tags: Documentação Real-Time Metrics, Documentação Azion Real-Time Metrics,
+      Documentação Real-Time Metrics da Azion
+  docs_real_time_events:
+    title: Real-Time Events
+    description: Utilize o Real-Time Events para acompanhar suas aplicações em tempo
+      real, monitorando eventos e antecipando-se a possíveis problemas.
+    meta_tags: Documentação Real-Time Events, Documentação Azion Real-Time Events,
+      Documentação Real-Time Events da Azion
+  docs_app_accerelation:
+    title: Application Acceleration
+    description: Confira a documentação completa do serviço Application Acceleration
+      da Azion.
+    meta_tags: Documentação Application Acceleration,  Documentação Application Acceleration
+      Azion
+  docs_cloud_storage:
+    title: Cloud Storage
+    description: Cloud Storage
+    meta_tags: Cloud Storage
+  docs_content_delivery:
+    title: Content Delivery
+    description: Acesse a documentação completa do Azion Content Delivery (CDN), da
+      Azion.
+    meta_tags: Documentação Content Delivery, Documentação Azion Content Delivery,
+      Documentação CDN, Documentação CDN Azion
+  docs_digital_certificates:
+    title: Digital Certificates
+    description: Digital Certificates
+    meta_tags: Digital Certificates
+  docs_rawlogs:
+    title: Rawlogs
+    description: Rawlogs
+    meta_tags: Rawlogs
+  docs_rtp:
+    title: Real-Time Purge
+    description: Real-Time Purge
+    meta_tags: Real-Time Purge
+  docs_rules_engine:
+    title: Rules Engine
+    description: Rules Engine
+    meta_tags: Rules Engine
+  docs_single_origin:
+    title: Single origin
+    description: Single origin
+    meta_tags: Single origin
+  docs_data_streaming:
+    title: Data Streaming
+    description: Veja toda a documentação completa do Azion Data Streaming.
+    meta_tags: Documentação Azion Data Streaming, Documentação Data Streaming, Documentação
+      Data Streamig da Azion
+  data_streaming_fields:
+    title: Data Streaming Fields
+    description: Data Streaming Fields
+    meta_tags: Data Streaming Fields
+  docs_ddos_protection:
+    title: DDoS Protection
+    description: Acesse a documentação completa do Azion DDoS Protection.
+    meta_tags: Documentação DDoS Protection, Documentação Azion DDoS Protection
+  docs_edge_firewall:
+    title: Edge Firewall
+    description: Veja a documentação completa do Azion Edge Firewall.
+    meta_tags: Documentação Azion Edge Firewall, Documentação Edge Firewall
+  docs_edge_applications:
+    title: Edge Application
+    description: Confira a documentação completa do Azion Edge Applications.
+    meta_tags: Documentação Azion Edge Applications, Documentação Edge Applications
+  docs_edge_orchestrator:
+    title: Edge Orchestrator
+    description: Acesse a documentação do Edge Orchestrator, serviço que garante que
+      você escale mantendo a compatibilidade entre os demais serviços e devices.
+    meta_tags: Edge Orchestrator
+  docs_edge_orchestrator_edge_nodes:
+    title: Edge Node
+    description: Edge Node
+    meta_tags: Edge Node
+  docs_edge_orchestrator_edge_services:
+    title: Edge Services
+    description: Edge Services
+    meta_tags: Edge Services
+  docs_edge_applications_digital_certificates:
+    title: Digital Certificates
+    description: Digital Certificates
+    meta_tags: Digital Certificates
+  docs_edge_applications_real_time_purge:
+    title: Real-Time Purge
+    description: Real-Time Purge
+    meta_tags: Real-Time Purge
+  docs_edge_applications_rules_engine:
+    title: Rules Engine
+    description: Rules Engine
+    meta_tags: Rules Engine
+  docs_edge_applications_edge_functions_instances:
+    title: Edge Functions Instances
+    description: Você poderá instanciar funções serverless em seu Edge Application
+      na Azion.
+    meta_tags: Edge Functions Instances
+  docs_image_optimization:
+    title: Image Processor
+    description: Acesse a documentação completa do serviço Image Processor da Azion.
+    meta_tags: Documentação Azion Image Processor, Documentação Image Processor
+  docs_integration_services:
+    title: Integration Services
+    description: Confira a documentação completa do serviço Integration Services da
+      Azion.
+    meta_tags: Documentação Integration Services, Documentação Integration Services
+      da Azion
+  docs_live_ingest:
+    title: Live Ingest
+    description: Live Ingest
+    meta_tags: Live Ingest
+  docs_load_balancer:
+    title: Load Balancer
+    description: Acesse a documentação do Azion Load Balancer e veja como garantir
+      disponibilidade através do Load Balancer.
+    meta_tags: Documentação Azion Load Balancer, Documentação Load Balancer, Documentação
+      Load Balancer da Azion, Load Balancer.
+  docs_support:
+    title: Support
+    description: Com o suporte da Azion você é atendido por um time de engenheiros
+      especialistas em performance para auxiliar a sua empresa.
+    meta_tags: Suporte da Azion, Azion Support
+  docs_open_ticket:
+    title: Abrindo um ticket
+    description: Confira como utilizar os tickets para sanar dúvidas, enviar sugestões
+      ou reportar algum problema que tenha ocorrido.
+    meta_tags: Abrindo um ticket
+  docs_web_application_firewall:
+    title: Web Application Firewall
+    description: Acesse a Documentação completa do serviço Web Application Firewall
+      da Azion.
+    meta_tags: Documentação Web Application Firewall, Documentação Web Application
+      Firewall da Azion
+  api_app_acelleration:
+    title: Application Acceleration
+    description: Application Acceleration
+    meta_tags: Application Acceleration
+  api_v3_intelligent_dns:
+    title: Intelligent DNS
+    description: Intelligent DNS
+    meta_tags: Intelligent DNS
+  docs_use_case_massive_redirect:
+    title: Massive Redirect
+    description: Veja como redirecionar suas urls de forma massiva sem perder a relevância
+      e a autoridade das páginas.
+    meta_tags: Massive Redirect
+  docs_use_case:
+    title: Casos de uso
+    description: Acesse os casos de uso do Azion e aprimore a aplicação dos recursos
+      da plataforma de edge computing.
+    meta_tags: Casos de uso
+  docs_use_case_edge_firewall:
+    title: Edge Firewall
+    description: Conheça todas as funções do Azion Edge Firewall e adicione multicamadas
+      de proteção nas suas aplicações.
+    meta_tags: Edge Firewall
+  docs_use_case_jwt:
+    title: Azion JWT
+    description: Azion JWT
+    meta_tags: Azion JWT
+  docs_use_case_edge_caching:
+    title: Edge Caching
+    description: Veja como Edge Caching da Azion suporta grandes cargas de requisições
+      para conteúdos dinâmicos sem necessidade de uso de sistemas de fila.
+    meta_tags: Edge Caching
+  docs_use_case_secure_token:
+    title: Secure Token
+    description: Secure Token
+    meta_tags: Secure Token
+  docs_use_case_content_paywall_edge_function:
+    title: Paywall com Edge Function JWT
+    description: Paywall com Edge Function JWT
+    meta_tags: Paywall com Edge Function JWT
+  docs_use_case_content_azion_secure_token:
+    title: Protegendo conteúdo restrito contra acessos indevidos
+    description: Protegendo conteúdo restrito contra acessos indevidos com Azion Secure
+      Token
+    meta_tags: Protegendo conteúdo restrito contra acessos indevidos com Azion Secure
+      Token
+  docs_use_case_apis_performance_sites:
+    title: Acelerando o desempenho de APIs e websites
+    description: Acelerando o desempenho de APIs e websites
+    meta_tags: Acelerando o desempenho de APIs e websites
+  docs_edge_caching:
+    title: Edge Caching
+    description: Edge Caching
+    meta_tags: Edge Caching
+  docs_edge_applications_domains:
+    title: Domains
+    description: Domains
+    meta_tags: Domains
+  docs_edge_pulse:
+    title: Edge Pulse
+    description: Edge Pulse
+    meta_tags: Edge Pulse
+  docs_network_layer_protection:
+    title: Network Layer Protection
+    description: Network Layer Protection
+    meta_tags: Network Layer Protection
+  docs_edge_firewall_rules_engine:
+    title: Rules Engine
+    description: Rules Engine
+    meta_tags: Rules Engine
+  docs_edge_firewall_access_permissions:
+    title: Permissões de Acesso
+    description: Permissões de Acesso
+    meta_tags: Permissões de Acesso
+  docs_web_application_firewall_waf_rule_sets:
+    title: Waf Rule Sets
+    description: Waf Rule Sets
+    meta_tags: Waf Rule Sets
+  docs_edge_firewall_rule_sets:
+    title: Rule Sets
+    description: Rule Sets
+    meta_tags: Rule Sets
+  docs_edge_firewall_network_lists:
+    title: Network Lists
+    description: Network Lists
+    meta_tags: Network Lists
+  docs_edge_firewall_edge_functions_instances:
+    title: Edge Functions Instances
+    description: Execute funções serveless em nossa robusta rede distribuída de Edge
+      Nodes, respondendo a eventos mais próximo do usuário final, garantindo maior
+      escalabilidade e disponibilidade.
+    meta_tags: Edge Functions Instances
+  docs_use_case_serverless_functions:
+    title: Executando funções serverless no Edge
+    description: Personalize as funções da plataforma de Edge Computing da Azion e
+      utilize todo o potencial da plataforma.
+    meta_tags: Executando funções serverless no Edge
+  docs_use_case_ab_testing:
+    title: Configure testes A/B no Edge
+    description: Configure testes A/B no Edge
+    meta_tags: Configure testes A/B no Edge
+  docs_use_case_hosting_edge_website:
+    title: Construa regras dinâmicas para sites estáticos com Azion Edge Application
+    description: Construa regras dinâmicas para sites estáticos com Azion Edge Application
+    meta_tags: Construa regras dinâmicas para sites estáticos com Azion Edge Application
+  docs_use_case_blacklists_ip_addresses_edge:
+    title: Blacklists de endereços IP no Edge
+    description: Blacklists de endereços IP no Edge
+    meta_tags: Blacklists de endereços IP no Edge
+  docs_how_to_configurations_upgrade_edge_firewall:
+    title: Como atualizar seu Edge Firewall
+    description: Como atualizar seu Edge Firewall
+    meta_tags: Como atualizar seu Edge Firewall
+  docs_use_case_content_targeting:
+    title: Segmentação de conteúdo
+    description: Através de funções serverless e lógicas de Edge computing é possível
+      criar, avaliar e realizar a variação de cookies diretamente no Edge.
+    meta_tags: Segmentação de conteúdo, Edge Computing
+  docs_use_case_hosting_edge_site:
+    title: Hospedagem de um edge site
+    description: Utilize funções serverless de Edge Computing, para processar e entregar
+      sites diretamente na borda da rede
+    meta_tags: Hospedagem, Edge site
+  docs_products_edge_functions:
+    title: Edge Functions
+    description: Edge functions
+    meta_tags: Edge functions
+  docs_products_edge_functions_runtime_apis:
+    title: Runtime Apis
+    description: Runtime Apis
+    meta_tags: Runtime Apis
+  docs_products_edge_functions_runtime_apis_javascript:
+    title: Javascript
+    description: Javascript
+    meta_tags: Javascript
+  docs_products_edge_functions_runtime_apis_javascript_webstandards:
+    title: Web standards
+    description: Web standards
+    meta_tags: Web standards
+  docs_products_edge_functions_runtime_apis_javascript_event_listener:
+    title: Add event listener
+    description: Add event listener
+    meta_tags: Add event listener
+  docs_products_edge_functions_runtime_apis_javascript_fetch:
+    title: Fetch
+    description: Fetch
+    meta_tags: Fetch
+  docs_products_edge_functions_runtime_apis_javascript_fetch_event:
+    title: Fetch Event
+    description: Fetch Event
+    meta_tags: Fetch Event
+  docs_products_edge_functions_runtime_apis_javascript_request:
+    title: Request
+    description: Request
+    meta_tags: Request
+v2:
+  button:
+    azion_jobs:
+      text: Explore as carreiras na Azion
+      href: https://www.azion.com/pt-br/carreiras/
+    contact_sales:
+      text: Contate vendas
+      href: "/pt-br/contate-vendas/"
+    explore_our_platform:
+      text: Explore nossa plataforma
+      href: "/pt-br/produtos/"
+    explore_carees:
+      text: Veja nossas oportunidades
+      href: https://www.azion.com/pt-br/carreiras/
+    free_account:
+      text: cuenta gratuita
+    go_to_marketplace:
+      text: Ir para o Marketplace
+      href: https://marketplacee.azion.com/
+    read_more:
+      text: Leia mais
+    success_cases:
+      text: Veja nossos casos de sucesso
+      href: "/pt-br/casos-de-sucesso/"
+    our_products:
+      text: Veja nossos produtos
+      href: "/pt-br/produtos/"
+    our_products_about:
+      text: Saiba mais sobre nossos produtos
+      href: "/pt-br/produtos/"
+    see_all_features:
+      text: Ver todas features
+    see_less_features:
+      text: Mostrar menos
+    see_all_jobs:
+      text: Ver todas las vacantes
+    see_all_positions:
+      text: Ver todos vagas abertas
+    see_jobs:
+      text: Ver vacantes
+    about_us:
+      text: Sobre Azion
+    talk_expert:
+      text: hablar con un expert
+    create_free_account:
+      text: crear cuenta gratis
+    read_custumer_success:
+      text: leia mais casos de sucesso
+    learn_more:
+      text: más información
+  pages:
+    blog:
+      title: Blog
+      description: Acesse o blog de tecnologia da Azion e se mantenha atualizado com
+        as novidades do setor.
+      meta_tags: blog tecnologia, blog de tecnologia, notícias tecnologia, notícias
+        sobre tecnologia
+      og_image: static/images/v3/open-graph/og-blog.png
+      category: Categorias
+      posts:
+        blog_home: Página inicial
+        prev_post: Anterior
+        next_post: Próximo
+      category_list:
+        serverless: Serverless
+        5g: 5G
+        seguranca: Segurança
+        edge-computing: Edge Computing
+        edge-routing: Edge Routing
+    careers:
+      title: Trabaja con nosotros
+      breadcrumb_title: Trabaja en Azion
+      jobsTitle: Vacantes
+      description: Vamos a crear juntos
+      meta_tags: carreiras, vagas, journey, desafios, azion, jobs
+      initial:
+        title: Vamos a construir juntos
+        description: Azion siempre se ha conducido bajo los valores esenciales de
+          la innovación, la confiabilidad y la capacidad de tomar decisiones transparentes
+          y con visión de futuro, lo cual ejecuta con precisión y agilidad. Creemos
+          que nuestro éxito depende del éxito de nuestros clientes.
+      candidate_journey:
+        title: La jornada del candidato
+        description: Un sueño grande y desafiante hace que todos remen en la misma
+          dirección.
+        value1:
+          title: Elige un desafío
+          description: El primer paso es elegir cuál de nuestros desafíos te mueve
+            y enviar tu currículo para postularte.
+        value2:
+          title: Entra en contacto
+          description: 'Es momento de conocernos mejor. Serán 3 etapas: una evaluación
+            rápida de alineamiento con uno de nuestros reclutadores, una entrevista
+            técnica y una entrevista de fit cultural.'
+        value3:
+          title: Espera por el match
+          description: Las informaciones de los candidatos son analizadas por un comité
+            de selección interno para decidir quién es el candidato perfecto para
+            el cargo. Posteriormente, nos ponemos en contacto para hacer una propuesta
+            o dar un feedback.
+      our_values:
+        title: Nuestros valores
+        value1:
+          title: Calidad
+          description: Satisfacer altas expectativas es el estándar en Azion. Superarlas
+            nos distingue e impulsa nuestro éxito.
+          image: "/static/images/careers/image-employees-01.png"
+        value2:
+          title: Agilidad
+          description: En Azion, actuamos rápidamente para responder a los retos y
+            oportunidades.
+          image: "/static/images/careers/image-employees-02.png"
+        value3:
+          title: Ownership
+          description: En Azion tenemos autonomía para actuar y somos responsables
+            por nuestras acciones.
+          image: "/static/images/careers/image-employees-03.png"
+        value4:
+          title: Innovación
+          description: En Azion, desarrollamos soluciones que abren nuevas posibilidades.
+          image: "/static/images/careers/image-employees-04.png"
+      pick_team:
+        title: "¿Quieres unirte a <strong>nuestro equipo</strong>?"
+        description: Elige un desafío.
+      all_jobs:
+        title: Estamos <strong>contratando</strong>
+      thats_all:
+        title: " Eso es todo</br>Por ahora."
+        description: Sigue buscando otras vacantes. ¿Por qué no en otras áreas?
+      not_match:
+        title: Não deu match?
+        description: Sigue buscando otras vacantes. ¿Por qué no en otras áreas?
+      filter:
+        title: 'Pesquise nossas vagas:'
+        submit: Pesquisar
+      jobs:
+        search:
+          area:
+          - text: Todas Áreas
+            value: all
+          - text: Engenharia
+            value: Engineering
+          - text: Operações
+            value: Operations
+          - text: Produtos
+            value: Products
+          - text: Revenue
+            value: Revenue
+          - text: Segurança
+            value: Security
+          location:
+          - text: Todas Localizações
+            value: all
+          - text: Los Angeles, CA, USA
+            value: Los Angeles-CA-USA
+          - text: São Paulo, Brasil
+            value: São Paulo-Brazil
+          - text: Porto Alegre, Brasil
+            value: Porto Alegre-Brazil
+          - text: Cidade do México, México
+            value: Mexico City-Mexico
+          - text: Remoto, Brazil
+            value: Remote-Brazil
+          - text: Remoto, USA
+            value: Remote-USA
+      job:
+        title: Sobre o trabalho
+        form:
+          title: Você quer trabalhar, ensinar e aprender na Azion?
+          description: Preencha o formulário para se candidatar a esta vaga.
+          first_name: 'Primeiro nome:'
+          last_name: 'Sobrenome:'
+          email: 'E-mail:'
+          phone: 'Telefone:'
+          resume:
+            title: 'Currículo:'
+            attach: Anexar currículo
+          linkedin: " URL do perfil do LinkedIn:"
+          salary: 'Salário pretendido:'
+          address: 'Endereço:'
+          city: 'Cidade:'
+          state: 'Estado:'
+          postal: 'CEP:'
+          submit: Enviar inscrição
+      departments:
+      - title: Operaciones
+        description: Impulsa nuestras iniciativas de negocios para lograr resultados
+          exitosos a escala global.
+        href: Operations
+        icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+          d="M22.8459 47.3115H16.7934C10.1443 47.3115 4.68852 41.8557 4.68852 35.2066V27.7049H5.88197V35.2066C5.88197
+          41.259 10.741 46.118 16.7934 46.118H22.8459V47.3115Z" fill="#F3652B"/><path
+          d="M47.3115 24.8918H46.118V16.7934C46.118 10.741 41.259 5.88197 35.2066
+          5.88197H28.9836V4.68852H35.2066C41.8557 4.68852 47.3115 10.1443 47.3115
+          16.7934V24.8918Z" fill="#F3652B"/><path d="M34.4393 47.3115H32.7344C32.3934
+          47.3115 32.1377 47.0557 32.1377 46.7148C32.1377 46.3738 32.3934 46.118 32.7344
+          46.118H34.4393C34.7803 46.118 35.0361 46.3738 35.0361 46.7148C35.0361 47.0557
+          34.6951 47.3115 34.4393 47.3115ZM30.1771 47.3115H28.4721C28.1311 47.3115
+          27.8754 47.0557 27.8754 46.7148C27.8754 46.3738 28.1311 46.118 28.4721 46.118H30.1771C30.518
+          46.118 30.7738 46.3738 30.7738 46.7148C30.7738 47.0557 30.4328 47.3115 30.1771
+          47.3115ZM25.9148 47.3115C25.5738 47.3115 25.318 47.0557 25.318 46.7148C25.318
+          46.3738 25.5738 46.118 25.9148 46.118C26.2557 46.118 26.5115 46.3738 26.5115
+          46.7148C26.5115 47.0557 26.1705 47.3115 25.9148 47.3115ZM36.9115 47.141C36.6557
+          47.141 36.4 46.9705 36.3148 46.6295C36.2295 46.2885 36.4852 46.0328 36.8262
+          45.9475C37.3377 45.8623 37.8492 45.6918 38.3607 45.6066C38.7016 45.5213
+          39.0426 45.6918 39.1279 45.9475C39.2131 46.2885 39.0426 46.6295 38.7869
+          46.7148C38.1902 46.8852 37.5934 47.0557 37.082 47.141C36.9967 47.141 36.9967
+          47.141 36.9115 47.141ZM40.918 45.6918C40.7475 45.6918 40.4918 45.6066 40.4066
+          45.4361C40.2361 45.1803 40.3213 44.7541 40.577 44.5836C41.0033 44.3279 41.5148
+          43.9869 41.941 43.6459C42.1967 43.4754 42.5377 43.4754 42.7934 43.7311C42.9639
+          43.9869 42.9639 44.3279 42.7082 44.5836C42.282 44.9246 41.7705 45.2656 41.259
+          45.6066C41.1738 45.6918 41.0033 45.6918 40.918 45.6918ZM44.0721 42.8787C43.9016
+          42.8787 43.8164 42.8787 43.7311 42.7934C43.4754 42.623 43.3902 42.1967 43.6459
+          41.941C43.9869 41.5148 44.2426 41.0885 44.5836 40.577C44.7541 40.3213 45.0951
+          40.1508 45.4361 40.3213C45.6918 40.4918 45.8623 40.8328 45.6918 41.1738C45.4361
+          41.6852 45.0951 42.1967 44.6689 42.6229C44.4984 42.7934 44.2426 42.8787
+          44.0721 42.8787ZM46.0328 39.1279C45.9475 39.1279 45.9475 39.1279 45.8623
+          39.1279C45.5213 39.0426 45.3508 38.7016 45.4361 38.3607C45.6066 37.8492
+          45.6918 37.3377 45.777 36.8262C45.8623 36.4852 46.118 36.2295 46.459 36.3148C46.8
+          36.4 46.9705 36.6557 46.9705 36.9967C46.8852 37.5934 46.7148 38.1902 46.5443
+          38.7869C46.5443 38.9574 46.2885 39.1279 46.0328 39.1279ZM46.5443 34.9508C46.2033
+          34.9508 45.9475 34.6951 45.9475 34.3541V32.6492C45.9475 32.3082 46.2033
+          32.0525 46.5443 32.0525C46.8852 32.0525 47.141 32.3082 47.141 32.6492V34.3541C47.141
+          34.6098 46.8852 34.9508 46.5443 34.9508ZM46.5443 30.6885C46.2033 30.6885
+          45.9475 30.4328 45.9475 30.0918V28.3869C45.9475 28.0459 46.2033 27.7902
+          46.5443 27.7902C46.8852 27.7902 47.141 28.0459 47.141 28.3869V30.0918C47.141
+          30.3475 46.8852 30.6885 46.5443 30.6885Z" fill="#F3652B"/><path d="M5.2
+          24.3803C4.85901 24.3803 4.60328 24.1246 4.60328 23.7836V22.9312C4.60328
+          22.5902 4.85901 22.3344 5.2 22.3344C5.54098 22.3344 5.79672 22.5902 5.79672
+          22.9312V23.7836C5.79672 24.1246 5.45574 24.3803 5.2 24.3803Z" fill="#F3652B"/><path
+          d="M5.2 20.8852C4.85901 20.8852 4.60328 20.6295 4.60328 20.2885V18.5836C4.60328
+          18.2426 4.85901 17.9869 5.2 17.9869C5.54098 17.9869 5.79672 18.2426 5.79672
+          18.5836V20.2885C5.79672 20.6295 5.45574 20.8852 5.2 20.8852ZM5.2 16.5377C4.85901
+          16.5377 4.60328 16.1967 4.60328 15.8557C4.68852 15.259 4.77377 14.6623 4.85901
+          14.0656C4.94426 13.7246 5.28524 13.5541 5.54098 13.6393C5.88197 13.7246
+          6.05246 14.0656 5.96721 14.3213C5.88197 14.8328 5.79672 15.4295 5.71147
+          15.941C5.79672 16.282 5.54098 16.5377 5.2 16.5377ZM6.3082 12.3607C6.22295
+          12.3607 6.1377 12.3607 6.05246 12.2754C5.79672 12.1049 5.62623 11.7639 5.79672
+          11.5082C6.05246 10.9967 6.39344 10.4 6.73442 9.88853C6.90492 9.63279 7.33115
+          9.54754 7.58688 9.71803C7.84262 9.88853 7.92787 10.3148 7.75738 10.5705C7.41639
+          10.9967 7.16065 11.5082 6.90492 12.0197C6.73442 12.2754 6.56393 12.3607
+          6.3082 12.3607ZM8.95082 8.86557C8.78033 8.86557 8.60983 8.78033 8.52459
+          8.69508C8.26885 8.43934 8.3541 8.09836 8.52459 7.84262C8.95082 7.41639 9.46229
+          7.07541 9.97377 6.73443C10.2295 6.56393 10.6557 6.64918 10.8262 6.90492C10.9967
+          7.16066 10.9115 7.58689 10.6557 7.75738C10.2295 8.01312 9.71803 8.3541 9.37705
+          8.69508C9.20656 8.86557 9.12131 8.86557 8.95082 8.86557ZM12.6164 6.64918C12.3607
+          6.64918 12.1902 6.47869 12.0197 6.22295C11.9344 5.88197 12.0197 5.54098
+          12.3607 5.45574C13.0426 5.28525 13.6393 5.11475 14.2361 4.94426C14.4918
+          4.85902 14.8328 5.11475 14.918 5.45574C15.0033 5.79672 14.7475 6.05246 14.4918
+          6.13771C13.9803 6.22295 13.3836 6.39344 12.8721 6.56393C12.7869 6.64918
+          12.7016 6.64918 12.6164 6.64918ZM23.0164 5.88197H21.3115C20.9705 5.88197
+          20.7148 5.62623 20.7148 5.28525C20.7148 4.94426 20.9705 4.68852 21.3115
+          4.68852H23.0164C23.3574 4.68852 23.6131 4.94426 23.6131 5.28525C23.6131
+          5.62623 23.3574 5.88197 23.0164 5.88197ZM18.6688 5.88197H16.9639C16.6229
+          5.88197 16.3672 5.62623 16.3672 5.28525C16.3672 4.94426 16.6229 4.68852
+          16.9639 4.68852H18.6688C19.0098 4.68852 19.2656 4.94426 19.2656 5.28525C19.2656
+          5.62623 19.0098 5.88197 18.6688 5.88197Z" fill="#F3652B"/><path d="M26.5115
+          5.88197H25.659C25.318 5.88197 25.0623 5.62623 25.0623 5.28525C25.0623 4.94426
+          25.318 4.68852 25.659 4.68852H26.5115C26.8525 4.68852 27.1082 4.94426 27.1082
+          5.28525C27.1082 5.62623 26.8525 5.88197 26.5115 5.88197Z" fill="#F3652B"/><path
+          d="M0.852459 32.6492L0 31.7967L5.28525 26.5115L10.5705 31.7967L9.71803 32.6492L5.28525
+          28.2164L0.852459 32.6492Z" fill="#F3652B"/><path d="M22.0787 10.5705L21.2262
+          9.71803L25.659 5.28525L21.2262 0.852459L22.0787 0L27.3639 5.28525L22.0787
+          10.5705Z" fill="#F3652B"/><path d="M30.3475 52L25.0623 46.7148L30.3475 41.4295L31.2
+          42.282L26.682 46.7148L31.2 51.1475L30.3475 52Z" fill="#F3652B"/><path d="M46.7148
+          25.7443L41.4295 20.459L42.1967 19.6066L46.7148 24.0393L51.1475 19.6066L52
+          20.459L46.7148 25.7443Z" fill="#F3652B"/><path d="M26 33.6721C21.9082 33.6721
+          18.5836 30.3475 18.5836 26.2557C18.5836 22.1639 21.9082 18.8393 26 18.8393C30.0918
+          18.8393 33.4164 22.1639 33.4164 26.2557C33.4164 30.3475 30.0918 33.6721
+          26 33.6721ZM26 20.0328C22.5902 20.0328 19.777 22.8459 19.777 26.2557C19.777
+          29.6656 22.5902 32.4787 26 32.4787C29.4098 32.4787 32.2229 29.6656 32.2229
+          26.2557C32.2229 22.8459 29.4098 20.0328 26 20.0328Z" fill="#F3652B"/><path
+          d="M23.0164 39.7246V36.9967C22.0787 36.741 21.141 36.3148 20.2885 35.8885L18.3279
+          37.8492L14.1508 33.6721L16.1115 31.7115C15.6 30.859 15.259 29.9213 15.0033
+          28.9836H12.2754V23.0164H15.0033C15.259 22.0787 15.6852 21.141 16.1115 20.2885L14.1508
+          18.3279L18.3279 14.1508L20.2885 16.1115C21.141 15.6 22.0787 15.259 23.0164
+          15.0033V12.2754H28.8984V15.0033C29.8361 15.259 30.7738 15.6853 31.6262 16.1115L33.5869
+          14.1508L37.7639 18.3279L35.8033 20.2885C36.3148 21.141 36.6557 22.0787 36.9115
+          23.0164H39.6393V28.8984H36.9115C36.6557 29.8361 36.2295 30.7738 35.8033
+          31.6262L37.7639 33.5869L33.5869 37.7639L31.7115 35.8033C30.859 36.3148 29.9213
+          36.6557 28.9836 36.9115V39.7246H23.0164ZM24.2098 38.5312H27.7049V36.059L28.4721
+          35.8885C29.4098 35.6328 30.2623 35.2918 31.1148 34.7803L31.7967 34.3541L33.5016
+          36.059L35.9738 33.5869L34.2689 31.882L34.6951 31.2C35.2066 30.3476 35.5475
+          29.4951 35.8033 28.5574L35.9738 27.7902H38.4459V24.2951H35.9738L35.8033
+          23.4426C35.5475 22.5049 35.2066 21.6525 34.6951 20.8L34.2689 20.118L35.9738
+          18.4131L33.5016 15.941L31.7967 17.6459L31.1148 17.2197C30.2623 16.7082 29.4098
+          16.3672 28.4721 16.1115L27.7049 15.941V13.4689H24.2098V15.941L23.4426 16.1115C22.5049
+          16.3672 21.6525 16.7082 20.8 17.2197L20.118 17.6459L18.4131 15.941L15.941
+          18.4131L17.6459 20.118L17.2197 20.8C16.7082 21.6525 16.3672 22.5049 16.1115
+          23.4426L15.941 24.2098H13.4689V27.7049H15.941L16.1115 28.4721C16.3672 29.4098
+          16.7082 30.2623 17.2197 31.1148L17.6459 31.7967L15.941 33.5017L18.4131 35.9738L20.118
+          34.2689L20.8 34.6951C21.6525 35.2066 22.5049 35.5476 23.4426 35.8033L24.2098
+          35.9738V38.5312Z" fill="#F3652B"/></svg>
+      - title: Ingeniería
+        description: Mejora tus habilidades mientras construyes el futuro de la computación
+          y ofreces servicios de misión crítica para clientes globales.
+        href: Engineering
+        icon: <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+          d="M43.0945 0H5.90554C2.63355 0 0 2.63355 0 5.90554V43.0945C0 46.3664 2.63355
+          49 5.90554 49H43.0945C46.3664 49 49 46.3664 49 43.0945V5.90554C49 2.63355
+          46.3664 0 43.0945 0ZM5.90554 1.11726H43.0945C45.728 1.11726 47.8827 3.27199
+          47.8827 5.90554V10.6938H1.11726V5.90554C1.11726 3.27199 3.27199 1.11726
+          5.90554 1.11726ZM43.0945 47.8827H5.90554C3.27199 47.8827 1.11726 45.728
+          1.11726 43.0945V11.8909H47.8827V43.0945C47.8827 45.728 45.728 47.8827 43.0945
+          47.8827Z" fill="#F3652B"/><path d="M5.98534 17.6368H40.4609C40.7801 17.6368
+          41.0195 17.3974 41.0195 17.0782C41.0195 16.759 40.7801 16.5195 40.4609 16.5195H5.98534C5.66612
+          16.5195 5.42671 16.759 5.42671 17.0782C5.42671 17.3974 5.66612 17.6368 5.98534
+          17.6368Z" fill="#F3652B"/><path d="M44.6905 21.9463H8.61889C8.29967 21.9463
+          8.06026 22.1857 8.06026 22.5049C8.06026 22.8241 8.29967 23.0635 8.61889
+          23.0635H44.6905C45.0098 23.0635 45.2492 22.8241 45.2492 22.5049C45.2492
+          22.1857 44.93 21.9463 44.6905 21.9463Z" fill="#F3652B"/><path d="M37.8274
+          28.0912C37.8274 27.772 37.5879 27.5326 37.2687 27.5326H5.98534C5.66612 27.5326
+          5.42671 27.772 5.42671 28.0912C5.42671 28.4104 5.66612 28.6498 5.98534 28.6498H37.2687C37.5879
+          28.6498 37.8274 28.4104 37.8274 28.0912Z" fill="#F3652B"/><path d="M20.5098
+          33.1189H8.61889C8.29967 33.1189 8.06026 33.3583 8.06026 33.6775C8.06026
+          33.9967 8.29967 34.2362 8.61889 34.2362H20.5098C20.829 34.2362 21.0684 33.9967
+          21.0684 33.6775C21.0684 33.3583 20.829 33.1189 20.5098 33.1189Z" fill="#F3652B"/><path
+          d="M32.8795 33.0391L27.772 38.1466L32.8795 43.1743L33.6775 42.456L29.3681
+          38.1466L33.6775 33.8371L32.8795 33.0391Z" fill="#F3652B"/><path d="M37.5081
+          33.8371L41.8176 38.1466L37.5081 42.456L38.3062 43.1743L43.3339 38.1466L38.3062
+          33.0391L37.5081 33.8371Z" fill="#F3652B"/><path d="M7.34202 7.66123C8.14007
+          7.66123 8.6987 7.0228 8.6987 6.30456C8.6987 5.50651 8.06026 4.94788 7.34202
+          4.94788C6.54397 4.94788 5.98534 5.58632 5.98534 6.30456C5.98534 7.0228 6.54397
+          7.66123 7.34202 7.66123Z" fill="#F3652B"/><path d="M12.6889 7.66123C13.487
+          7.66123 14.0456 7.0228 14.0456 6.30456C14.0456 5.50651 13.4072 4.94788 12.6889
+          4.94788C11.8909 4.94788 11.3322 5.58632 11.3322 6.30456C11.3322 7.0228 11.8909
+          7.66123 12.6889 7.66123Z" fill="#F3652B"/><path d="M18.0358 7.66123C18.8339
+          7.66123 19.3925 7.0228 19.3925 6.30456C19.3925 5.50651 18.7541 4.94788 18.0358
+          4.94788C17.2378 4.94788 16.6792 5.58632 16.6792 6.30456C16.5993 7.0228 17.2378
+          7.66123 18.0358 7.66123Z" fill="#F3652B"/></svg>
+      - title: Productos
+        description: Construye productos para impulsar una economía hiperconectada
+          mientras mejoras metodologías y estrategias.
+        href: Products
+        icon: <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+          d="M5.97903 12.1435H11.0371M19.1774 12.1435H45.021M19.1774 12.1435C19.1774
+          14.3696 17.3728 16.1742 15.1468 16.1742C12.9207 16.1742 11.1161 14.3696
+          11.1161 12.1435C11.1161 9.91749 12.9207 8.1129 15.1468 8.1129C17.3728 8.1129
+          19.1774 9.91749 19.1774 12.1435ZM5.97903 25.5H31.5065M31.5065 25.5C31.5065
+          27.7261 33.311 29.5306 35.5371 29.5306C37.7632 29.5306 39.5677 27.7261 39.5677
+          25.5C39.5677 23.2739 37.7632 21.4694 35.5371 21.4694C33.311 21.4694 31.5065
+          23.2739 31.5065 25.5ZM39.6468 25.5H45.021M26.0532 38.8565H45.3371M26.0532
+          38.8565C26.0532 41.1262 24.2133 42.9661 21.9435 42.9661C19.6738 42.9661
+          17.8339 41.1262 17.8339 38.8565M26.0532 38.8565C26.0532 36.5867 24.2133
+          34.7468 21.9435 34.7468C19.6738 34.7468 17.8339 36.5867 17.8339 38.8565M5.97903
+          38.8565H17.8339M44.7048 50H6.29516C3.37097 50 1 47.629 1 44.7048V6.29516C1
+          3.37097 3.37097 1 6.29516 1H44.7048C47.629 1 50 3.37097 50 6.29516V44.7048C50
+          47.629 47.629 50 44.7048 50Z" stroke="#F3652B" stroke-width="1.4" stroke-miterlimit="10"/></svg>
+      - title: Revenue
+        description: Crea historias increíbles con clientes globales.
+        href: Revenue
+        icon: <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+          d="M37.3027 45.1232L37.3143 45.1165L37.322 45.1115C37.3238 45.1109 37.3275
+          45.1099 37.3334 45.109C37.3483 45.1068 37.3696 45.1067 37.3937 45.1114C37.4178
+          45.1161 37.4369 45.1241 37.449 45.1313C37.4494 45.1316 37.4499 45.1319 37.4503
+          45.1321C37.4517 45.1431 37.4518 45.1597 37.4478 45.1791C37.4436 45.1997
+          37.4365 45.216 37.4301 45.2263C37.4295 45.2273 37.4289 45.2282 37.4284 45.2289C33.5968
+          47.3343 29.3753 48.5 25 48.5C11.5044 48.5 0.5 37.7014 0.5 24.5C0.5 11.2986
+          11.5044 0.5 25 0.5C38.4956 0.5 49.5 11.2986 49.5 24.5C49.5 29.3448 48.066
+          33.9536 45.3554 37.9403C45.354 37.9414 45.3516 37.9431 45.348 37.9452C45.3359
+          37.9524 45.3168 37.9604 45.2927 37.9652C45.2686 37.9699 45.2473 37.9698
+          45.2325 37.9675C45.23 37.9672 45.2279 37.9668 45.2261 37.9664C45.2257 37.9657
+          45.2252 37.9649 45.2246 37.9641C45.2183 37.9538 45.2111 37.9375 45.2069
+          37.9169C45.2027 37.8963 45.203 37.879 45.2047 37.8681C45.205 37.8663 45.2053
+          37.8649 45.2055 37.8638C47.949 33.9481 49.3599 29.3025 49.3599 24.5C49.3599
+          11.286 38.4588 0.617264 25 0.617264C11.5412 0.617264 0.640065 11.286 0.640065
+          24.5C0.640065 37.714 11.5412 48.3827 25 48.3827C29.3199 48.3827 33.6412
+          47.2435 37.3027 45.1232ZM31.6389 12.4617L18.9629 35.316C18.9512 35.3207
+          18.9372 35.325 18.9225 35.3281C18.92 35.3287 18.9176 35.3291 18.9153 35.3295C18.8982
+          35.3175 18.8814 35.3022 18.8671 35.2852C18.8598 35.2765 18.8541 35.2685
+          18.8497 35.2614L31.5303 12.4786C31.5413 12.4647 31.5548 12.4509 31.5701
+          12.4386C31.5817 12.4293 31.5925 12.4222 31.6018 12.4171C31.6087 12.4236
+          31.6153 12.4306 31.6215 12.438C31.6288 12.4466 31.6345 12.4547 31.6389 12.4617ZM36.6564
+          30.9642V30.9514L36.6557 30.9387C36.5614 29.091 35.0523 27.5912 33.2248 27.5912C31.3295
+          27.5912 29.7932 29.0825 29.7932 30.9642C29.7932 32.8459 31.3295 34.3371
+          33.2248 34.3371C35.12 34.3371 36.6564 32.8459 36.6564 30.9642ZM16.6124 20.6482C14.6737
+          20.6482 13.0407 19.1005 13.0407 17.158C13.0407 15.2091 14.5988 13.6678 16.6124
+          13.6678C18.6259 13.6678 20.184 15.2091 20.184 17.158C20.184 19.1069 18.6259
+          20.6482 16.6124 20.6482ZM16.6124 13.8648C14.7171 13.8648 13.1808 15.3561
+          13.1808 17.2378C13.1808 19.1195 14.7171 20.6107 16.6124 20.6107C18.5076
+          20.6107 20.044 19.1195 20.044 17.2378C20.044 15.3561 18.5076 13.8648 16.6124
+          13.8648ZM33.2248 34.3746C31.286 34.3746 29.6531 32.8269 29.6531 30.8844C29.6531
+          29.0088 31.2177 27.3941 33.2248 27.3941C35.2352 27.3941 36.7916 28.9307
+          36.7964 30.8753C36.72 32.8441 35.1439 34.3746 33.2248 34.3746Z" fill="#F3652B"
+          stroke="#F3652B"/></svg>
+      - title: Seguridad
+        description: Ayúdanos a proteger nuestras aplicaciones, infraestructura, redes,
+          dispositivos y datos.
+        href: Security
+        icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+          d="M16.3838 2.91202C19.3455 1.67483 22.5822 1 25.9939 1C31.555 1 36.6787
+          2.81205 40.8402 5.88628C41.3401 6.26118 41.8274 6.64859 42.3023 7.04849C42.6147
+          7.32342 42.9272 7.59835 43.2271 7.88578C43.727 8.36066 44.2143 8.86053 44.6767
+          9.3854C45.2266 9.99775 45.7514 10.6476 46.2388 11.3224C49.2381 15.4464 51.0001
+          20.5201 51.0001 26.0062C51.0001 31.18 49.4255 35.9913 46.7262 39.9778" stroke="#F3652B"
+          stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round"/><path
+          d="M35.8538 48.963C32.8295 50.2627 29.4929 50.9875 25.9938 50.9875C12.1847
+          50.9875 1 39.8028 1 25.9937C1 20.82 2.57461 16.0087 5.27393 12.0222" stroke="#F3652B"
+          stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round"/><path
+          d="M7.76071 12.547C9.67251 12.547 11.2223 10.9972 11.2223 9.08541C11.2223
+          7.17361 9.67251 5.62378 7.76071 5.62378C5.8489 5.62378 4.29907 7.17361 4.29907
+          9.08541C4.29907 10.9972 5.8489 12.547 7.76071 12.547Z" stroke="#F3652B"
+          stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round"/><path
+          d="M44.2143 46.626C46.1261 46.626 47.676 45.0762 47.676 43.1644C47.676 41.2526
+          46.1261 39.7028 44.2143 39.7028C42.3025 39.7028 40.7527 41.2526 40.7527
+          43.1644C40.7527 45.0762 42.3025 46.626 44.2143 46.626Z" stroke="#F3652B"
+          stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round"/><path
+          d="M34.3793 24.3067V18.3457C34.3793 14.0342 30.6928 10.5476 26.1564 10.5476H25.8315C21.2951
+          10.5476 17.6085 14.0342 17.6085 18.3457V24.3067C16.6213 24.3442 15.834 25.1065
+          15.834 26.0562V39.6778C15.834 40.6526 16.6588 41.4274 17.6835 41.4274H34.3044C35.3291
+          41.4274 36.1539 40.6401 36.1539 39.6778V26.0562C36.1539 25.119 35.3666 24.3442
+          34.3793 24.3067ZM25.9565 13.4469C28.8557 13.4469 31.1926 15.6713 31.1926
+          18.4206V24.3192H20.7203V18.4206C20.7203 15.6713 23.0572 13.4469 25.9565
+          13.4469Z" stroke="#F3652B" stroke-width="1.4" stroke-miterlimit="10"/></svg>
+    cases:
+      title: Casos de sucesso
+      description: Conheça os casos de sucesso da plataforma de Edge Computing da
+        Azion e saiba como construir e executar aplicações serverless no edge da rede.
+      meta_tags: Case de sucesso, case de sucesso de edge computing, edge computing
+        como funciona, soluções edge computing
+      title_detailed: Casos de <strong>Sucesso</strong>
+      work_us:
+        title: Trabalhe conosco
+        description: Junte-se à nossa equipe de alto desempenho que valoriza a inovação
+          e o trabalho em equipe.
+    doc:
+      home:
+        title: Documentação
+        description: Reunimos tudo o que você precisa para desenvolver suas aplicaçōes
+          Serverless, desde APIs a documentaçōes.
+        meta_tags: Aplicaçōes Serverless, Documentaçōes
+        search_content:
+          title: Documentação
+          description: A ajuda que você precisa para construir suas aplicações serverless
+            no Edge com a Azion.
+          placeholder: Alguma pergunta? pergunte ou coloque um termo.
+          submit:
+            text: Buscar
+        list:
+          title: Explore
+          description: Aprenda como criar aplicações e APIs escaláveis, confiáveis
+            e seguras no Edge, livre de tarefas operacionais!
+          doc_umbrella:
+            title: Documentação
+            first_steps:
+              title: Primeiros Passos
+              description: Seu guia inicial para mover suas aplicações para a Azion.
+            products:
+              title: Produtos
+              description: Documentação detalhada sobre cada um dos nossos produtos
+                e suas funcionalidades.
+            success_case:
+              title: Casos de Uso
+              description: Confira o desempenho dos produtos da Azion e como aplicar
+                as soluçōes de Edge Computing na sua empresa.
+            api:
+              title: API
+              description: A API da Azion expõe todo o portfólio de produtos da Azion
+                através de uma interface programática padronizada.
+          resouces_umbrella:
+            title: Recursos Gerais
+            how_to:
+              title: How To
+              description: Aprenda a usar nossos produtos para fins específicos e
+                construa em cima da Plataforma Azion.
+            agreements:
+              title: Contratos
+              description: Leia os contratos aplicáveis aos produtos e serviços que
+                você deseja utilizar.
+            system_status:
+              title: System Status
+              description: Fornece as informações de status sobre os serviços que
+                fazem parte da Plataforma de Edge Computing da Azion.
+            changelog:
+              title: Changelog
+              description: Na Azion nos dedicamos a melhorar constantemente nossos
+                produtos. Leia aqui as últimas atualizações.
+v3:
+  button:
+    create_free_account:
+      text: crear cuenta gratis
+    talk_to_an_expert:
+      text: hablar con un expert
+    read_customer_success_stories:
+      text: casos de éxito de nuestros clientes
+metatags:
+  home:
+    title: Inicio
+    description: Azion es una plataforma de edge computing full-stack que simplifica
+      y agiliza la forma en la que construyes aplicaciones.
+    og_image: static/images/v3/open-graph/og-home.png
+  about_us:
+    title: Sobre Azion
+    description: Nuestra misión es impulsar una economía hiperconectada. Creemos que
+      el éxito se consigue con las personas adecuadas y también con la mentalidad
+      correcta.
+    og_image: static/images/v3/open-graph/og-about-us.png
+  careers:
+    title: Trabaja con nosotros
+    description: Únete a nosotros en la misión de impulsar una economía hiperconectada
+      y sé parte del Azion Way of Life. ¡Vamos a construir juntos!
+    og_image: static/images/v3/open-graph/og-careers.png
+  contact:
+    title: Contacto Ventas
+    description: 'Habla con nuestro equipo de ventas y empieza a acelerar la modernización
+      de tus aplicaciones ahora. '
+    og_image: static/images/v3/open-graph/og-default.png
+  pricing:
+    title: Precios
+    description: Nuestro modelo de precios basado en el uso te da la libertad de pagar
+      solamente por lo que necesitas.Todos los productos y funcionalidades, sin compromisos.
+    meta_tags: CDN pricing, Best CDN prices, Edge Computing pricing, Edge computing
+      prices
+    og_image: static/images/v3/open-graph/og-pricing.png
+  support:
+    title: Soporte
+    description: Soporte de ingeniero a ingeniero con la transparencia que siempre
+      has esperado. Tomamos con seriedad los servicios de misión crítica.
+    og_image: static/images/v3/open-graph/og-support.png
+  products:
+    application_acceleration:
+      title: Application Acceleration
+      description: Acelera el desempeño de tus aplicaciones y API con la optimización
+        de protocolos y reglas avanzadas de almacenamiento en caché.
+      og_image: static/images/v3/open-graph/og-default.png
+    data_streaming:
+      title: Data Streaming
+      description: Potencia tus plataformas de big data, stream processing, SIEM y
+        aplicaciones serverless con analítica de datos en tiempo real.
+      og_image: static/images/v3/open-graph/og-default.png
+    ddos_protection:
+      title: DDoS Protection
+      description: Mitiga los ataques DDoS más grandes y complejos en las capas de
+        red y aplicación.
+      og_image: static/images/v3/open-graph/og-default.png
+    edge_application:
+      title: Edge Application
+      description: Construye aplicaciones web que se ejecutan en la Plataforma de
+        Edge Computing de Azion.
+      og_image: static/images/v3/open-graph/og-default.png
+    edge_caching:
+      title: Edge Caching
+      description: Optimiza el suministro al almacenar el contenido en caché en el
+        edge de la red, más cerca de tus usuarios.
+      og_image: static/images/v3/open-graph/og-default.png
+    edge_firewall:
+      title: Edge Firewall
+      description: Protege a tus usuarios, aplicaciones y redes con un enfoque moderno.
+        Detección y mitigación de amenazas precisas y un motor de reglas programable.
+      og_image: static/images/v3/open-graph/og-default.png
+    edge_functions:
+      title: Edge Functions
+      description: Ejecuta aplicaciones serverless en el edge de la red, más cerca
+        de tus usuarios y sus dispositivos. Acelera la modernización de tus aplicaciones
+        ahora.
+      og_image: static/images/v3/open-graph/og-default.png
+    edge_network:
+      title: Edge Network
+      description: La estrategia de conectividad de Azion nos ayuda a brindar el mejor
+        desempeño, disponibilidad y resiliencia a nuestros clientes.
+      og_image: static/images/v3/open-graph/og-default.png
+    edge_orchestrator:
+      title: Edge Orchestrator
+      description: Trabaja con cualquier proveedor de cloud con un panel de control
+        único para agregar tolerancia a fallos, ahorrar dinero y evitar el vendor
+        lock-in.
+      og_image: static/images/v3/open-graph/og-default.png
+    edge_pulse:
+      title: Edge Pulse
+      description: Mejora la experiencia de tus aplicaciones al generar insights detallados
+        sobre los usuarios.
+      og_image: static/images/v3/open-graph/og-default.png
+    image_processor:
+      title: Image Processor
+      description: Optimiza y modifica imágenes en el momento adecuado para mejorar
+        la experiencia de usuario.
+      og_image: static/images/v3/open-graph/og-default.png
+    intelligent_dns:
+      title: Intelligent DNS
+      description: Mejora la disponibilidad y seguridad de tus aplicaciones, incrementa
+        el desempeño y agrega una capa elevada de seguridad a tu sitio web.
+      og_image: static/images/v3/open-graph/og-default.png
+    load_balancer:
+      title: Load Balancer
+      description: Distribuye la carga entre sus servidores y cualquier proveedor
+        cloud para mejorar la confiabilidad y disponibilidad de sus contenidos, aplicaciones
+        y API.
+      og_image: static/images/v3/open-graph/og-default.png
+    network_layer_protection:
+      title: Network Layer Protection
+      description: Un perímetro de seguridad programable en el edge para gestionar
+        el tráfico de entrada y de salida.
+      og_image: static/images/v3/open-graph/og-default.png
+    real_time_events:
+      title: Real-Time Events
+      description: Explora en tiempo real los datos generados por tus aplicaciones
+        con nuestro motor de búsquedas complejas.
+      og_image: static/images/v3/open-graph/og-default.png
+    real_time_metrics:
+      title: Real-Time Metrics
+      description: Excelentes insights con una potente visualización en tiempo real
+        sobre el desempeño, la disponibilidad y la seguridad de tus aplicaciones.
+      og_image: static/images/v3/open-graph/og-default.png
+    web_application_firewall:
+      title: Web Application Firewall
+      description: Protege tus aplicaciones web de numerosos peligros, desde amenazas
+        OWASP Top 10 hasta complejos ataques de día cero.
+      og_image: static/images/v3/open-graph/og-default.png
+  error404:
+    title: Error 404 - Página no encontrada
+    description: Error 404 - Página no encontrada
+    og_image: static/images/v3/open-graph/og-default.png
+  compliance:
+    title: Compliance
+    description: Azion se ha incorporado a los altos estándares de seguridad, disponibilidad y privacidad para que los clientes puedan usar nuestros servicios con confianza.
+    og_image: "static/images/v3/open-graph/og-default.png"
+    pci:
+      title: 'PCI DSS Certification'
+      description: "As part of our ongoing compliance efforts, Azion continually strives to enhance our internal security controls that apply to our customers’ data, applications and websites delivered by our edge platform. With that, Azion has been certified as a PCI DSS 3.2.1 Level 1 Service Provider, demonstrating our commitment to ensuring transmission and processing of cardholder data is secure for our own customers as well as anyone who interacts with Azion’s services."
+      og_image: "static/images/v3/open-graph/og-default.png"
+    soc:
+      title: 'SOC 2 Type II'
+      description: En Azion, nos esforzamos constantemente por mejorar nuestros controles de seguridad internos con el objetivo de garantizar a nuestros clientes que las aplicaciones y los sitios web que ofrece nuestra plataforma de edge se mantienen seguros y disponibles. De este modo, Azion recibe informes anuales de SOC 2 tTipo 2, que demuestran que nuestros controles de seguridad se auditan continuamente durante el transcurso del año.
+      og_image: "static/images/v3/open-graph/og-default.png"
+  marketplace:
+    title: 'Marketplace'
+    description: 'Azion Marketplace reúne soluciones de empresas asociadas y de código abierto, con el objetivo de mejorar y personalizar la infraestructura construida en la Plataforma de Edge de Azion.'
+    og_image: "static/images/v3/open-graph/marketplace/og-default-es.png"
+  become_partner:
+    title: 'Ser socio'
+    description: 'En el Azion Marketplace, los clientes pueden encontrar soluciones de Azion o de terceros y lanzar un producto en Edge Firewall o en Edge Application. ¡Conviértete en un socio de Azion!'
+    og_image: "static/images/v3/open-graph/marketplace/og-default-es.png"

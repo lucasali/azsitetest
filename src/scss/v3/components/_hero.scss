@@ -1,0 +1,263 @@
+@import './logo-slider';
+
+.hero {
+    position: relative;
+    background: $color-dark-theme;
+    padding: 2rem 0 3.875rem;
+    overflow: hidden;
+    @include media-breakpoint-up("lg") {
+        padding: 4.75rem 0 3.875rem;
+        @media (min-height: 900px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: calc(100vh - 96px);
+        }
+    }
+    .row {
+        &:first-of-type {
+            @include media-breakpoint-up("lg") {
+                align-items: center;
+            }
+        }
+        &:last-of-type {
+            @include media-breakpoint-down("sd") {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+    h1 {
+        line-height: 130%;
+        font-size: #{"max(min(4.5vw, 3rem), 2rem)"};
+        @include media-breakpoint-up("lg") {
+            line-height: 140%;
+            font-size: #{"max(min(2.875vw, 3.125rem), 1.5rem)"};
+        }
+        @include media-breakpoint-up("max") {
+            font-size: #{"max(min(2.875vw, 3.75rem), 1.5rem)"};
+        }
+        margin: 0 0 1.5rem;
+        color: $color-super-light-theme;
+        @include media-breakpoint-up("lg") {
+            margin: 3.125rem 0 2.25rem;
+        }
+        .typed-cursor {
+            color: $color-primary;
+        }
+        .br-ptbr {
+            &:first-of-type {
+                @include media-breakpoint-up("lg") {
+                    display: none;
+                }
+            }
+        }
+        .br-en {
+            &:first-of-type {
+                @include media-breakpoint-up("lg") {
+                    display: none;
+                }
+            }
+        }
+        #typing,
+        .typed-cursor {
+            border-color: transparent;
+        }
+    }
+    .form-email {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include media-breakpoint-up("md") {
+            align-items: flex-start;
+        }
+        @include media-breakpoint-up("lg") {
+            flex-direction: row;
+        }
+        .input-transparent {
+            @include media-breakpoint-down("sd") {
+                width: 100%;
+            }
+            input {
+                background-color: $color-gray-800;
+                border-radius: 2px;
+                border: 0px;
+                color: $color-gray-600;
+                color: $color-super-light-theme;
+                line-height: initial;
+                padding: 0.9675rem 1rem;
+                margin-bottom: 1rem;
+                height: initial;
+                height: -moz-available;
+                width: 100%;
+                &:focus,
+                &:-webkit-autofill,
+                &:-webkit-autofill:hover,
+                &:-webkit-autofill:focus,
+                &:-webkit-autofill:active {
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    box-shadow: 0 0 0px 1000px $color-gray-800 inset;
+                }
+                @include media-breakpoint-up("md") {
+                    width: 40.9984375vw;
+                }
+                @include media-breakpoint-up("lg") {
+                    border-radius: 2px 0 0 2px;
+                    padding: 0.9675rem;
+                    flex-direction: row;
+                    margin-bottom: 0rem;
+                    width: 24vw;
+                }
+                &::placeholder {
+                    font-size: #{"max(min(1vw, 1rem), 0.875rem)"};
+                    line-height: #{"max(min(1vw, 1rem), 1rem)"};
+                }
+            }
+        }
+        .btn-wrap {
+            width: 100%;
+            @include media-breakpoint-only("sd") {
+                display: flex;
+            }
+            .btn {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                text-align: left;
+                @include media-breakpoint-up("md") {
+                    width: 41vw;
+                }
+                @include media-breakpoint-up("sd") {
+                    width: 20vw;
+                }
+                @include media-breakpoint-up("lg") {
+                    width: 13.6vw;
+                    &:last-child {
+                        width: 14vw;
+                    }
+                }
+                @include media-breakpoint-up("xlg") {
+                    width: 13vw;
+                    &:last-child {
+                        width: 13vw;
+                    }
+                }
+                &.btn-primary-dark {
+                    margin-bottom: 0.625rem;
+                    @include media-breakpoint-up("sd") {
+                        margin-bottom: 0;
+                    }
+                    @include media-breakpoint-up("lg") {
+                        border-radius: 0 2px 2px 0;
+                    }
+                }
+                &.btn-secondary-dark {
+                    @include media-breakpoint-only("sd") {
+                        margin-left: 0.4rem;
+                    }
+                    @include media-breakpoint-up("xlg") {
+                        margin-left: 1rem;
+                    }
+                }
+                .icon-right-arrow {
+                    svg {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+    .illustration-hero-content {
+        @include media-breakpoint-up("sm") {
+            margin: 0;
+        }
+    }
+    .illustration-hero {
+        margin: 1.375rem 0 2.625rem;
+        picture {
+            img {
+                height: auto;
+                @include media-breakpoint-down("sm") {
+                    min-width: 221px;
+                    display: block;
+                    margin: auto;
+                }
+                @include media-breakpoint-down("sd") {
+                    width: 34.0625vw;
+                }
+                @include media-breakpoint-between("md", "sd") {
+                    width: calc(100% - 10vw);
+                }
+                @include media-breakpoint-up("lg") {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .hero-text {
+        color: $color-super-light-theme;
+        font-size: #{"max(min(1.5vw, 1.5rem), 1rem)"};
+        line-height: #{"max(min(2.1vw, 2.1rem), 1.375rem)"};
+        text-align: center;
+        @include media-breakpoint-between("md", "sd") {
+            margin-top: 2.5rem;
+        }
+    }
+    .bg1 {
+        position: absolute;
+        top: 100vw;
+        right: 0;
+        background: url(/static/images/v3/home/bg1-mobile.svg) no-repeat;
+        background-size: contain;
+        width: 100vw;
+        height: 177.5vw;
+        @include media-breakpoint-up("md") {
+            top: 8.25vw;
+            background: url(/static/images/v3/home/bg1.svg) no-repeat;
+            background-size: contain;
+            width: 90.625vw;
+            height: 47.25vw;
+        }
+        @include media-breakpoint-up("lg") {
+            top: 7.25vw;
+        }
+        @include media-breakpoint-up("xlg") {
+            top: 4.25vw;
+        }
+        @include media-breakpoint-up("slg") {
+            top: 1.25vw;
+        }
+        @include media-breakpoint-up("max") {
+            top: -2.25vw;
+        }
+    }
+    .bg2 {
+        position: absolute;
+        right: 0;
+        top: 55vw;
+        background: url(/static/images/v3/home/bg2-mobile.svg) no-repeat;
+        background-size: contain;
+        width: 100vw;
+        height: 179.0625vw;
+        @include media-breakpoint-up("md") {
+            top: 3.5vw;
+            background: url(/static/images/v3/home/bg2.svg) no-repeat;
+            background-size: contain;
+            width: 58.625vw;
+            height: 47.25vw;
+        }
+        @include media-breakpoint-up("lg") {
+            top: 4.5vw;
+        }
+        @include media-breakpoint-up("xlg") {
+            top: 2.75vw;
+        }
+        @include media-breakpoint-up("slg") {
+            top: 1vw;
+        }
+        @include media-breakpoint-up("max") {
+            top: -1.5vw;
+        }
+    }
+}

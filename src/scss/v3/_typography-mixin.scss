@@ -1,0 +1,39 @@
+@mixin h1 {
+    line-height: 130%;
+    font-size: #{"max(min(4.5vw, 3rem), 2rem)"};
+
+    @include media-breakpoint-up("lg") {
+        line-height: 140%;
+        font-size: #{"max(min(2.875vw, 3.125rem), 1.5rem)"};
+    }
+    @include media-breakpoint-up("max") {
+        font-size: #{"max(min(2.875vw, 3.75rem), 1.5rem)"};
+    }
+}
+
+@mixin h2 {
+    line-height: 140%;
+    font-size: clamp(1.625rem, 1.3500rem + 1.3750vw, 3rem);
+}
+
+@mixin h3 {
+    line-height: 140%;
+    font-size: clamp(1.5rem, 1.2750rem + 1.1250vw, 2.625rem);
+}
+
+@mixin h4 {
+    line-height: 140%;
+    font-size: clamp(#{rem(18)}, 1.875vw, #{rem(36)});
+}
+
+@mixin h5 {
+    line-height: 160%;
+    font-size: clamp(1.375rem, 1.2250rem + 0.7500vw, 2.125rem);
+    font-weight: map-get($font-weight, 'bold');
+}
+
+@mixin h6 {
+    line-height: 160%;
+    font-size: clamp(1.125rem, 1.0500rem + 0.3750vw, 1.5rem);
+    font-weight: map-get($font-weight, 'bold');
+}

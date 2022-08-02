@@ -1,0 +1,69 @@
+---
+form:
+  title: Disculpa, no fue posible encontrar esta página.
+  description: Utiliza la barra de búsqueda o los enlaces que aparecen a continuación
+    para navegar por el sitio web.
+  placeholder: "¿Alguna duda? Consulta o escribe un término."
+list_of_links:
+- category_name: Sobre Azion
+  links:
+  - text: Inicio
+    url: "/es/"
+  - text: Sobre Azion
+    url: "/es/sobre-azion/"
+  - text: Casos de éxito
+    url: "/es/casos-de-exito/"
+  - text: Blog
+    url: "/es/blog/"
+- category_name: Nuestros productos
+  links:
+  - text: Application Acceleration
+    url: "/es/productos/application-acceleration/"
+  - text: DDoS Protection
+    url: "/es/productos/ddos-protection/"
+  - text: Casos de éxito
+    url: "/es/casos-de-exito/"
+  - text: Edge Caching
+    url: "/es/productos/edge-caching/"
+  - text: Edge Functions
+    url: "/es/productos/edge-functions/"
+  - text: Edge Pulse
+    url: "/es/productos/edge-pulse/"
+  - text: Intelligent DNS
+    url: "/es/productos/intelligent-dns/"
+  - text: Image Processor
+    url: "/es/productos/image-processor/"
+  - text: Load Balancer
+    url: "/es/productos/load-balancer/"
+  - text: Network Layer Protection
+    url: "/es/productos/network-layer-protection/"
+  - text: Real-Time Events
+    url: "/es/productos/real-time-events/"
+  - text: Real-Time Metrics
+    url: "/es/productos/real-time-metrics/"
+  - text: Web Application Firewall
+    url: "/es/productos/web-application-firewall/"
+- category_name: Documentación
+  links:
+  - text: Primeros Pasos
+    url: "/en/documentation/products/first-steps/"
+  - text: Casos de éxito
+    url: "/es/casos-de-exito/"
+  - text: API
+    url: https://api.azion.com/
+  - text: How-To
+    url: "/en/documentation/products/how-to/"
+  - text: Contratos
+    url: "/en/documentation/agreements/customer-agreement/"
+  - text: Changelog
+    url: "/en/documentation/products/changelog/"
+- category_name: Ayuda
+  links:
+  - text: Soporte
+    url: "/es/soporte/"
+  - text: Contacto
+    url: "/es/contacto-ventas/"
+  - text: Estatus del sistema
+    url: https://status.azion.com/
+  - text: Cuenta gratis
+    url: https://manager.azion.com/signup/

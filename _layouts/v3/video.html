@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html translate="no" lang="{{ site.lang }}">
+	{% include v3/head.html %}
+    <body>
+       <div id="content">
+            {% include v3/grid-overlayer.html %}
+            {% include v3/components/header/index.html %}
+            <main>
+                <section id="tutorialPage" class="az-tutorial-content">
+                    <div class="col-lg-10 col-md-6 col-sm-4 offset-lg-5 offset-md-2 video-wrap">
+                        <iframe
+                            src="https://www.youtube.com/embed/{{ page.youtube_id }}"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </section>
+                <div class="col-lg-10 col-md-6 col-sm-4 offset-lg-5 offset-md-2 video-text-content">
+                    {{ content }}
+                </div>
+            </main>
+            {% include v3/components/footer.html %}
+            {% include v3/scripts.html %}
+       </div>
+	</body>
+</html>

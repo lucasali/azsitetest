@@ -1,0 +1,40 @@
+<section id="careersJobsPage" class="careers-jobs-page">
+    <div class="row">
+         <ul class="breadcrumb-list col-lg-16 col-md-10 col-sm-4 offset-lg-2">
+            <li>
+                <a href="{% tl careers %}" title="Careers">
+                    {% t v2.pages.careers.breadcrumb_title %}
+                    <i class="icon icon-arrow-right-small-gray"></i>
+                </a>
+            </li>
+            <li>{% t v2.pages.careers.jobsTitle %}</li>
+         </ul>
+    </div>
+
+    <div class="row">
+         <h1 class="col-lg-18 col-md-10 col-sm-4 offset-lg-2">
+            {{ site.data.pages.careers.jobs.[site.lang].title }}
+         </h1>
+    </div>
+
+    <div class="row">
+        <aside class="sidebar-list-category col-lg-5 col-md-4 offset-lg-2">
+            <div class="aside-internal-content">
+                {% include v3/pages/careers/jobs/filter.html %}
+                {% include v3/pages/careers/jobs/sidebar.html %}
+            </div>
+        </aside>
+
+        <div id="contentList" class="content-list col-lg-10 col-md-6 offset-lg-1"> <!-- jobs list --> </div>
+    </div>
+
+    <div class="row not-match-content">
+        <div class="box-text col-lg-6 col-md-6 col-sm-4 offset-md-2 offset-lg-2">
+            <h3>{% t v2.pages.careers.thats_all.title %}</h3>
+            <p>{% t v2.pages.careers.thats_all.description %}</p>
+        </div>
+        <figure class="box-image col-md-6 col-sm-4 offset-md-2">
+            <img src="/static/images/careers/image-build.png">
+        </figure>
+    </div>
+</section>

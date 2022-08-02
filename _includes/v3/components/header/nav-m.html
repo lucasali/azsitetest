@@ -1,0 +1,96 @@
+<div class="mobile-navigation">
+    <nav>
+        <ul class="strong">
+            {% for item in site.data.menu.[site.lang].head.nav %}
+            <li>
+                <a {% if item.dropdown==nil and item.dropdown_resources==nil %} href="{{ item.href }}" {% endif %} title="{{ item.text }}"
+                    class="menu-link">
+                    {{ item.text }}
+                    {% if item.dropdown or item.dropdown_resources %}
+                    <svg class="arrow" width="11" height="7" viewBox="0 0 11 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.32947 4.36843L8.86501 0.832901C9.25553 0.442377 9.8887 0.442376 10.2792 0.832899C10.6697 1.22342 10.6697 1.85658 10.2792 2.24711L6.0377 6.48862C6.03733 6.489 6.03695 6.48937 6.03658 6.48975C5.64605 6.88027 5.01289 6.88028 4.62236 6.48975L0.379716 2.24712C-0.0108092 1.85659 -0.0108091 1.22343 0.379715 0.832903C0.77024 0.442377 1.40341 0.442376 1.79393 0.8329L5.32947 4.36843Z"
+                            fill="white" />
+                    </svg>
+                    {% endif %}
+                </a>
+                {% if item.dropdown %}
+                <div class="dropdown-area">
+                    {% for linklist in item.dropdown %}
+                    <ul id="{{ linklist.id }}" class="dropdown-list">
+                        <lh class="dropdown-list-title">
+                            {{ linklist.title }}
+                        </lh>
+                        {% for item in linklist.links %}
+                        {% if item.class =="azion-edge-network" %}
+                            <li class="dropdown-list-item {{ item.class }}">
+                                <a class="btn btn-icon btn-tertiary-light" href="{{ item.href }}">
+                                    {{ item.text }}
+                                    {% include v3/components/btn-icon-double-arrow-right.html %}
+                                </a>
+                            </li>
+                        {% else %}
+                            <li class="dropdown-list-item">
+                                {% if item.href == nil %}
+                                <p class="category">
+                                    {{ item.text }}
+                                </p>
+                                {% else %}
+                                <a href="{{ item.href }}" {% if item.class !=nil %} class="{{ item.class }}" {% endif %}>
+                                    {{ item.text }}
+                                </a>
+                                {% endif %}
+                            </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% if item.dropdown_resources %}
+                    <div class="dropdown-area resources">
+                        {% if item.dropdown_resources %}
+                        {% for linklist in item.dropdown_resources %}
+                        <ul class="dropdown-list">
+                            {% for item in linklist.links %}
+                            <li class="dropdown-list-item">
+                                {% if item.href == nil %}
+                                <p class="category">
+                                    {{ item.text }}
+                                </p>
+                                {% else %}
+                                <a href="{{ item.href }}" {% if item.class !=nil %} class="{{ item.class }}" {% endif %}>
+                                    {{ item.text }}
+                                </a>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        <ul class="weak">
+            {% for item in site.data.menu.[site.lang].sidebar.nav_week %}
+            <li>
+                <a href="{{ item.href }}" title="{{ item.text }}">
+                    {{ item.text }}
+                </a> {% if item.flag and item.flag.text.size > 0 %}<span class="flag flag-primary">{{ item.flag.text }}</span>{% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="buttons">
+            {% for item in site.data.menu.[site.lang].sidebar.buttons %}
+            <a class="btn {% if item.icon %}btn-icon{% endif %} {{ item.class }}" href="{{ item.href }}"
+                title="{{ item.text }}">
+                {{ item.text }}
+                {% if item.icon %} {% include v3/components/btn-icon-double-arrow-right.html %} {% endif %}
+            </a>
+            {% endfor %}
+        </div>
+    </nav>
+</div>

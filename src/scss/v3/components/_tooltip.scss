@@ -1,0 +1,49 @@
+.tippy-tooltip {
+    &.az-theme {
+        background-color: $color-super-light-theme;
+        color: $color-dove-gray;
+        padding: 0.5rem;
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 4px;
+        filter: drop-shadow(0px 103.564px 82.8508px rgba(0, 0, 0, 0.07))
+            drop-shadow(0px 43.2664px 34.6131px rgba(0, 0, 0, 0.0503198))
+            drop-shadow(0px 23.1323px 18.5058px rgba(0, 0, 0, 0.0417275))
+            drop-shadow(0px 12.9678px 10.3742px rgba(0, 0, 0, 0.035))
+            drop-shadow(0px 6.88708px 5.50966px rgba(0, 0, 0, 0.0282725))
+            drop-shadow(0px 2.86587px 2.29269px rgba(0, 0, 0, 0.0196802));
+        &[data-placement^="top"] {
+            .tippy-arrow {
+                border-top-color: $color-super-light-theme;
+            }
+        }
+        &[data-placement^="bottom"] {
+            .tippy-arrow {
+                border-bottom-color: $color-super-light-theme;
+            }
+        }
+        &[data-placement^="left"] {
+            .tippy-arrow {
+                border-left-color: $color-super-light-theme;
+            }
+        }
+        &[data-placement^="right"] {
+            .tippy-arrow {
+                border-right-color: $color-super-light-theme;
+            }
+        }
+    }
+    &.az-map-primary-theme,
+    &.az-map-secondary-theme {
+        background: transparent;
+        .tippy-svg-arrow {
+            bottom: -30px;
+            position: absolute;
+        }
+        .tippy-content {
+            font-weight: map-get($font-weight, 'bold');
+            color: $color-gray-300;
+            text-shadow: 0px 0px 4px $color-dark-theme, 4px 0px 4px $color-dark-theme;
+        }
+    }
+}

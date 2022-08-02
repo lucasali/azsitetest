@@ -1,0 +1,166 @@
+<div id="careersJobView" class="careers-job-view-content">
+    <section class="cover" id="cover"></section>
+    <div id="mCoverIconList" class="row m-cover-icon-list"></div>
+
+    <section class="row job-to-apply-content">
+        <div class="col-lg-16 col-md-10 col-sm-4 offset-lg-2">
+            <ul class="breadcrumb-list">
+                <li>
+                    <a href="{% tl careers %}" title="{% tl careers %}">
+                        {% t v2.pages.careers.breadcrumb_title %}
+                    </a>
+                    <i class="icon icon-arrow-right-small-gray"> </i>
+                </li>
+                <li>
+                    <a href="{% tl careers_jobs %}" title="{% tl careers_jobs %}">
+                        {% t v2.pages.careers.jobsTitle %}
+                    </a>
+                    <i class="icon icon-arrow-right-small-gray"> </i>
+                </li>
+                <li id="breadcrumbJobTitle"><!-- appended by javascript --></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="box-job-description col-lg-8 col-md-5 col-sm-4 offset-lg-2">
+                <div class="box-title">
+                    <h4>
+                        {% t v2.pages.careers.job.title %}
+                    </h4>
+                </div>
+
+                <div id="jobDescription" class="box-description post-text-content">
+                    <!-- appended by javascript -->
+                </div>
+            </div>
+
+            <div class="box-form-apply col-lg-6 col-md-5 col-sm-4 offset-lg-1">
+                <div class="box-form">
+                    <div class="box-title">
+                        <h6>
+                            {% t v2.pages.careers.job.form.title %}
+                        </h6>
+                    </div>
+                    <div class="box-description">
+                        <p>
+                            {% t v2.pages.careers.job.form.description %}
+                        </p>
+                    </div>
+
+                    <form name="applicantForm">
+                        <div class="box-name">
+                            <div class="box-input input-wrapper">
+                                <label for="first_name">
+                                    {% t v2.pages.careers.job.form.first_name %} <span class="hs-form-required">*</span>
+                                </label>
+                                <input required type="text" name="first_name">
+                            </div>
+
+                            <div class="box-input input-wrapper">
+                                <label for="last_name">
+                                    {% t v2.pages.careers.job.form.last_name %} <span class="hs-form-required">*</span>
+                                </label>
+                                <input required type="text" name="last_name">
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email">
+                                {% t v2.pages.careers.job.form.email %} <span class="hs-form-required">*</span>
+                            </label>
+                            <input required type="email" name="email">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="phone">
+                                {% t v2.pages.careers.job.form.phone %} <span class="hs-form-required">*</span>
+                            </label>
+                            <input required type="tel" name="phone">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label>
+                                {% t v2.pages.careers.job.form.resume.title %} .pdf, .odt, .txt, .docx, .doc, .rtf
+                                (limit 5MB) <span class="hs-form-required">*</span>
+                            </label>
+                            <input type="file" name="base64-resume" accept=".pdf, .odt, .txt, .docx, .doc, .rtf">
+
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="linkedin">
+                                {% t v2.pages.careers.job.form.linkedin %} <span class="hs-form-required">*</span>
+                            </label>
+                            <input required type="text" name="linkedin">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="salary">
+                                {% t v2.pages.careers.job.form.salary %} <span class="hs-form-required">*</span>
+                            </label>
+                            <input required type="text" name="salary">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="address">{% t v2.pages.careers.job.form.address %}</label>
+                            <input type="text" name="address" placeholder="Street address">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="city">{% t v2.pages.careers.job.form.city %}</label>
+                            <input value="" type="text" name="city">
+                        </div>
+
+                        <div class="box-address">
+                            <div class="box-input">
+                                <label for="state">{% t v2.pages.careers.job.form.state %}</label>
+                                <input type="text" name="state">
+                            </div>
+                            <div class="box-input">
+                                <label for="zip">{% t v2.pages.careers.job.form.postal %}</label>
+                                <input type="text" name="zip">
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="hidden" name="job">
+                        </div>
+
+                        <div class="box-btn">
+                            <button type="submit" class="btn btn-icon btn-primary-light">
+                                {% t v2.pages.careers.job.form.submit %}
+                                {% include v3/components/btn-icon-double-arrow-right.html %}
+                            </button>
+                            <!-- <input value="{% t v2.pages.careers.job.form.submit %}" type="submit" class="btn btn-brand"> -->
+                        </div>
+
+                        {% include share-buttons.html %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row not-match-content">
+        <figure class="box-image">
+            <img src="/static/images/careers/cover-job-game-room.png">
+        </figure>
+        <div class="box-text col-lg-6 col-md-6 col-sm-4 offset-md-2 offset-lg-2">
+            <div class="box-title">
+                <h1>
+                    {% t v2.pages.careers.not_match.title %}
+                </h1>
+            </div>
+            <div class="box-description">
+                <p>
+                    {% t v2.pages.careers.not_match.description %}
+                </p>
+            </div>
+            <div class="box-btn">
+                <a href="{% tl careers_jobs %}" class="btn btn-icon btn-primary-light">
+                    {% t v2.button.see_all_positions.text %}
+                    {% include v3/components/btn-icon-double-arrow-right.html %}
+                </a>
+            </div>
+        </div>
+    </section>
+</div>

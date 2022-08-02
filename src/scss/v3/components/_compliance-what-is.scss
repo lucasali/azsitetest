@@ -1,0 +1,47 @@
+.compliance-what-is {
+    position: relative;
+    padding: clamp(5rem, 5.5vw, 5.5rem) 0 clamp(4rem, 5.5vw, 5.5rem);
+    .bd_sub{
+        display: block;
+        margin-bottom: 1.5rem;
+        @include media-breakpoint-up(md){
+            margin-bottom: 2rem;
+        }
+        @include media-breakpoint-up(sd){
+            margin-bottom: 3rem;
+        }
+    }
+    .row {
+        @include media-breakpoint-down(md) {
+                flex-direction: column-reverse;
+        }
+    }
+    .text {
+        @include media-breakpoint-down(md) {
+                text-align: center;
+        }
+    }
+    .vertical-line{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        z-index: 2;
+        transform: translateX(-50%);
+        height: 5rem;
+        width: 1px;
+        background: linear-gradient(rgba(170, 170, 170, 0) -1.27%, rgb(178, 178, 178) 97.1%);
+        @include media-breakpoint-up(sd){
+            height: 80%;
+        }
+        .dot {
+            position: absolute;
+            bottom: -0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: $color-primary;
+        }
+    }
+}

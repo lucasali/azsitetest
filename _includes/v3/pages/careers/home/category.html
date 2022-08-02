@@ -1,0 +1,59 @@
+<section class="row pick-team-content">
+    <div class="col-lg-16 offset-lg-2">
+        <div class="illustration-left-primary"></div>
+        <div class="illustration-right-primary"></div>
+
+        <div class="box-title">
+            <h2 class="primary-super-large">{% t v2.pages.careers.pick_team.title %}</h2>
+        </div>
+        <div class="box-description">
+            <p>{% t v2.pages.careers.pick_team.description %}</p>
+        </div>
+
+        <div id="swipper" class="swipper-master">
+            <div class="swiper-container-careers">
+                <div class="swiper-wrapper">
+
+                    {% for item in site.translations[site.lang]['v2']['pages']['careers']['departments'] %}
+                    <div class="swiper-slide">
+                        <i class="icon icon-operations">
+                            {{ item.icon }}
+                        </i>
+                        <h3 class="title"> {{ item.title }} </h3>
+                        <p class="description">
+                            {{ item.description }}
+                        </p>
+                        <a href="{% tl careers_jobs %}?area={{ item.href }}">
+                            {% t v2.button.see_jobs.text %}
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+            <div class="swiper-button-next-careers">
+                <i class="icon">
+                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25715 0L0 1.25711L8.72381 9.99996L0 18.7428L1.25715 20L11.4286 9.99996L1.25715 0Z" fill="#646464"/>
+                    </svg>
+                </i>
+            </div>
+            <div class="swiper-button-prev-careers">
+                <i class="icon">
+                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.7429 0L12 1.25711L3.27619 9.99996L12 18.7428L10.7428 20L0.571429 9.99996L10.7429 0Z" fill="#646464"/>
+                    </svg>
+                </i>
+            </div>
+        </div>
+
+        <div class="box-btn">
+            <a href="{% tl careers_jobs %}" class="btn btn-icon btn-primary-dark">
+                {% t v2.button.see_all_jobs.text %}
+                {% include v3/components/btn-icon-double-arrow-right.html %}
+            </a>
+        </div>
+
+        <div class="illustration-right-secondary"></div>
+    </div>
+</section>

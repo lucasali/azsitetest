@@ -1,0 +1,95 @@
+.compliance-certificate-faq {
+    padding: clamp(5rem, 6vw, 6rem) 0 clamp(3.5rem, 4.5vw, 4.5rem);
+    .title-wrap {
+        .bd_sub {
+            display: block;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            @extend h4;
+        }
+    }
+    .text-with-list {
+        margin-top: clamp(3rem, 6.5vw, 6.5rem);
+        h2{
+            @extend h3;
+        }
+        .title-wrap{
+            .bold{
+                font-weight: map-get($font-weight, 'bold');
+            }
+        }
+        ul {
+            padding-left: 2rem;
+            li:before{
+                border-radius: 50%;
+            }
+        }
+    }
+    .small-vertical-line {
+        margin: 0 0 1.5rem;
+        position: relative;
+        height: 5.5rem;
+        @include media-breakpoint-up(sd){
+            margin: 0.5rem 0 3.5rem;
+        }
+        .line {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 100%;
+            width: 1px;
+            transform: translateX(-50%);
+            background: linear-gradient(rgba(170, 170, 170, 0) -1.27%, rgb(178, 178, 178) 97.1%);
+        }
+        .dot {
+            position: absolute;
+            left: 50%;
+            bottom: -0.5rem;
+            transform: translateX(-50%);
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: $color-primary;
+        }
+    }
+    .faq {
+        &-item {
+            border: 1px solid $color-primary;
+            border-radius: 1.5rem;
+            padding: 0.5rem 3rem 0.5rem 1.5rem;
+            p {
+                margin: 0;
+            }
+            + .faq-item{
+                margin-top: 1rem;
+            }
+            .dropdown-button {
+                position: relative;
+                text-align: center;
+                cursor: pointer;
+                p {
+                    color: $color-dark-theme;
+                }
+                &::after {
+                    content: url('/static/images/v3/compliance/icon-dropdown-closed.svg');
+                    position: absolute;
+                    right: -1rem;
+                    top: 50%;
+                    height: 1rem;
+                    transform: translateY(-50%);
+                }
+                &.active {
+                    &::after {
+                        content: url('/static/images/v3/compliance/icon-dropdown-open.svg');
+                    }
+                }
+            }
+            .dropdown-content {
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 0.5s ease-out;
+            }
+        }
+    }
+}

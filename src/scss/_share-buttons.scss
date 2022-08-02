@@ -1,0 +1,90 @@
+#share {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    @include breakpoint(small down) {
+        position: relative;
+        transform: unset;
+        margin: 1.3rem 0 0;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        @include breakpoint(small down) {
+            display: flex;
+        }
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            @include breakpoint(large down) {
+                width: 40px;
+                height: 40px;
+            }
+            .svg-icon {
+                width: 1.5rem;
+                height: 1.5rem;
+                @include breakpoint(medium down) {
+                    width: 1rem;
+                    height: 1rem;
+                }
+                path,
+                polygon,
+                rect {
+                    fill: #fff;
+                }
+                circle {
+                    stroke: #fff;
+                    stroke-width: 1;
+                }
+            }
+            &.whatsapp {
+                background-color: #34af23;
+                &:hover {
+                    background-color: darken(#34af23, 5%);
+                }
+            }
+
+            &.facebook {
+                background-color: #3b5998;
+                &:hover {
+                    background-color: darken(#3b5998, 5%);
+                }
+            }
+            &.linkedin {
+                background-color: #0e76a8;
+                &:hover {
+                    background-color: darken(#0e76a8, 5%);
+                }
+            }
+            &.twitter {
+                background-color: #00acee;
+                &:hover {
+                    background-color: darken(#00acee, 5%);
+                }
+            }
+            &.reddit {
+                background-color: #ff5700;
+                &:hover {
+                    background-color: darken(#ff5700, 5%);
+                }
+            }
+        }
+    }
+}
+
+.careers-job-view-content #share {
+    @include breakpoint(small down) {
+        a {
+            width: calc(100% / 5);
+            li {
+                width: 100%;
+                height: 40px;
+            }
+        }
+    }
+}

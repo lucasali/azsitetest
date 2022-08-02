@@ -1,0 +1,17 @@
+all:
+    title: "All areas"
+engineering:
+    title: "Engineering"
+    description: "Infrastructure and R&D"
+revenue:
+    title: "Revenue"
+    description: "Customer Success, Demand Generation, Marketing Intelligence, Marketing, Revenue Solution, Sales"
+products:
+    title: "Products"
+    description: "Product Management, Product Marketing, Design, Education, and Data Science"
+operations:
+    title: "Operations"
+    description: "Finance and People"
+security:
+    title: "Security"
+    description: "Security"

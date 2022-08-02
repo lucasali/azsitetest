@@ -1,0 +1,113 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-grid-classes: true !default;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem !default;
+$spacers: () !default;
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5,
+    ),
+    5: (
+      $spacer * 3,
+    ),
+  ),
+  $spacers
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto,
+  ),
+  $sizes
+);
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: (
+  sm: 0,
+  md: 640px,
+  sd: 960px,
+  lg: 1280px,
+  xlg: 1440px,
+  slg: 1600px,
+  max: 1920px,
+) !default;
+
+// Used inside the mixim to generate the grid with 4 columns for mobile devices
+$mobile-breakpoints: (
+  sm: 0,
+);
+// Used inside the mixim to generate the grid with 10 columns for small devices
+$small-breakpoints: (
+  md: 640px,
+  sd: 960px,
+);
+
+// Used inside the mixim to generate the grid with 20 columns for large devices
+$large-breakpoints: (
+  lg: 1280px,
+  xlg: 1440px,
+  slg: 1600px,
+  max: 1920px,
+);
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+$grid-columns-mobile: 4;
+$grid-columns-large: 20 !default;
+$grid-gutter-width: 2rem !default;
+
+// Configuring mini unit
+//
+// will be based on figmagrid system:
+// https://www.figma.com/file/UB8VMDIfC5WK9Tq9q37p8z/New-Concepts?node-id=2%3A208
+$mini-unit: 8 !default;
+$table-unit: (
+  x1: 1 * $mini-unit,
+  x2: 2 * $mini-unit,
+  x3: 3 * $mini-unit,
+  x4: 4 * $mini-unit,
+  x6: 6 * $mini-unit,
+  x8: 8 * $mini-unit,
+  x10: 10 * $mini-unit,
+) !default;
+
+//////////////////
+// AZION COLORS //
+//////////////////
+@import "variables-colors";
+

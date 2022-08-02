@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html translate="no" lang="{{ site.lang }}">
+	{% include v3/head.html %}
+	<body>
+        <div id="content">
+    		{% include header.html %}
+            {% include nav-mobile.html %}
+    		<main class="site-main">
+                <div id='blogPostView' class="blog-post-view-content v2">
+                    <div class="title-block-header">
+                        <div class="box-container">
+                            <div class="box-title">
+                                <h1 class="main-title">{% t v2.pages.blog.title %}</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <article>
+                        <div class="breadcrumb-content">
+                            <div class="box-container">
+                                <ul class="breadcrumb-list">
+                                    <li>
+                                        <a href="/{{site.lang}}/blog/" title="{% t v2.pages.blog.title %}">
+                                            {% t v2.pages.blog.title %}
+                                        </a>
+                                        <i class="icon icon-arrow-right-text"> > </i>
+                                    </li>
+                                    <li>
+                                        {{page.title}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="post-header">
+                            <div class="box-container">
+                                <div class="box-title">
+                                    <h2 class="main-title no-detail">{{ page.title }}</h2>
+                                </div>
+
+                                <div class="post-meta-info">
+                                    <div class="author-block">
+                                        <i class="author-img">
+                                            <img class="author-img-hold" src="{{page.img_author}}">
+                                        </i>
+                                        <p class="author-name">{{ page.author }}</p>
+                                    </div>
+
+                                    <div class="date-block">
+                                        <i class="icon icon-calendar"></i>
+
+                                        <p class="post-date">
+                                            {%  if site.lang == "en" %}
+                                                {{ page.date | date: "%B %-d, %Y" }}
+                                            {% else %}
+                                                {% assign m = page.date | date: "%-m" %}
+                                                {{ page.date | date: "%d" }} de
+                                                {% case m %}
+                                                {% when '1' %}Janeiro
+                                                {% when '2' %}Fevereiro
+                                                {% when '3' %}Março
+                                                {% when '4' %}Abril
+                                                {% when '5' %}Maio
+                                                {% when '6' %}Junho
+                                                {% when '7' %}Julho
+                                                {% when '8' %}Agosto
+                                                {% when '9' %}Setembro
+                                                {% when '10' %}Outubro
+                                                {% when '11' %}Novembro
+                                                {% when '12' %}Dezembro
+                                                {% endcase %}
+                                                 de
+                                                {{ page.date | date: "%Y" }}
+                                                -
+                                                {{ page.date | date: "%R" }}
+                                            {% endif %}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-text-content">
+                            <div class="box-container">
+                                {{ content }}
+                            </div>
+                        </div>
+
+                        <div class="nav clearfix">
+                            <div class="box-container">
+                                {% if page.previous.url %}
+                                <a class="to-back" href="/{{site.lang}}{{page.previous.url}}" title="{% t search.back %}">
+                                    <i class="icon icon-arrow-left"></i> {% t v2.pages.blog.posts.prev_post %}
+                                </a>
+                                {% endif %}
+
+                                {% if page.next.url %}
+                                <a class="to-foward" href="/{{site.lang}}{{page.next.url}}" title="{{page.next.title}}">
+                                    {% t v2.pages.blog.posts.next_post %} <i class="icon icon-arrow-right"></i>
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="box-container disqus-content">
+                            <div id="disqus_thread"></div>
+
+                            {% assign disqus_url = "https://azion.disqus.com/embed.js" %}
+                            {%  if lang == "en" %}
+                                {% assign disqus_url = "https://https-www-azion-com-en.disqus.com/embed.js" %}
+                            {%  endif %}
+
+                            <script type="text/javascript">
+                                /**
+                                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                                var disqus_config = function () {
+                                    this.page.url = '{{ site.url }}{{ post.url }}';  // Replace PAGE_URL with your page's canonical URL variable
+                                    this.page.identifier = '{{ site.url }}{{ post.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                };
+
+                                (function() { // DON'T EDIT BELOW THIS LINE
+                                    var d = document, s = d.createElement('script');
+                                    // s.src = 'https://https-www-azion-com-en.disqus.com/embed.js';
+                                    // s.src = 'https://azion.disqus.com/embed.js';
+                                    s.src = '{{ disqus_url }}';
+                                    s.setAttribute('data-timestamp', +new Date());
+                                    (d.head || d.body).appendChild(s);
+                                })();
+                            </script>
+
+                            <noscript>
+                                Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                            </noscript>
+                        </div>
+
+                    </article>
+
+                    {% include newsletter.html %}
+                </div>
+            </main>
+            {% include v3/components/footer.html %}
+            {% include script-calls.html %}
+        </div>
+    </body>
+</html>

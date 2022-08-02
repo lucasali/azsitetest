@@ -1,0 +1,82 @@
+ul {
+    list-style: none;
+    li {
+        position: relative;
+        &:before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background-color: $color-dove-gray;
+            position: absolute;
+            left: -20px;
+            top: 14px;
+        }
+    }
+}
+blockquote {
+    border-left: solid 3px $color-primary;
+    font-size: 1rem;
+    line-height: 28px;
+    font-style: italic;
+    padding: 0.5rem 2rem 0.25rem 2rem;
+    margin: 2rem 0;
+    color: $color-dove-gray;
+    .author {
+        display: block;
+        font-style: normal;
+        font-weight: map-get($font-weight, 'medium');
+        margin-top:  6px;
+    }
+}
+/////////////////////////////
+// CUSTOM AND GLOBAL CLASS //
+/////////////////////////////
+.bd_sub {
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: $color-primary;
+    margin: 0 0 1rem;
+    @include media-breakpoint-up("lg") {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+}
+.dark-bg-theme {
+    background: $color-dark-theme;
+    h1, h2, h3, h4, h5, h6 {
+        color: $text-super-light;
+    }
+    p {
+        color: $text-light;
+    }
+}
+.dark-gradient-bg-theme {
+    background: $color-dark-theme;
+    h1, h2, h3, h4, h5, h6 {
+        color: $text-super-light;
+    }
+    p {
+        color: $text-light;
+    }
+}
+.light-bg-theme {
+    background: $color-light-theme;
+    h1, h2, h3, h4, h5, h6 {
+        color: $text-dark;
+    }
+}
+.light-gradient-bg-theme {
+    // figma it is #f9f9f9
+    background: linear-gradient(180deg, $color-light-alabaster 32.01%, $color-light-theme 177.65%);
+    h1, h2, h3, h4, h5, h6 {
+        color: $text-dark;
+    }
+}
+.super-light-bg-theme {
+    background: $color-super-light-theme;
+    h1, h2, h3, h4, h5, h6 {
+        color: $text-dark;
+    }
+}

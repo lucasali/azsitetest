@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="76px" viewBox="0 0 1440 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Grafismo_Horizontal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="91.9887337%" y1="50%" x2="2.81570289%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F7F7F7" offset="0%"></stop>
+            <stop stop-color="#3B3B3B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="24.0522531%" y1="50%" x2="8.28971185%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#3B3B3B" offset="0%"></stop>
+            <stop stop-color="#1E1E1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="81.3956366%" y1="50%" x2="32.7712443%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#1E1E1E" offset="0%"></stop>
+            <stop stop-color="#3B3B3B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Overview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PRODUCT_Overview" transform="translate(0.000000, -1730.000000)">
+            <g id="Grafismo_Horizontal" transform="translate(0.000000, 1730.000000)">
+                <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="1440" height="28"></rect>
+                <rect id="Rectangle-Copy-13" fill="url(#linearGradient-2)" x="0" y="28" width="1440" height="48"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-3)" x="156" y="28" width="1093" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

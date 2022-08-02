@@ -1,0 +1,51 @@
+a{
+    &.link{
+        &-primary,
+        &-secondary{
+            text-decoration: underline;
+            transition: all ease 0.2s;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &-primary{
+            color: $color-primary;
+            &:hover{
+                color: $color-dark-theme;
+            }
+        }
+        &-secondary{
+            color: $color-dark-theme;
+            &:hover{
+                color: $color-primary;
+            }
+        }
+        &-dark-theme{
+            color: $color-super-light-theme;
+            text-decoration: underline;
+            transition: all 0.2s;
+            &:active,
+            &:hover{
+                color: $color-primary;
+            }
+            &:focus{
+                color: $color-primary;
+                text-decoration: underline;
+            }
+        }
+        &-light-theme{
+            color: $color-dark-theme;
+            text-decoration: underline;
+            transition: all 0.2s;
+            &:active,
+            &:hover{
+                color: $color-primary;
+            }
+            &:focus{
+                color: $color-primary;
+                text-decoration: underline;
+            }
+        }
+
+    }
+}

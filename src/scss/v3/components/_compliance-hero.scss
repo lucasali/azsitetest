@@ -1,0 +1,14 @@
+.compliance-hero{
+    position: relative;
+    background-color: $color-dark-theme;
+    padding: clamp(1.5rem, 9vw, 9rem) 0
+        clamp(5.5rem, 9vw, 9rem);
+    .content-wrap{
+        h1{
+            color: $color-super-light-theme;
+        }
+        p{
+            color: $color-gray-300;
+        }
+    }
+}

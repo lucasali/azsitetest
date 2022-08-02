@@ -1,0 +1,69 @@
+{% assign lang = site.lang %}
+{% capture cache_timestamp %}s300{% endcapture %}
+
+{% if page.permalink_pt-br %}
+    {% assign default_lang = "pt-br" %}
+    {% assign default_hreflang = page.permalink_pt-br %}
+{% elsif page.permalink %}
+    {% assign default_lang = "en" %}
+    {% assign default_hreflang = page.permalink %}
+{% elsif page.permalink_es %}
+    {% assign default_lang = "es" %}
+    {% assign default_hreflang = page.permalink_es %}
+{% endif %}
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="{{ site.url }}/static/images/favicon/favicon.png" />
+    <link rel="icon" type="image/png" href="{{ site.url }}/static/images/favicon/favicon.png" size="32x32" />
+    <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/static/images/favicon/favicon.png" sizes="32x32" />
+    <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/static/images/favicon/favicon.png" sizes="72x72" />
+    <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/static/images/favicon/favicon.png" sizes="114x114" />
+    <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/static/images/favicon/favicon.png" sizes="120x120" />
+    <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/static/images/favicon/favicon.png" sizes="144x144" />
+    <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/static/images/favicon/favicon.png" sizes="152x152" />
+
+    {% if page.permalink_pt-br %}
+    <link rel="alternate" href="{{ site.hosturl }}/pt-br{{ page.permalink_pt-br }}" hreflang="pt-br" />
+    {% endif %}
+    {% if page.permalink %}
+    <link rel="alternate" href="{{ site.hosturl }}/en{{ page.permalink }}" hreflang="en" />
+    {% endif %}
+    {% if page.permalink_es %}
+    <link rel="alternate" href="{{ site.hosturl }}/es{{ page.permalink_es }}" hreflang="es" />
+    {% endif %}
+    <link rel="alternate" href="{{ site.hosturl }}/{{ default_lang }}{{ default_hreflang }}" hreflang="x-default" />
+    <link rel="canonical" href="{{ site.hosturl }}/{{ site.lang }}{{ page.url }}" />
+
+    <title>{% t page.title %} | {{ site.brand }}</title>
+    <meta name="description" content="{% t page.description %}" />
+    <meta name="twitter:title" content="{% t page.title %}" />
+    <meta name="twitter:description" content="{% t  page.description %}" />
+    <meta property="og:title" content="{% t page.title %}" />
+    <meta property="og:description" content="{% t page.description %}" />
+    <meta property="og:image" content="{{ site.hosturl }}/{% t page.og_image %}" />
+
+    <meta property="og:site_name" content="{{ site.name }}" />
+    <meta property="og:url" content="{{ site.hosturl }}/{{ site.lang }}{{ page.url }}" />
+    <meta property="og:locale" content="{{ site.lang }}" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@{{ site.twitter }}" />
+
+    {% for css in page.files.css %}
+    <link rel="stylesheet" href="{{ site.url }}/{{ css }}?cache={{cache_timestamp}}" />
+    {% endfor %}
+    {% for style in page.custom_style %}
+    <link rel="stylesheet" href="{{ site.url }}/{{ style }}?cache={{cache_timestamp}}" />
+    {% endfor %}
+    <!-- ALGOLIA CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/static/trd3/algolia/theme.css" />
+    <!-- END ALGOLIA CSS -->
+    <!-- REQUIRED BY JAVASCRIPT -->
+    <script>
+        window.azsitelang = "{{ site.lang }}";
+    </script>
+</head>

@@ -1,0 +1,19 @@
+---
+all:
+  title: Todas las áreas
+engineering:
+  title: Ingeniería
+  description: Infraestructura y R&D
+revenue:
+  title: Revenue
+  description: Éxito del cliente, generación de demanda, inteligencia de marketing,
+    marketing, solución de ingresos, ventas
+products:
+  title: Productos
+  description: Product Management, Product Marketing, Design, Education y Data Science
+operations:
+  title: Operaciones
+  description: Financiero y People
+security:
+  title: Seguridad
+  description: Seguridad

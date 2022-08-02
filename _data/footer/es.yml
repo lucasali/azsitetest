@@ -1,0 +1,60 @@
+---
+sales_and_support: Para ventas y soporte, contáctanos <a href="tel:52 800 872 0565" class="phone-number">+52
+  800 872 0565</a>
+links_columns:
+  - title: Resources
+    links:
+      - text: Blog
+        route: /es/blog
+      - text: Documentation
+        route: /en/documentation
+      - text: Marketplace
+        route: '/es/marketplace/'
+      - text: Compliance
+        route: /es/compliance
+      - text: Success Cases
+        route: /es/casos-de-exito
+  - title: Empresa
+    links:
+      - text: Sobre Azion
+        route: /es/sobre-azion
+      - text: Azion Edge Network
+        route: /es/productos/edge-network
+      - text: Trabaja en Azion
+        route: /es/trabaja-en-azion
+        flag: ¡Estamos contratando!
+      - text: Política de Privacidad
+        route: /en/documentation/agreements/privacy-policy
+  - title: Precios
+    links:
+      - text: Productos
+        route: /es/precios
+      - text: Soporte
+        route: /es/soporte
+  - title: Contacto
+    links:
+      - text: Contacto Ventas
+        route: /en/contact-sales
+      - text: Soporte
+        route: /es/soporte
+      - text: Facebook
+        route: https://www.facebook.com/aziontech
+        type: external
+      - text: Twitter
+        route: https://twitter.com/aziontech
+        type: external
+      - text: Linkedin
+        route: https://www.linkedin.com/company/aziontech
+        type: external
+      - text: Instagram
+        route: https://www.instagram.com/aziontech
+        type: external
+      - text: YouTube
+        route: https://www.youtube.com/aziontech
+        type: external
+      - text: Linktree
+        route: https://linktr.ee/aziontech
+        type: external
+copyright: Copyright © 2022, Azion Technologies, Inc. o sus filiales. Todos los derechos
+  reservados.
+language_selector: 'Idioma: '

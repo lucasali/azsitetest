@@ -1,0 +1,25 @@
+<section class="cta">
+    <div class="row">
+        <div class="col-slg-10 col-xlg-10 col-lg-10 col-md-4 col-sm-10 offset-lg-2 offset-md-1">
+            <div class="bd_sub">
+                {{ site.data.pages.home.[site.lang].accelerate_app.label }}
+            </div>
+            <h1>
+                {{ site.data.pages.home.[site.lang].accelerate_app.heading_one }}
+            </h1>
+        </div>
+        <div class="col-slg-4 col-xlg-4 col-lg-4 col-md-3 col-sm-10 offset-lg-2 offset-md-1 no-gutters-large">
+            <div class="btn-wrap">
+                <a href="https://manager.azion.com/signup/" title="Free account | Azion Signup"
+                    class="btn btn-primary-light">
+                    {% t v2.button.create_free_account.text %}
+                    {% include v3/components/btn-icon-double-arrow-right.html %}
+                </a>
+                <a href="{% tl contact %}" title="{% tl contact %}" class="btn btn-secondary-light">
+                    {% t v3.button.talk_to_an_expert.text %}
+                    {% include v3/components/btn-icon-double-arrow-right.html %}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

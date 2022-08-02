@@ -1,0 +1,20 @@
+.compliance-cta {
+    .cta {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: clamp(2.5rem, 4.5vw, 4.5rem) 0 clamp(3.5rem, 6vw, 6rem);
+        background-color: $color-light-theme;
+        h2 {
+            @extend h4;
+            margin-bottom: 0;
+            color: $color-gray-600;
+            .email {
+                color: $color-dark-theme;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

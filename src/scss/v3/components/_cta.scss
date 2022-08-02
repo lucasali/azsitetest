@@ -1,0 +1,45 @@
+.cta {
+    background-color: $color-super-light-theme;
+    padding: clamp(2.8125rem, 6.5vw, 6.5rem) 0 clamp(3.75rem, 6.0625vw, 6.0625rem);
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 1rem 0;
+    }
+    h1 {
+        line-height: 130%;
+        font-size: #{"max(min(4.5vw, 3rem), 2rem)"};
+        @include media-breakpoint-up("lg") {
+            line-height: 140%;
+            font-size: #{"max(min(2.875vw, 3.125rem), 1.5rem)"};
+        }
+        @include media-breakpoint-up("max") {
+            font-size: #{"max(min(2.875vw, 3.75rem), 1.5rem)"};
+        }
+    }
+    .btn-wrap {
+        height: 100%;
+        @include media-breakpoint-up("md") {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .btn {
+            min-width: 180px;
+            position: relative;
+            &:first-of-type {
+                margin-bottom: 1rem;
+
+                @include media-breakpoint-up("sm") {
+                    margin-right: 1rem;
+                }
+                @include media-breakpoint-up("md") {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

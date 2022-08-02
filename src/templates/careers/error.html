@@ -1,0 +1,11 @@
+<div class="error-message">
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        {% if lang == 'pt-br' %}
+            <p>Desculpe, algo errado. Por favor, tente novamente.</p>
+        {% else %}
+            <p>Sorry, something wrong. Please try again.</p>
+        {% endif %}
+    {% endif %}
+</div>

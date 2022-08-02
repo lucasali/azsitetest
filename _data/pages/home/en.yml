@@ -1,0 +1,321 @@
+---
+hero:
+  heading_one: The easiest way <br class='br-en'/> to<span id='typing'></span> <br
+    class='br-en'/> modern applications anywhere
+  text_logo_slide: From prototype to enterprise-scale with NoOps, <strong>just code.</strong>
+  form:
+    placeholder: Your work email
+  logo_slide:
+  - logo: "/static/images/v3/home/logo-vtex.png"
+    name: VTEX
+  - logo: "/static/images/v3/home/logo-rocket-chat.png"
+    name: Rocket.chat
+  - logo: "/static/images/v3/home/logo-radware.png"
+    name: Radware
+  - logo: "/static/images/v3/home/logo-motorola.png"
+    name: Motorola
+  - logo: "/static/images/v3/home/logo-sky.png"
+    name: Sky
+  - logo: "/static/images/v3/home/logo-walmart.png"
+    name: Walmart
+  - logo: "/static/images/v3/home/logo-coca-cola.png"
+    name: Coca-Cola
+  - logo: "/static/images/v3/home/logo-samsung.png"
+    name: Samsung
+  - logo: "/static/images/v3/home/logo-crate-and-barrel.png"
+    name: Crate & Barrel
+  - logo: "/static/images/v3/home/logo-calvin-klein.png"
+    name: Calvin Klein
+  - logo: "/static/images/v3/home/logo-panasonic.png"
+    name: Panasonic
+  - logo: "/static/images/v3/home/logo-vtex.png"
+    name: VTEX
+  - logo: "/static/images/v3/home/logo-rocket-chat.png"
+    name: Rocket.chat
+  - logo: "/static/images/v3/home/logo-radware.png"
+    name: Radware
+  - logo: "/static/images/v3/home/logo-motorola.png"
+    name: Motorola
+  - logo: "/static/images/v3/home/logo-sky.png"
+    name: Sky
+  - logo: "/static/images/v3/home/logo-walmart.png"
+    name: Walmart
+  - logo: "/static/images/v3/home/logo-coca-cola.png"
+    name: Coca-Cola
+  - logo: "/static/images/v3/home/logo-samsung.png"
+    name: Samsung
+  - logo: "/static/images/v3/home/logo-crate-and-barrel.png"
+    name: Crate & Barrel
+  - logo: "/static/images/v3/home/logo-calvin-klein.png"
+    name: Calvin Klein
+  - logo: "/static/images/v3/home/logo-panasonic.png"
+    name: Panasonic
+  button:
+    read_success_case:
+      text: read customer success stories
+      href: "/success-case/"
+manager:
+  heading_one: Azion is a full-stack edge platform that simplifies how you <span>build</span>
+    better applications, <span> faster</span>.
+  description: Take advantage of our 100+ global edge locations, or use Azion to orchestrate
+    your own multi-cloud, on-premise or remote-device deployment.
+cloud_edge:
+  heading_one: We now live in a <s>globalized</s> hyper-connected economy that demands
+    flawless experiences. Are your applications ready?
+  first_paragraph: A flawless online experience means speed and reliability without
+    compromising security and compliance. Azion’s flexible platform allows you to
+    respond to the demands of the hyper-connected economy, anywhere in the world.
+    With Azion’s decentralized platform, your applications are highly distributed
+    in every country you operate.
+  destak_paragraph: Build the future - now!
+  link: https://www.azion.com/en/blog/cloud-computing-vs-edge-computing-which-is-better-for-my-business/
+  list:
+    label: CLOUD IS NOT ENOUGH
+    cloud:
+    - Centralized
+    - Ops-Intensive
+    - Vendor Lock-In
+    - Basic Security
+    - Limited Compliance
+    edge:
+    - Distributed
+    - NoOps
+    - Open Standards
+    - Security-Centric
+    - Local Compliance
+    paragraph: The edge is faster, cheaper, more reliable, and helps you meet local
+      compliance requirements.
+provide:
+  heading_one: Azion provides much more than just a great user experience...
+  description:
+  - 'We enable new technologies and use cases for applications, security, networking,
+    video and game streaming, AI, IoT, 5G - you name it. Azion’s powerful full-stack
+    platform allows you to focus on what you do best: build.</br><b>Let’s take a look
+    at what you can do.</b>'
+  table:
+    head:
+      build: Build
+      secure: Secure
+      deliver: Deliver
+      observe: Observe
+    industry:
+    - title: retail
+      id: retail
+      description: Optimize for user experience and security at scale, from digital
+        to physical. Push efficiency to the limit and drastically reduce time-to-market.
+      service:
+      - title: Build
+        list:
+        - Application modernization
+        - User segmentation
+        - A/B testing
+        - Payments
+      - title: Secure
+        list:
+        - DDoS attack protection
+      - title: Deliver
+        list:
+        - Multi-cloud strategy
+        - Avoid vendor lock-in
+        - Fully managed global infrastructure
+      - title: Observe
+        list:
+        - Phishing attempt analysis
+        - Credit card fraud detection
+    - title: finance
+      id: finance
+      description: Optimize for security and compliance - from online to offline -
+        while delivering unprecedented reliability. Build a modern security approach
+        with Zero-Trust at the core.
+      service:
+      - title: Build
+        list:
+        - Geo-based access policies
+      - title: Secure
+        list:
+        - Customer account takeover protection
+        - Implement Zero-Trust security
+      - title: Deliver
+        list:
+        - Multi-cloud strategy
+        - Avoid vendor lock-in
+        - Fully managed global infrastructure
+      - title: Observe
+        list:
+        - Continuous monitoring for compliance
+        - Real-time threat intelligence
+    - title: media
+      id: media
+      description: Optimize for user experience at scale. Build an engaged global
+        audience with millisecond performance to any device in any location.
+      service:
+      - title: Build
+        list:
+        - Customized content
+        - Rich media experiences at the edge
+      - title: Secure
+        list:
+        - Efficient paywalls with JWTs
+      - title: Deliver
+        list:
+        - Multi-cloud strategy
+        - Avoid vendor lock-in
+        - Fully managed global infrastructure
+      - title: Observe
+        list:
+        - Content performance monitoring
+        - Request-level and page-level metrics
+    - title: education
+      id: education
+      description: Deliver rich learning experiences anywhere, with the compliance
+        and security required to innovate and grow faster.
+      service:
+      - title: Build
+        list:
+        - E-learning app development
+        - Engaging student experiences
+      - title: Secure
+        list:
+        - Student data protection
+      - title: Deliver
+        list:
+        - Multi-cloud strategy
+        - Avoid vendor lock-in
+        - Fully managed global infrastructure
+      - title: Observe
+    - title: tech
+      id: tech
+      description: Build faster, more reliable applications to push the limits of
+        innovation. Disrupt global markets with millisecond performance and local
+        compliance anywhere, and only pay for what you use.
+      service:
+      - title: Build
+        list:
+        - Business logic at the edge with functions
+        - RESTful APIs to handle multiple endpoints
+        - Web apps that perform like they're native
+      - title: Secure
+        list:
+        - Secure microservices
+      - title: Deliver
+        list:
+        - Multi-cloud strategy
+        - Avoid vendor lock-in
+        - Fully managed global infrastructure
+      - title: Observe
+        list:
+        - Microservice and infrastructure monitoring
+        - Increased performance for better app reviews
+    - title: healthcare
+      id: healthcare
+      description: Optimize for compliance and innovation. Make patient data secure
+        and readily available to drive better clinical outcomes and build the future
+        of healthcare.
+      service:
+      - title: Build
+        list:
+        - Patient-centric apps
+        - Cost-efficient telemedicine apps
+        - Fast, customized patient experiences
+        - App building as quick as patients’ needs change
+      - title: Secure
+        list:
+        - Patient data protection
+        - Drug research protection
+        - Availability of healthcare portals
+        - 3rd-party API access security
+      - title: Deliver
+        list:
+        - Multi-cloud strategy
+        - Avoid vendor lock-in
+        - Fully managed global infrastructure
+      - title: Observe
+        list:
+        - Patient app usage observability
+        - Real-time performance and availability insights
+    - title: telecom
+      id: telecom
+      description: Disrupt networking economics with a simplified edge-native stack
+        that transforms your edge infrastructure with software - 5G ready.
+      service:
+      - title: Build
+        list:
+        - Content delivery optimization
+        - Better traffic routing
+        - Bad traffic filters
+        - Better network solutions for IoT and 5G
+        - 'Digital transformation: cloud migration & data center consolidation'
+      - title: Secure
+        list:
+        - DDoS attack protection
+        - Secure microperimeters for network components
+      - title: Deliver
+        list:
+        - Multi-cloud strategy
+        - Avoid vendor lock-in
+        - Fully managed global infrastructure
+      - title: Observe
+        list:
+        - Real-time traffic insights across every node
+    - title: robotics
+      id: robotics
+      description: Build complex workloads and highly reliable zero-touch orchestration
+        to go beyond the factory floor.
+      service:
+      - title: Build
+        list:
+        - Low-latency apps for IoT devices
+        - Faster app GTM for changing processes
+        - Continuous scaling (in milliseconds)
+        - Pay-per-use serverless computing
+        - Smart automation systems
+        - Efficient real-time systems
+        - Increased plant efficiency
+      - title: Secure
+        list:
+        - Secure, serverless infrastructure by default
+        - Secure APIs
+      - title: Deliver
+        list:
+        - Multi-cloud strategy
+        - Avoid vendor lock-in
+        - Fully managed global infrastructure
+      - title: Observe
+        list:
+        - Real-time IoT data streaming
+big_numbers:
+  heading_one: Azion in Numbers
+  list:
+  - number: "100"
+    label: k+
+    description: online stores worldwide rely on Azion
+  - number: "20"
+    label: M+
+    description: students use Azion for distance learning
+  - number: "200"
+    label: B+
+    description: financial service requests delivered monthly
+  - number: "100"
+    label: "+"
+    description: edge locations
+  - number: "20"
+    label: k+
+    description: edge applications running
+  - number: "10"
+    label: Tb/s
+    description: network capacity
+blog:
+  label: BLOG
+  list:
+  - heading_one: Azion Listed in Forrester New Wave Report for Edge Development Platforms
+    description: 'Here at Azion, we’re very excited to announce that Azion Technologies
+      has been named a “best fit for companies that require global edge performance…”
+      in The Forrester New WaveTM: Edge Development Platforms, Q4 2021.'
+    href: https://www.azion.com/en/blog/azion-listed-in-forrester-new-wave-edge-platforms/
+  - heading_one: 'Cloud Computing vs. Edge Computing: Which Is Better for My Business?'
+    description: In a hyper-connected economy, brands and companies have changed the
+      way they relate to and communicate with their customers...
+    href: https://www.azion.com/en/blog/cloud-computing-vs-edge-computing-which-is-better-for-my-business/
+accelerate_app:
+  label: GET STARTED
+  heading_one: Accelerate your application modernization now.

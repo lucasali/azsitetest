@@ -1,0 +1,22 @@
+<section class="row introduce-box">
+    <div class="col-lg-8 col-sd-5 col-md-6 offset-sd-0 offset-md-2 offset-lg-2">
+        <h1>
+            {% t v2.pages.careers.initial.title %}
+        </h1>
+        <p>
+            {% t v2.pages.careers.initial.description %}
+        </p>
+        <div class="box-btn">
+            <a class="btn btn-icon btn-primary-dark" href="{% tl careers_jobs %}">
+                {% t v2.button.see_jobs.text %}
+                {% include v3/components/btn-icon-double-arrow-right.html %}
+            </a>
+            <a class="btn btn-icon btn-secondary-dark" href="{% tl about %}">
+                {% t v2.button.about_us.text %}
+                {% include v3/components/btn-icon-double-arrow-right.html %}
+            </a>
+        </div>
+        <figure class="box-image">
+            <img src="/static/images/careers/illustration-main.svg">
+        </figure>
+</section>

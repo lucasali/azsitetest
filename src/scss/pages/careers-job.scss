@@ -1,0 +1,393 @@
+@import "../v3/context";
+@import "../v3/form";
+@import "../v3/components/share-buttons";
+@import "../template/_breadcrumb";
+
+
+.careers-job-view-content {
+    .cover {
+        padding: 0;
+        width: 100%;
+        display: grid;
+        background-color: #F9F9F9;
+        background-image: url(/static/images/careers/cover-job-1440.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        align-items: center;
+
+        @include media-breakpoint-up(sm) {
+            min-height: 194px;
+            background-size: 100% 194px;
+        }
+
+        @include media-breakpoint-up(md) {
+            height: 540px;
+            background-size: 100% 100%;
+        }
+
+        .box-wrap {
+            display: flex;
+            align-items: center;
+            background-color: #FFF;
+            position: relative;
+            z-index: 10;
+
+            @include media-breakpoint-up(sm) {
+                padding-top: 26px;
+                padding-bottom: 26px;
+            }
+
+            @include media-breakpoint-up(md) {
+                height: 371px;
+            }
+
+            &:after {
+                background-color: #FFF;
+                position: absolute;
+                left: -500px;
+                top: 0;
+                z-index: 9;
+                content: "";
+                height: 100%;
+                width: 500px;
+            }
+
+
+            h1, h2, h3, h4, h5, h6 {
+                color: $color-dark-theme;
+                margin-bottom: 1rem;
+
+                @include media-breakpoint-up(sm) {
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+
+                @include media-breakpoint-up(md) {
+                    font-size: 38px;
+                    line-height: 48px;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 60px;
+                    line-height: 70px;
+                }
+            }
+
+            .box-icons {
+                li {
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                li, li a {
+                    font-size: 1rem;
+                }
+
+                @include media-breakpoint-up(sm) {
+                    display: none;
+                }
+
+                @include media-breakpoint-up(md) {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .cover,
+    .m-cover-icon-list {
+        .box-icons {
+            margin: 20px 0 0;
+            padding: 0;
+            list-style: none;
+
+            @include media-breakpoint-up(md) {
+                display: flex;
+                margin: 0;
+            }
+
+            li {
+                line-height: 32px;
+
+                @include media-breakpoint-up(md) {
+                    line-height: 40px;
+                    margin-right: 40px;
+                }
+
+                .icon {
+                    position: relative;
+                    top: 4px;
+                    margin-right: 6px;
+
+                    &.icon-clock {
+                        top: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .m-cover-icon-list {
+        height: 156px;
+        padding: 10px 0 30px;
+        background-color: #F9F9F9;
+
+        .box-icons {
+            margin: 0;
+        }
+
+        li {
+            margin: 8px 0;
+
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+
+        @include media-breakpoint-up(sm) {
+            display: block;
+        }
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+
+    .breadcrumb-list {
+        margin: 0 0 40px;
+        padding: 0;
+    }
+
+    .jobs-departament,
+    .job-to-apply-content {
+        background-color: #FFF;
+        position: relative;
+        z-index: 20;
+        padding: 28px 0;
+
+        .link-navigation {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        .box-job-description {
+            .box-title {
+                margin-bottom: 40px;
+
+                .standard-medium-title {
+                    margin: 0;
+                    color: $color-dark-theme;
+                }
+            }
+
+            p {
+                strong {
+                    color: $color-dark-theme;
+                }
+            }
+
+            .box-description {
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.0888889px;
+
+                ul {
+                    margin-bottom: 24px;
+
+                    li {
+                        margin-bottom: 8px;
+
+                        &:before {
+                            width: 5px;
+                            height: 5px;
+                            top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .box-form-apply {
+            background: #FFF;
+
+            h1, h2, h3, h4, h5, h6 {
+                margin-bottom: 0.5rem;
+            }
+
+            .box-form {
+                margin-bottom: 40px;
+
+                @include media-breakpoint-up(md) {
+                    box-shadow: 0px 1.2px 2.5px #aaaaaa;
+                    border-radius: 4px;
+                    padding: 28px;
+                }
+            }
+
+            .box-description {
+                margin-bottom: 28px;
+
+                p {
+                    @include media-breakpoint-up(sm) {
+                        font-size: 12px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .error-message {
+                margin: 10px 0;
+            }
+
+            form {
+                button[type="submit"] {
+                    width: 100%;
+                    cursor: pointer;
+                    border-color: transparent;
+                    text-align: inherit;
+                }
+
+                input,
+                textarea {
+                    margin-bottom: 0;
+                }
+
+                .input-wrapper {
+                    margin: 0 0 1rem;
+                }
+
+                .box-name,
+                .box-address {
+                    .box-input {
+                        width: 48%;
+                    }
+                }
+
+                .box-name,
+                .box-address {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .box-btn {
+                    .btn-brand {
+                        margin: 28px 0 0;
+                    }
+
+                    margin: 0 0 8px;
+                }
+            }
+
+            .sharethis-inline-share-buttons {
+                margin-top: 14px;
+            }
+
+            .st-btn[data-network="sharethis"] {
+                height: 40px !important;
+                display: block !important;
+
+                border-radius: 4px;
+                border: solid 1px $color-primary !important;
+
+                color: $color-primary !important;
+                background-color: $color-primary !important;
+
+                line-height: 40px !important;
+                font-size: 16px !important;
+                font-weight: map-get($font-weight, "light") !important;
+
+                &:hover {
+                    color: #fff !important;
+                    background-color: $color-primary-variant !important;
+                }
+            }
+        }
+    }
+
+    .not-match-content {
+        background-color: #F9F9F9;
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+        overflow: hidden;
+
+        @include media-breakpoint-up(sm) {
+            text-align: center;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 445px;
+            background-image: url(/static/images/careers/cover-job-game-room.png);
+            text-align: left;
+            display: flex;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: $color-gray-800;
+        }
+
+        .box-image {
+            margin: 0 auto 40px;
+
+            @include media-breakpoint-up(sm) {
+                display: block;
+            }
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+
+        .box-title {
+            .standard-large-title {
+                color: $color-secondary;
+                margin-bottom: 12px;
+            }
+        }
+
+        .box-description {
+            p {
+                font-size: 20px;
+                margin-bottom: 30px;
+
+                @include media-breakpoint-up(sm) {
+                    line-height: 24px;
+                }
+
+                @include media-breakpoint-up(md) {
+                    line-height: 28px;
+                }
+            }
+        }
+
+        .box-wrap {
+            background-color: #F9F9F9;
+            max-width: 100%;
+            width: 100%;
+
+            @include media-breakpoint-up(lg) {
+                width: 100%;
+                max-width: 482px;
+                padding: 20px 20px 20px 0;
+            }
+        }
+    }
+
+    .secondary-title {
+        &:after {
+            display: none;
+        }
+    }
+}

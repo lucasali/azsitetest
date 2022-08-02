@@ -1,0 +1,72 @@
+.related-posts{
+    margin-bottom: 40px;
+    .box-container{
+        padding-top: 40px;
+        border-top: 1px solid #ebebeb;
+    }
+    .related-title {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        color: $color-secondary;
+    }
+
+    .related-wrap {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        @include breakpoint(small down){
+            flex-direction: column;
+        }
+        .related-card {
+            &:before {
+                display: none;
+            }
+            width: calc((100% / 3) - 25px);
+            @include breakpoint(medium down){
+                width: calc((100% / 3) - 10px);
+            }
+            @include breakpoint(small down){
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .related-image {
+                width: 100%;
+                max-height: 257px;
+                height: auto;
+                border-radius: 4px;
+                @include breakpoint(large down){
+                    max-height: 231px;
+                }
+                @include breakpoint(medium down){
+                    max-height: 148.5px;
+                }
+                @include breakpoint(small down){
+                    max-height: unset;
+                }
+            }
+            .related-card-title-wrap {
+                margin-top: 10px;
+                font-weight: 500;
+                padding: 10px;
+                color: $color-secondary;
+                .related-post-category {
+                    font-size: 14px;
+                    line-height: 14px;
+                    text-transform: capitalize;
+                }
+                .related-post-title {
+                    font-size: 20px;
+                    line-height: 26px;
+                    margin: 8px 0;
+                    @include breakpoint(medium down){
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    
+    }
+}

@@ -1,0 +1,249 @@
+$background:    #1E1E1E;
+$background-light: #FAFAFA;
+$highlight:     #DF6D2E;
+$alternate:     #646464;
+$text:          #646464;
+$light_text:    #C8C8C8;
+
+$time:          200ms;
+
+$font-family: 'Roboto', Helvetica, Arial, sans-serif;
+$roboto: $font-family;
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    color: $text;
+    font-family: $font-family;
+}
+
+::selection {
+    color: #FFF;
+    background: #F47929;
+}
+
+.container{
+    padding: 0 20px;
+    position: relative;
+    width: 100%;
+}
+
+.content-wrapper{
+    margin: 0 auto;
+    position: relative;
+    max-width: 1440px;
+    z-index: 0;
+}
+
+.site-main{
+    position: relative;
+    z-index: 0;
+
+    @include breakpoint(medium){
+        min-height: calc(100vh - 275px);
+    }
+}
+
+.links-list{
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    overflow: auto;
+
+    @include breakpoint(small) {
+        justify-content: flex-start;
+        margin: 40px 0 20px;
+    }
+
+    @include breakpoint(large) {
+       margin: 0;
+        justify-content: flex-end;
+    }
+
+    &.tabs{
+        background: transparent;
+        border: 0;
+
+        .tabs-title{
+            float: none;
+
+            &.is-active a{
+                color: $highlight;
+
+                &::before{
+                    transform: scaleX(1);
+                }
+            }
+
+            a{
+                font-size: 1rem;
+                padding: 0 0 15px;
+
+                &:focus,
+                &[aria-selected='true']{
+                    background: transparent;
+                }
+            }
+        }
+    }
+
+    > li + li{
+        margin-left: 5vw;
+
+        @include breakpoint(medium){
+            margin-left: 40px;
+        }
+    }
+
+    > li > a{
+        color: #FFF;
+        display: block;
+        padding-right: 0;
+        padding-left: 0;
+        position: relative;
+        transition: color $time;
+        white-space: nowrap;
+
+        &::before{
+            background: #DF6D2E;
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: 0 0;
+            transition: transform $time;
+            width: 100%;
+            height: 2px;
+        }
+
+        &:hover, &.is-active{
+            color: #DF6D2E;
+
+            &::before{
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    > li:last-child a{
+        margin: initial;
+    }
+}
+
+.highlight{
+    color: $highlight;
+}
+
+.button{
+    background: $highlight;
+    color: #fff;
+    border-radius: 2px;
+    transition: all $time;
+
+    &.primary{
+        color: #fff !important;
+    }
+
+    & + .button{
+        margin-left: 20px;
+    }
+}
+
+
+.button,
+.btn {
+    line-height: 40px;
+    border-radius: 4px;
+    font-weight: map-get($font-weight, 'regular');
+    font-size: $font-size-text-small;
+    line-height: 19px;
+    padding: 10px 17px;
+    display: inline-block;
+    -webkit-transition: all .150s ease-in-out;
+    -moz-transition: all .150s ease-in-out;
+    -o-transition: all .150s ease-in-out;
+    -ms-transition: all .150s ease-in-out;
+    transition: all .150s ease-in-out;
+
+    &-brand {
+        border: solid 1px $color-primary;
+        color: $color-white;
+        background-color: $color-primary;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-on-primary;
+        }
+    }
+
+    &-secondary {
+        border: solid 1px $color-primary;
+        color: $color-primary;
+        background-color: transparent;
+
+        &:hover {
+            background: $color-primary-Alpha;
+            color: $color-primary;
+            opacity: 1;
+        };
+    }
+
+    // old CSS
+    &.primary{
+        color: #fff !important;
+    }
+
+    & + .button{
+        margin-left: 20px;
+    }
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+
+    @include breakpoint(medium){
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    &::after{
+        color: #F3652B;
+        content: '_';
+        padding-left: .1em
+    }
+}
+
+.arrow-link{
+    color: $highlight;
+
+    &::after{
+        content: '▶';
+        font-size: .7em;
+        margin-left: .7em;
+    }
+}
+
+.list-simple{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li{
+        margin-bottom: .4em;
+        padding-left: 1em;
+        text-indent: -.7em;
+
+        &::before{
+            color: $highlight;
+            content: "●";
+            font-size: .8em;
+            margin-right: .6em;
+        }
+    }
+}

@@ -1,0 +1,299 @@
+@mixin make-grid-columns-azion(
+  $grid-columns-large,
+  $grid-columns-mobile,
+  $mobile-breakpoints,
+  $small-breakpoints,
+  $large-breakpoints,
+  $gutter: $grid-gutter-width,
+  $breakpoints: $grid-breakpoints
+) {
+  %grid-column {
+    position: relative;
+    width: 100%;
+    padding-right: math.div($gutter, 2);
+    padding-left: math.div($gutter, 2);
+  }
+
+  //common classes for all breakpoints
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+    .col#{$infix},
+    .col#{$infix}-auto {
+      @extend %grid-column;
+    }
+    @include media-breakpoint-only($breakpoint, $breakpoints) {
+      [class*="col-"] {
+        &.no-gutters#{$infix} {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      .no-gutters#{$infix} {
+        > [class*="col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      .narrow-l#{$infix} {
+        > [class*="col-"] {
+          padding-left: 0;
+        }
+      }
+      [class*="col-"] {
+        &.narrow-l#{$infix} {
+          padding-left: 0;
+        }
+      }
+      .narrow-r#{$infix} {
+        > [class*="col-"] {
+          padding-right: 0;
+        }
+      }
+      [class*="col-"] {
+        &.narrow-r#{$infix} {
+          padding-right: 0;
+        }
+      }
+      .condensed#{$infix} {
+        > [class*="col-"] {
+          padding-right: 1px;
+          padding-left: 1px;
+        }
+      }
+
+      [class*="col-"] {
+        .condensed#{$infix} {
+          padding-right: 1px;
+          padding-left: 1px;
+        }
+      }
+    }
+    @include media-breakpoint-between("sm", "sd") {
+      [class*="col-"] {
+        &.no-gutters-small {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      .no-gutters-small {
+        > [class*="col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      .narrow-l-small {
+        > [class*="col-"] {
+          padding-left: 0;
+        }
+      }
+      [class*="col-"] {
+        &.narrow-l-small {
+          padding-left: 0;
+        }
+      }
+      .narrow-r-small {
+        > [class*="col-"] {
+          padding-right: 0;
+        }
+      }
+      [class*="col-"] {
+        &.narrow-r-small {
+          padding-right: 0;
+        }
+      }
+      .condensed-small {
+        > [class*="col-"] {
+          padding-right: 1px;
+          padding-left: 1px;
+        }
+      }
+
+      [class*="col-"] {
+        .condensed-small {
+          padding-right: 1px;
+          padding-left: 1px;
+        }
+      }
+    }
+    @include media-breakpoint-between("lg", "max") {
+      [class*="col-"] {
+        &.no-gutters-large {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      .no-gutters-large {
+        > [class*="col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      .narrow-l-large {
+        > [class*="col-"] {
+          padding-left: 0;
+        }
+      }
+      [class*="col-"] {
+        &.narrow-l-large {
+          padding-left: 0;
+        }
+      }
+      .narrow-r-large {
+        > [class*="col-"] {
+          padding-right: 0;
+        }
+      }
+      [class*="col-"] {
+        &.narrow-r-large {
+          padding-right: 0;
+        }
+      }
+      .condensed-large {
+        > [class*="col-"] {
+          padding-right: 1px;
+          padding-left: 1px;
+        }
+      }
+
+      [class*="col-"] {
+        .condensed-large {
+          padding-right: 1px;
+          padding-left: 1px;
+        }
+      }
+    }
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+      .col#{$infix} {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+      }
+
+      .col#{$infix}-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%; // Reset earlier grid tiers
+      }
+
+      .order#{$infix}-first {
+        order: -1;
+      }
+    }
+  }
+
+  // only classes for mobile breakpoints
+  @each $breakpoint in map-keys($mobile-breakpoints) {
+    $infix: breakpoint-infix-small($breakpoint, $breakpoints);
+    $columns: $grid-columns-mobile;
+
+    @for $i from 1 through $columns {
+      .col#{$infix}-#{$i} {
+        @extend %grid-column;
+      }
+    }
+
+    .order#{$infix}-last {
+      order: $columns + 1;
+    }
+
+    @include media-breakpoint-up($breakpoint, $mobile-breakpoints) {
+      // `$columns - 1` because offsetting by the width of an entire row isn't possible
+      @for $i from 0 through ($columns - 1) {
+        @if not($infix == "" and $i == 0) {
+          // Avoid emitting useless .offset-0
+          .offset#{$infix}-#{$i} {
+            @include make-col-offset($i, $columns);
+          }
+        }
+      }
+
+      @for $i from 1 through $columns {
+        .col#{$infix}-#{$i} {
+          @include make-col($i, $columns);
+        }
+      }
+      @for $i from 0 through $columns {
+        .order#{$infix}-#{$i} {
+          order: $i;
+        }
+      }
+    }
+  }
+
+  // only classes for small breakpoints
+  @each $breakpoint in map-keys($small-breakpoints) {
+    $infix: breakpoint-infix-small($breakpoint, $breakpoints);
+    $columns: math.div($grid-columns-large, 2);
+
+    @for $i from 1 through $columns {
+      .col#{$infix}-#{$i} {
+        @extend %grid-column;
+      }
+    }
+
+    .order#{$infix}-last {
+      order: $columns + 1;
+    }
+
+    @include media-breakpoint-up($breakpoint, $small-breakpoints) {
+      // `$columns - 1` because offsetting by the width of an entire row isn't possible
+      @for $i from 0 through ($columns - 1) {
+        @if not($infix == "" and $i == 0) {
+          // Avoid emitting useless .offset-0
+          .offset#{$infix}-#{$i} {
+            @include make-col-offset($i, $columns);
+          }
+        }
+      }
+
+      @for $i from 1 through $columns {
+        .col#{$infix}-#{$i} {
+          @include make-col($i, $columns);
+        }
+      }
+      @for $i from 0 through $columns {
+        .order#{$infix}-#{$i} {
+          order: $i;
+        }
+      }
+    }
+  }
+
+  // only classes for large breakpoints
+  @each $breakpoint in map-keys($large-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+    @for $i from 1 through $grid-columns-large {
+      .col#{$infix}-#{$i} {
+        @extend %grid-column;
+      }
+    }
+
+    .order#{$infix}-last {
+      order: $grid-columns-large + 1;
+    }
+
+    @include media-breakpoint-up($breakpoint, $large-breakpoints) {
+      // `$columns - 1` because offsetting by the width of an entire row isn't possible
+      @for $i from 0 through ($grid-columns-large - 1) {
+        @if not($infix == "" and $i == 0) {
+          // Avoid emitting useless .offset-0
+          .offset#{$infix}-#{$i} {
+            @include make-col-offset($i, 20);
+          }
+        }
+      }
+      @for $i from 1 through 20 {
+        .col#{$infix}-#{$i} {
+          @include make-col($i, 20);
+        }
+      }
+      @for $i from 0 through 20 {
+        .order#{$infix}-#{$i} {
+          order: $i;
+        }
+      }
+    }
+  }
+}

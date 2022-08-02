@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1919px" height="438px" viewBox="0 0 1919 438" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Grafismos_1440_fundo Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="74.0921636%" y1="49.2297452%" x2="89.7801852%" y2="48.7627114%" id="linearGradient-1">
+            <stop stop-color="#F2F2F2" offset="0%"></stop>
+            <stop stop-color="#EEEEEE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="79.2268315%" y1="49.0288631%" x2="7.73003472%" y2="51.2957304%" id="linearGradient-2">
+            <stop stop-color="#D4D4D4" offset="0%"></stop>
+            <stop stop-color="#FAF6F6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.6453804%" y1="49.7528487%" x2="16.7994226%" y2="51.1412314%" id="linearGradient-3">
+            <stop stop-color="#F7F7F7" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="PRICING---Grid-Novo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Grafismos_1440_fundo-Copy">
+            <polyline id="Path-5-Copy" fill="#F7F7F7" points="-1.13686838e-13 0 2.2028147 301.779022 1442 74.7404097 1442 0"></polyline>
+            <polyline id="Path-5-Copy-2" fill="#FFFFFF" transform="translate(723.000000, 224.333523) rotate(-180.000000) translate(-723.000000, -224.333523) " points="2 73.7790222 4.2028147 374.888024 1919 147.849412 1919 73.7790222"></polyline>
+            <g id="Grafismos_1440-Copy" transform="translate(2.000000, 21.779022)">
+                <polygon id="Fill-1" fill="url(#linearGradient-1)" points="1439.99367 0.228094576 0 227.702161 0 278.228095 1440 50.7540277"></polygon>
+                <polygon id="Fill-2" fill="url(#linearGradient-2)" points="0 277.702353 0 328.228095 1440 100.753836 1440 50.2280946"></polygon>
+                <polygon id="Fill-3" fill="url(#linearGradient-3)" points="1272 77.3645121 197 246.228095 197 223.090622 1272 54.2280946"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

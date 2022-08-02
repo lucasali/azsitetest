@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html translate="no" lang="{{ site.lang }}">
+	{% include v3/head.html %}
+    <body>
+        <div id="content">
+    		{% include v3/grid-overlayer.html %}
+            {% include v3/components/top-bar.html %}
+            {% include v3/components/header/index.html %}
+            <main class="site-main">
+    			{{ content }}
+    		</main>
+            {% include v3/components/footer.html %}
+            {% include script-calls.html %}
+        </div>
+	</body>
+</html>

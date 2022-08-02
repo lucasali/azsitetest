@@ -1,0 +1,360 @@
+a.btn,
+.btn {
+    font-weight: map-get($font-weight, "medium");
+    padding: 0.875rem 1rem 0.875rem 1rem;
+    display: inline-block;
+    text-transform: lowercase;
+    font-size: #{"max(min(1vw, 1rem), 0.875rem)"};
+    line-height: 1rem;
+    position: relative;
+    border-radius: 2px;
+    border: solid 2px transparent;
+    transition: all 0.1s ease-in;
+    @include media-breakpoint-down("sd") {
+        padding: 0.75rem 2rem 0.75rem 1rem;
+    }
+    &-icon {
+        padding: 0.9375rem 2rem 0.9375rem 1rem;
+        @include media-breakpoint-down("sd") {
+            padding: 0.75rem 2rem 0.75rem 1rem;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    .icon {
+        position: absolute;
+        right: 1rem;
+        &-right-arrow {
+            margin-left: 0.5rem;
+            top: calc(50% - 8px);
+        }
+        &-search {
+            position: relative;
+            top: 0.25rem;
+        }
+    }
+
+    // -- CUSTOM BUTTONS -- //
+    &-primary {
+        &-dark {
+            border-color: $color-primary;
+            color: $color-dark-theme;
+            background-color: $color-primary;
+            .icon {
+                svg {
+                    fill: $color-dark-theme;
+                }
+                &.icon-animation-secondary {
+                    transition: all ease 350ms;
+                }
+            }
+            &:visited {
+                color: $color-dark-theme;
+            }
+            &:hover {
+                border-color: $bg-super-light;
+                background-color: $bg-super-light;
+                color: $color-primary;
+                .icon {
+                    svg {
+                        fill: $color-primary;
+                    }
+                    &.icon-animation-primary {
+                        right: -0.2rem;
+                        transition: right cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms,
+                        opacity cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms;
+                        opacity: 0;
+                    }
+
+                    &.icon-animation-secondary {
+                        opacity: 1;
+                        right: 0.6rem;
+                    }
+                }
+            }
+            &:active {
+                border-color: $bg-super-light;
+                background-color: $bg-super-light;
+                color: $color-primary-variant;
+                .icon {
+                    svg {
+                        fill: $color-primary-variant;
+                    }
+                    &.icon-animation-secondary {
+                        transition: all ease 350ms;
+                    }
+                }
+            }
+        }
+        &-light {
+            border-color: $color-primary;
+            color: $color-dark-theme;
+            background-color: $color-primary;
+            .icon {
+                svg {
+                    fill: $color-dark-theme;
+                }
+            }
+            &:visited {
+                color: $color-dark-theme;
+            }
+            &:hover {
+                background-color: $bg-dark;
+                border-color: $bg-dark;
+                color: $color-primary;
+                .icon {
+                    svg {
+                        fill: $color-primary;
+                    }
+                    &.icon-animation-primary {
+                        right: -0.2rem;
+                        transition: right cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms,
+                            opacity cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms;
+                        opacity: 0;
+                    }
+
+                    &.icon-animation-secondary {
+                        opacity: 1;
+                        right: 0.6rem;
+                    }
+                }
+            }
+            &:active {
+                background-color: $bg-dark;
+                border-color: $bg-dark;
+                color: $color-primary-variant;
+                .icon svg {
+                    fill: $color-primary-variant;
+                }
+            }
+        }
+        &-disabled {
+            color: $color-gray-400 !important;
+            background-color: $color-gray-200 !important;
+            border-color: $color-gray-200 !important;
+            .icon svg {
+                fill: $color-gray-400 !important;
+            }
+        }
+    }
+    &-secondary {
+        &-dark {
+            border-color: $bg-super-light;
+            color: $text-super-light;
+            background-color: $bg-dark;
+            .icon {
+                svg {
+                    fill: $text-super-light;
+                }
+
+                &.icon-animation-secondary {
+                    transition: all ease 350ms;
+                }
+            }
+            &:visited {
+                color: $text-super-light;
+            }
+            &:hover {
+                border-color: $color-primary;
+                background-color: $bg-dark;
+                color: $color-primary;
+                .icon {
+                    svg {
+                        fill: $color-primary;
+                    }
+
+                    &.icon-animation-primary {
+                        right: -0.2rem;
+                        transition: right cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms,
+                            opacity cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms;
+                        opacity: 0;
+                    }
+
+                    &.icon-animation-secondary {
+                        opacity: 1;
+                        right: 0.6rem;
+                    }
+                }
+            }
+            &:active {
+                border-color: $color-primary-variant;
+                background-color: $bg-dark;
+                color: $color-primary-variant;
+                .icon svg {
+                    fill: $color-primary-variant;
+                }
+            }
+            &-disabled {
+                color: $color-gray-600 !important;
+                background-color: $bg-dark !important;
+                border-color: $color-gray-600 !important;
+                .icon svg {
+                    fill: $color-gray-600 !important;
+                }
+            }
+        }
+        &-light {
+            border-color: $color-dark-theme;
+            color: $text-dark;
+            background-color: transparent;
+            .icon {
+                svg {
+                    fill: $text-dark;
+                }
+                &.icon-animation-secondary {
+                    transition: all ease 350ms;
+                }
+            }
+            &:visited {
+                color: $text-dark;
+            }
+            &:hover {
+                border-color: $color-primary;
+                color: $color-primary;
+                .icon {
+                    svg {
+                        fill: $color-primary;
+                    }
+                    &.icon-animation-primary {
+                        right: -0.2rem;
+                        transition: right cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms,
+                            opacity cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms;
+                        opacity: 0;
+                    }
+                    &.icon-animation-secondary {
+                        opacity: 1;
+                        right: 0.6rem;
+                    }
+                }
+            }
+            &:active {
+                background-color: $bg-super-light;
+                border-color: $color-primary-variant;
+                color: $color-primary-variant;
+                .icon svg {
+                    fill: $color-primary-variant;
+                }
+            }
+            &-disabled {
+                color: $color-gray-200 !important;
+                background-color: $bg-super-light !important;
+                border-color: $color-gray-200 !important;
+                .icon svg {
+                    fill: $color-gray-200 !important;
+                }
+            }
+        }
+    }
+    &-tertiary {
+        &-dark {
+            border-color: transparent;
+            background-color: transparent;
+            color: $text-super-light;
+            .icon {
+                svg {
+                    fill: $text-super-light;
+                }
+                &.icon-animation-secondary {
+                    transition: all ease 350ms;
+                }
+            }
+            &:visited {
+                color: $text-super-light;
+            }
+            &:hover {
+                border-color: transparent;
+                background-color: transparent;
+                color: $color-primary;
+                .icon {
+                    svg {
+                        fill: $color-primary;
+                    }
+                    &.icon-animation-primary {
+                        right: -0.2rem;
+                        transition: right cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms,
+                            opacity cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms;
+                        opacity: 0;
+                    }
+                    &.icon-animation-secondary {
+                        opacity: 1;
+                        right: 0.6rem;
+                    }
+                }
+            }
+            &:active {
+                border-color: transparent;
+                background-color: transparent;
+                color: $color-primary-variant;
+                .icon {
+                    svg {
+                        fill: $color-primary-variant;
+                    }
+                    &.icon-animation-secondary {
+                        transition: all ease 350ms;
+                    }
+                }
+            }
+            &-disabled {
+                color: $color-gray-600 !important;
+                background-color: transparent !important;
+                border-color: transparent !important;
+                .icon svg {
+                    fill: $color-gray-600 !important;
+                }
+            }
+        }
+        &-light {
+            border-color: transparent;
+            background-color: transparent;
+            color: $text-dark;
+            .icon {
+                svg {
+                    fill: $text-dark;
+                }
+                &.icon-animation-secondary {
+                    transition: all ease 350ms;
+                }
+            }
+            &:visited {
+                color: $text-dark;
+            }
+            &:hover {
+                border-color: transparent;
+                background-color: transparent;
+                color: $color-primary;
+                .icon {
+                    svg {
+                        fill: $color-primary;
+                    }
+                    &.icon-animation-primary {
+                        right: -0.2rem;
+                        transition: right cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms,
+                            opacity cubic-bezier(0.23, 1.2, 0.32, 1) 1400ms;
+                        opacity: 0;
+                    }
+                    &.icon-animation-secondary {
+                        opacity: 1;
+                        right: 0.6rem;
+                    }
+                }
+            }
+            &:active {
+                border-color: transparent;
+                background-color: transparent;
+                color: $color-primary-variant;
+                .icon svg {
+                    fill: $color-primary-variant;
+                }
+            }
+            &-disabled {
+                color: $color-gray-200 !important;
+                background-color: transparent !important;
+                border-color: transparent !important;
+                .icon svg {
+                    fill: $color-gray-200 !important;
+                }
+            }
+        }
+    }
+}

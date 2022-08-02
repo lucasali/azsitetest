@@ -1,0 +1,36 @@
+@import "flag";
+
+.top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: all .2s ease-in;
+    background: $color-gray-800;
+    &-wrapper{
+        display: grid;
+        grid-template-columns: auto 50px;
+        padding: 0.75rem 1rem;
+        .content,
+        .close-button{
+            display: flex;
+            align-items: center;
+        }
+        .content{
+            color: $color-light-theme;
+            line-height: 150%;
+        }
+        .close-button{
+            justify-content: flex-end;
+            cursor: pointer;
+            &:hover{
+                fill: $color-primary;
+            }
+        }
+        strong{
+            font-weight: map-get($font-weight, "bold");
+        }
+        .flag{
+            margin-right: 0.5rem;
+        }
+    }
+}

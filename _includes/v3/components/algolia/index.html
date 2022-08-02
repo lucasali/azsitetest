@@ -1,0 +1,31 @@
+<div id="azalgoliasearch" class="azalgoliasearch no-query">
+    <div class="box">
+        <div class="row searchbox-content">
+            <div class="col-lg-10 col-md-10 col-sm-4 offset-lg-6 no-gutters search-box-content">
+                <div id="searchbox">
+                    <button id="CloseSearchBTN" class="btn btn-tertiary-light btn-algolia-close">
+                    {% if site.lang == 'en'%}
+                        close
+                    {% elsif site.lang == 'es'%}
+                        cerrar
+                    {% else %}
+                        fechar
+                    {% endif %}
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-4 offset-lg-6 search-content no-db-label">
+                <p class="bd_sub">site</p>
+                <div id="hits-instant-search"></div>
+                <p class="bd_sub">doc</p>
+                <div id="hits-instant-search-doc"></div>
+                <p class="bd_sub">blog</p>
+                <div id="hits-instant-search-blog"></div>
+                <p class="bd_sub">success stories</p>
+                <div id="hits-instant-search-success-stories"></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+// Azion Typography Sass FILE
+//
+// Here you will find font-face, default configuration of h*, p, etc
+// Made by Azion Marketing
+//
+// Figma URL with the new concepts:
+// https://www.figma.com/file/UB8VMDIfC5WK9Tq9q37p8z/New-Concepts?node-id=2338%3A5675
+//
+
+
+/*
+    NEW TYPOGRAPHY IMPLEMENTED IN BLOG
+*/
+
+@import  'typography-font';
+$font-weight: (
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+    'medium-bold': 600,
+    'bold': 700,
+);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $text-dark;
+    font-weight: map-get($font-weight, 'regular');
+    padding-top: 0;
+    margin-top: 0;
+    letter-spacing: -0.001em;
+    span {
+        line-height: 120%;
+        border: solid 1px $color-primary;
+        display: inline-block;
+        border-radius: 100px;
+        padding: 0 0.75rem;
+    }
+}
+h1 {
+    margin-bottom: 2rem;
+    line-height: 130%;
+    font-size: clamp(1.75rem, 1.3500rem + 2.0000vw, 3.75rem);
+}
+h2 {
+    margin-bottom: 1.5rem;
+    line-height: 140%;
+    font-size: clamp(1.625rem, 1.3500rem + 1.3750vw, 3rem);
+}
+h3 {
+    margin-bottom: 1rem;
+    line-height: 140%;
+    font-size: clamp(1.5rem, 1.2750rem + 1.1250vw, 2.625rem);
+}
+h4 {
+    margin-bottom: 1rem;
+    line-height: 140%;
+    font-size: clamp(#{rem(18)}, 1.875vw, #{rem(36)});
+}
+h5 {
+    margin-bottom: 1rem;
+    line-height: 160%;
+    font-size: clamp(1.375rem, 1.2250rem + 0.7500vw, 2.125rem);
+    font-weight: map-get($font-weight, 'bold');
+}
+h6 {
+    margin-bottom: 1rem;
+    line-height: 160%;
+    font-size: clamp(1.125rem, 1.0500rem + 0.3750vw, 1.5rem);
+    font-weight: map-get($font-weight, 'bold');
+}
+.big {
+    margin-bottom: 1rem;
+    line-height: 160%;
+    font-weight: map-get($font-weight, 'medium');
+    font-size: clamp(1.125rem, 1.0000rem + 0.6250vw, 1.75rem);
+}
+.small {
+    font-size: 1rem;
+    line-height: 150%;
+}

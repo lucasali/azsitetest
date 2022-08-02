@@ -1,0 +1,72 @@
+name : Azion Technologies
+brand : Azion
+description : Move to the Edge
+year : 2021
+baseurl: ""
+
+hosturl: "https://www.azion.com" # PROD
+url: https://assets.azion.com # PROD
+
+#hosturl: "https://52082s.ha.azioncdn.net" # STAGE
+#url: https://52082s.ha.azioncdn.net # STAGE
+
+markdown : kramdown
+encoding : UTF-8
+permalink: pretty
+paginate : 6
+paginate_path: "/blog/page:num/"
+twitter: "azion"
+language_default: en
+languages:
+- en
+- pt-br
+- es
+default_locale_in_subfolder: true
+plugins:
+  - jekyll-multiple-languages-plugin
+  - jekyll-paginate
+  - jekyll-category-pages
+  #- jekyll-archives
+category_path: "blog" # <- default value
+jekyll-archives:
+  enabled:
+  - year
+  - month
+  layout: 'archive'
+  permalinks:
+    year: '/blog/:year/'
+    month: '/blog/:year/:month/'
+tipue_search:
+  include:
+    pages: true
+exclude_from_localizations:
+  - images
+  - static
+  - sitemap-index
+  - robots.txt
+  - waybackverify.txt
+exclude:
+  - src/scss
+  - src/js
+  - src/templates
+  - src/trd3
+  - src/font
+  - node_modules
+  - README.md
+  - package.json
+  - package-lock.json
+  - LICENSE
+  - gulpfile.js
+  - purge.js
+  - _config.yml
+  - Gemfile.lock
+  - Gemfile
+  - .gitignore
+  - .sass-cache
+  - .DS_Store
+  - .*.swp
+  - docs
+  - docker-compose.yml
+  - Dockerfile
+  - Dockerfile.aztech.jekyllawscli
+  - purgeapi

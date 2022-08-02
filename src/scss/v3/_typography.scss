@@ -1,0 +1,144 @@
+// Azion Typography Sass FILE
+//
+// Here you will find font-face, default configuration of h*, p, etc
+// Made by Azion Marketing
+//
+// Figma URL with the new concepts:
+// https://www.figma.com/file/UB8VMDIfC5WK9Tq9q37p8z/New-Concepts?node-id=2338%3A5675
+
+@import  'typography-font';
+@import 'typography-mixin';
+
+$font-weight: (
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+    'medium-bold': 600,
+    'bold': 700,
+);
+
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    font-size: 100%; // browser deafult, basing 16px
+}
+
+a {
+    outline: 0;
+    color: $text-link;
+    text-decoration: none;
+
+    &:visited,
+    &:active,
+    &:focus,
+    &:hover {
+        color: $text-link-variant;
+        outline: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $text-dark;
+    font-weight: map-get($font-weight, 'regular');
+    padding-top: 0;
+    margin-top: 0;
+    letter-spacing: -0.001em;
+    span {
+        line-height: 120%;
+        border: solid 1px $color-primary;
+        display: inline-block;
+        border-radius: 100px;
+        padding: 0 0.75rem;
+    }
+}
+
+h1 {
+    margin-bottom: 2rem;
+    @include h1();
+}
+
+h2 {
+    margin-bottom: #{rem(24)};
+    @include h2();
+}
+
+h3 {
+    margin-bottom: #{rem(16)};
+    @include h3();
+}
+
+h4 {
+    margin-bottom: #{rem(16)};
+    @include h4();
+}
+
+h5 {
+    margin-bottom: #{rem(16)};
+
+    @include h5();
+}
+
+h6 {
+    margin-bottom: #{rem(16)};
+    @include h6();
+}
+
+b,
+strong {
+    font-weight: map-get($font-weight, 'medium');
+}
+
+big {
+    font-size: #{"max(min(1.875vw, 1.5rem), 1.25rem)"};
+}
+
+
+p {
+    color: $text;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 180%;
+    letter-spacing: -0.001em;
+}
+
+p,
+ul li {
+    font-size: clamp(#{rem(16)}, 1.563vw, #{rem(20)});
+}
+
+li {
+    line-height: 180%;
+    color: $text;
+}
+
+.bd_sub {
+    letter-spacing: 50%;
+    font-size: #{"max(min(1.250vw, 1.250rem), 0.75rem)"};
+    color: $color-primary;
+
+    a {
+        color: $color-primary;
+        &:active,
+        &:hover {
+            color: $color-primary-variant;
+        }
+    }
+}
+
+blockquote,
+.sm_text {
+    letter-spacing: -0.001em;
+    font-size: #{"max(min(1.250vw, 1.250rem), 0.75rem)"};
+}

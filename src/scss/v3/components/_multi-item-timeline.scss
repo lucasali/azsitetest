@@ -1,0 +1,49 @@
+@import './timeline.scss';
+
+#multiItemTimeline {
+    position: relative;
+    background: $color-light-theme;
+    padding: clamp(3.5rem, 6.5vw, 6.5rem) 0
+        clamp(7.5rem, 6.0625vw, 6.0625rem);
+    .timeline-header-wrap {
+        h1{
+            @include media-breakpoint-down(md){
+                margin-bottom: 0;
+            }
+        }
+        @include media-breakpoint-up(sd){
+            margin-bottom: 5rem;
+        }
+    }
+    .cta-area-item-timeline {
+        margin-top: 4.5rem;
+        @include media-breakpoint-up(sd){
+            margin-top: 5rem;
+        }
+        .bd_sub {
+            display: block;
+            text-align: center;
+            margin-bottom: 2.25rem;
+        }
+        .btn-wrap {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            @include media-breakpoint-up(sd){
+                flex-direction: row;
+            }
+            .btn {
+                @include media-breakpoint-down(md){
+                    margin-bottom: 0.5rem;
+                }
+                @include media-breakpoint-up(sd){
+                    min-width: 27vw;
+                }
+                @include media-breakpoint-up(lg){
+                    min-width: 14vw;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,169 @@
+---
+head:
+  form:
+    placeholder: Buscar
+  nav:
+  - text: Productos
+    href: "/es/productos/"
+    dropdown:
+    - title: Construir
+      id: build
+      icon: "/static/images/v3/icons/icon-build.svg"
+      links:
+      - text: Edge Application
+        href: "/es/productos/edge-application/"
+        class: category
+      - text: Application Acceleration
+        href: "/es/productos/application-acceleration/"
+      - text: Edge Caching
+        href: "/es/productos/edge-caching/"
+      - text: Edge Functions
+        href: "/es/productos/edge-functions/"
+      - text: Image Processor
+        href: "/es/productos/image-processor/"
+      - text: Load Balancer
+        href: "/es/productos/load-balancer/"
+    - title: Proteger
+      id: secure
+      icon: "/static/images/v3/icons/icon-secure.svg"
+      links:
+      - text: Edge Firewall
+        href: "/es/productos/edge-firewall/"
+        class: category
+      - text: DDoS Protection
+        href: "/es/productos/ddos-protection/"
+      - text: Network Layer Protection
+        href: "/es/productos/network-layer-protection/"
+      - text: Web Application Firewall
+        href: "/es/productos/web-application-firewall/"
+      - text: Intelligent DNS
+        href: "/es/productos/intelligent-dns/"
+        class: category p-adjust
+    - title: Suministrar
+      id: deliver
+      icon: "/static/images/v3/icons/icon-deliver.svg"
+      links:
+      - text: Edge Orchestrator
+        href: "/es/productos/edge-orchestrator/"
+        class: category
+      - text: Azion Edge Network
+        href: "/es/productos/edge-network/"
+        class: azion-edge-network
+    - title: Observar
+      id: observe
+      icon: "/static/images/v3/icons/icon-observe.svg"
+      links:
+      - text: Data Streaming
+        href: "/es/productos/data-streaming/"
+        class: category
+      - text: Edge Pulse
+        href: "/es/productos/edge-pulse/"
+        class: category p-adjust
+      - text: Real-Time Metrics
+        href: "/es/productos/real-time-metrics/"
+        class: category p-adjust
+      - text: Real-Time Events
+        href: "/es/productos/real-time-events/"
+        class: category p-adjust
+    highlights:
+    - title: Documentación
+      id: documentation
+      description: The help you need to build your serverless applications at the
+        edge with Azion
+      href: "/en/documentation/"
+      icon: "/static/images/v3/icons/icon-documentation.svg"
+    - title: Casos de éxito
+      id: success-stories
+      description: Find customer stories and success cases
+      href: "/es/casos-de-exito/"
+      icon: "/static/images/v3/icons/icon-use-cases.svg"
+    - title: Soporte
+      id: support
+      description: Engineer-to-engineer support with the transparency you’ve come
+        to expect
+      href: "/es/soporte/"
+      icon: "/static/images/v3/icons/icon-support.svg"
+  - text: Precios
+    href: "/es/precios/"
+  - text: Sobre Azion
+    href: "/es/sobre-azion/"
+  - text: Resources
+    href: ''
+    dropdown_resources:
+    - links:
+      - text: Documentación
+        href: "/en/documentation/"
+        class: category
+      - text: Primeros Pasos
+        href: "/en/documentation/products/first-steps/"
+      - text: Productos
+        href: "/en/documentation/products/"
+      - text: Casos de Uso
+        href: "/en/documentation/use-cases/"
+      - text: API
+        href: https://api.azion.com/
+    - links:
+      - text: Recursos Generales
+        href: "/en/documentation/"
+        class: category
+      - text: How To
+        href: "/en/documentation/products/how-to/"
+      - text: Contratos
+        href: "/en/documentation/agreements/"
+      - text: Estado del sistema
+        href: https://status.azion.com/
+      - text: Changelog
+        href: "/en/documentation/products/changelog/"
+    - links:
+      - text: Blog
+        href: "/es/blog/"
+        class: category
+      - text: Compliance
+        href: "/es/compliance/"
+        class: category
+      - text: Casos de Éxito
+        href: "/es/casos-de-exito/"
+        class: category
+  - text: Marketplace
+    href: '/es/marketplace/'
+  buttons:
+  - text: Iniciar sesión
+    href: https://sso.azion.com/
+    icon: false
+    class: btn-tertiary-dark btn-link-menu
+  - text: Contacto
+    href: "/es/contacto-ventas/"
+    icon: false
+    class: btn-tertiary-dark btn-link-menu
+  - text: cuenta gratis
+    icon: true
+    href: https://manager.azion.com/signup/
+    class: btn-secondary-dark btn-free-account
+sidebar:
+  nav_week:
+  - text: Trabaja en Azion
+    href: "/es/trabaja-en-azion/"
+    flag:
+      text: "¡Estamos contratando!"
+  - text: Casos de éxito
+    href: "/es/casos-de-exito/"
+  - text: Política de privacidad
+    href: "/en/documentation/agreements/privacy-policy/"
+  buttons:
+  - text: Contacto
+    href: "/es/contacto-ventas/"
+    icon: true
+    class: btn-primary-light
+  - text: Iniciar sesión
+    href: https://sso.azion.com/
+    icon: true
+    class: btn-tertiary-light
+# top_bar_desktop: <span class="flag flag-primary">News:</span>Estás protegido con nosotros.
+#   Azion extiende su control de conformidad con PCI-DSS y SOC 2 | <a href="https://www.azion.com/es/compliance"
+#   class="link-dark-theme"> ¡Más información!</a>
+# top_bar_mobile: <span class="flag flag-primary">News:</span> Estás protegido con Azion.
+#   Conformidad PCI y SOC 2. | <a href="https://www.azion.com/es/compliance" class="link-dark-theme">
+#   ¡Más información!</a>
+top_bar_desktop: '<span class="flag flag-primary">News:</span> Desarrolladores: ¡<a href="https://www.azion.com/es/blog/mejoramos-experiencia-del-desarrollador-con-azion-cli/">Azion CLI</a> está disponible ahora! Libera tu creatividad e innova con agilidad. ¿Qué vas a construir próximamente?'
+top_bar_mobile: '<span class="flag flag-primary">News:</span> Desarrolladores: ¡<a href="https://www.azion.com/es/blog/mejoramos-experiencia-del-desarrollador-con-azion-cli/">Azion CLI</a> está disponible ahora! Libera tu creatividad e innova con agilidad. ¿Qué vas a construir próximamente?'
+

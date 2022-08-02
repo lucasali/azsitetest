@@ -1,0 +1,69 @@
+form:
+    title: Desculpe, não foi possível encontrar essa página.
+    description: "Use a barra de pesquisa ou os links de navegação abaixo para navegar no website."
+    placeholder: Alguma pergunta? pergunte ou coloque um termo.
+list_of_links:
+    - category_name: A Empresa
+      links:
+        - text: Home
+          url: '/pt-br/'
+        - text: Sobre nós
+          url: '/pt-br/sobre-nos/'
+        - text: Casos de Sucesso
+          url: '/pt-br/casos-de-sucesso/'
+        - text: Blog
+          url: '/pt-br/blog/'
+    - category_name: Nossos Produtos
+      links:
+        - text: Application Acceleration
+          url: '/pt-br/produtos/application-acceleration/'
+        - text: DDoS Protection
+          url: '/pt-br/produtos/ddos-protection/'
+        - text: Casos de Sucesso
+          url: '/pt-br/casos-de-sucesso/'
+        - text: Edge Caching
+          url: '/pt-br/produtos/edge-caching/'
+        - text: Edge Functions
+          url: '/pt-br/produtos/edge-functions/'
+        - text: Edge Pulse
+          url: '/pt-br/produtos/edge-pulse/'
+        - text: Intelligent DNS
+          url: '/pt-br/produtos/intelligent-dns/'
+        - text: Image Processor
+          url: '/pt-br/produtos/image-processor/'
+        - text: Image Processor
+          url: '/pt-br/produtos/image-processor/'
+        - text: Load Balancer
+          url: '/pt-br/produtos/load-balancer/'
+        - text: Network Layer Protection
+          url: '/pt-br/produtos/network-layer-protection/'
+        - text: Real-Time Events
+          url: '/pt-br/produtos/real-time-events/'
+        - text: Real-Time Metrics
+          url: '/pt-br/produtos/real-time-metrics/'
+        - text: Web Application Firewall
+          url: '/pt-br/produtos/real-time-metrics/'
+    - category_name: Documentation
+      links:
+        - text: Primeiros Passos
+          url: '/pt-br/documentacao/produtos/primeiros-passos/'
+        - text: Casos de Sucesso
+          url: '/pt-br/casos-de-sucesso/'
+        - text: API
+          url: 'https://api.azion.com/'
+        - text: How To
+          url: '/pt-br/documentacao/produtos/how-to/'
+        - text: Contratos
+          url: '/pt-br/documentacao/contratos/contrato-de-cliente/'
+        - text: Changelog
+          url: '/pt-br/documentacao/produtos/changelog/'
+    - category_name: Ajuda
+      links:
+        - text: Suporte
+          url: '/pt-br/suporte/'
+        - text: Contate Vendas
+          url: '/pt-br/contate-vendas/'
+        - text: Status do Sistema
+          url: 'https://status.azion.com/'
+        - text: Conta Grátis
+          url: 'https://manager.azion.com/signup/'

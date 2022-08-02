@@ -1,0 +1,82 @@
+@import "../v3/context";
+
+.notfound-content {
+    .list-link-content,
+    .search-content {
+        padding: clamp(4.5rem, 6.5vw, 6.5rem) 0 clamp(3.75rem, 6.0625vw, 6.0625rem);
+    }
+    .search-content {
+        .row {
+            @include media-breakpoint-down(sd) {
+                flex-direction: column-reverse;
+            }
+        }
+        .form-wrap {
+            .form {
+                display: flex;
+                width: 100%;
+                margin-top: 2rem;
+                @include media-breakpoint-up(lg) {
+                    max-width: 40vw;
+                }
+                input {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .not-found-picture{
+            margin-bottom: 4rem;
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .list-link-content {
+        .links-wrap {
+            display: grid;
+            grid-template-areas:
+                    "A"
+                    "B"
+                    "C"
+                    "D";
+            @include media-breakpoint-up(md) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas:
+                    "A D"
+                    "B C";
+                justify-content: space-between;
+            }
+            @include media-breakpoint-up(lg) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: "A B C D E"
+            }
+            .list-link {
+                margin: 0 0 2.5rem;
+                padding: 0;
+                @include media-breakpoint-up(lg) {
+                    margin: 0;
+                }
+                .link {
+                    &:before {
+                        display: none;
+                    }
+                    .btn {
+                        padding-left: 0;
+                    }
+                }
+                &:nth-of-type(1){
+                    grid-area: A;
+                }
+                &:nth-of-type(2){
+                    grid-area: B;
+                }
+                &:nth-of-type(3){
+                    grid-area: C;
+                }
+                &:nth-of-type(4){
+                    grid-area: D;
+                }
+            }
+        }
+    }
+}

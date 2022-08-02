@@ -1,0 +1,14 @@
+@import "../v3/context";
+@import "../v3/components/cloud-edge";
+@import "../v3/components/card";
+@import "../v3/components/big-numbers";
+@import "../v3/components/cases-table";
+@import "../v3/components/cta";
+@import "../v3/components/hero";
+@import "../v3/components/illustration";
+.az-page-home {
+    background: linear-gradient(180deg, #f9f9f9 0%, #f2f2f2 100%);
+    .big-numbers-and-blog {
+        padding: clamp(3rem, 4.5vw, 4.5rem) 0 clamp(4rem, 7vw, 7rem);
+    }
+}

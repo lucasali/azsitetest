@@ -1,0 +1,8 @@
+.compliance-text-block {
+    position: relative;
+    padding: clamp(3rem, 6vw, 6rem) 0 clamp(4.5rem, 8.5vw, 8.5rem);
+    background-color: $color-light-theme;
+    h2 {
+        @extend h3;
+    }
+}

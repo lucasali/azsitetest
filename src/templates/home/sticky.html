@@ -1,0 +1,99 @@
+<div class="box-container scroll-content bg-light">
+    <div class="box-arrow box-arrow-left">
+        <a href="javascript: void(0);">
+            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.7429 20L12 18.7429L3.27619 10L12 1.25718L10.7429 -1.09904e-07L0.57143 10L10.7429 20Z" fill="#838383"/>
+            </svg>
+        </a>
+    </div>
+
+    <div id="menuCase" class="menu-case">
+        <ul>
+            <li class="active">
+                <a href="javascript: void(0);" data-content-id="proofContent">
+                    {{ list.item1.title }}
+                </a>
+            </li>
+            <li>
+                <a href="javascript: void(0);" data-content-id="zeroTrustContent">
+                    {{ list.item2.title }}
+                </a>
+            </li>
+            <li>
+                <a href="javascript: void(0);" data-content-id="ultimateUxContent">
+                    {{ list.item3.title }}
+                </a>
+            </li>
+            <li>
+                <a href="javascript: void(0);" data-content-id="devicesRealtimeContent">
+                    {{ list.item4.title }}
+                </a>
+            </li>
+            <li>
+                <a href="javascript: void(0);" data-content-id="5gContent">
+                    {{ list.item5.title }}
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="box-arrow box-arrow-right">
+        <a href="javascript: void(0);">
+            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.25715 0L0 1.25711L8.72381 9.99996L0 18.7428L1.25715 20L11.4286 9.99996L1.25715 0Z" fill="#838383"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<div id="proofContent" class="box-container item-case item-proof">
+    <div class="box-description">
+        <h2>
+            {{ list.item1.title }}
+        </h2>
+        <p>{{ list.item1.description }}</p>
+        <a class="btn btn-secondary" href="{{ button.our_products.href }}" title="{{ button.our_products.text }}">{{ button.our_products.text }}</a>
+    </div>
+    <figure class="box-image"></figure>
+</div>
+<div id="zeroTrustContent" class="box-container item-case item-zero-trust">
+    <div class="box-description">
+        <h2>
+            {{ list.item2.title }}
+        </h2>
+        <p>{{ list.item2.description }}</p>
+        <a class="btn btn-secondary" href="{{ button.our_products.href }}" title="{{ button.our_products.text }}">{{ button.our_products.text }}</a>
+    </div>
+    <figure class="box-image"></figure>
+</div>
+<div id="ultimateUxContent" class="box-container item-case item-ultimate-ux">
+    <div class="box-description">
+        <h2>
+            {{ list.item3.title }}
+        </h2>
+        <p>{{ list.item3.description }}</p>
+        <a class="btn btn-secondary" href="{{ button.our_products.href }}" title="{{ button.our_products.text }}">{{ button.our_products.text }}</a>
+    </div>
+    <figure class="box-image"></figure>
+</div>
+<div id="devicesRealtimeContent" class="box-container item-case item-devices-realtime">
+    <div class="box-description">
+        <h2>
+            {{ list.item4.title }}
+        </h2>
+        <p>{{ list.item4.description }}</p>
+        <a class="btn btn-secondary" href="{{ button.our_products.href }}" title="{{ button.our_products.text }}">{{ button.our_products.text }}</a>
+    </div>
+    <figure class="box-image"></figure>
+</div>
+<div id="5gContent" class="box-container item-case item-5g">
+    <div class="box-description">
+        <h2>
+            {{ list.item5.title }}
+        </h2>
+        <p>{{ list.item5.description }}</p>
+        <a class="btn btn-secondary" href="{{ button.our_products.href }}" title="{{ button.our_products.text }}">{{ button.our_products.text }}</a>
+    </div>
+    <figure class="box-image"></figure>
+</div>
+<div class="box-container item-case item-transparent">

@@ -1,0 +1,21 @@
+<svg width="1920" height="76" viewBox="0 0 1920 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Grafismo_Horizontal">
+<rect id="Rectangle" x="1920" y="76" width="1920" height="28" transform="rotate(-180 1920 76)" fill="url(#paint0_linear)"/>
+<path id="Rectangle Copy 13" fill-rule="evenodd" clip-rule="evenodd" d="M1920 48L0 48V0L1686.12 0L1920 0V48Z" fill="url(#paint1_linear)"/>
+<rect id="Rectangle_2" x="1712" y="48" width="1457.33" height="24" transform="rotate(-180 1712 48)" fill="url(#paint2_linear)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="3686.18" y1="77.5158" x2="1974.06" y2="77.5158" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F7F7F7"/>
+<stop offset="1" stop-color="#3B3B3B"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="426.667" y1="27.783" x2="1680.67" y2="27.783" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3B3B3B"/>
+<stop offset="1" stop-color="#1E1E1E"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="2158.67" y1="54.1651" x2="3370.67" y2="54.1651" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1E1E1E"/>
+<stop offset="1" stop-color="#3B3B3B"/>
+</linearGradient>
+</defs>
+</svg>

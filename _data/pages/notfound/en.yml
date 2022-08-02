@@ -1,0 +1,71 @@
+form:
+    title: Sorry, we couldn't find that page.
+    description: "Use the search bar or the navigation links below to explore our website."
+    placeholder: Have a question? ask or enter a search term.
+list_of_links:
+    - category_name: The company
+      links:
+        - text: Home
+          url: '/en/'
+        - text: About Us
+          url: '/en/about-us/'
+        - text: Success Cases
+          url: '/en/success-case/'
+        - text: Blog
+          url: '/en/blog/'
+    - category_name: Our Products
+      links:
+        - text: Application Acceleration
+          url: '/en/products/application-acceleration/'
+        - text: DDoS Protection
+          url: '/en/products/ddos-protection/'
+        - text: Success Cases
+          url: '/en/success-case/'
+        - text: Edge Caching
+          url: '/en/products/edge-caching/'
+        - text: Edge Functions
+          url: '/en/products/edge-functions/'
+        - text: Edge Pulse
+          url: '/en/products/edge-pulse/'
+        - text: Intelligent DNS
+          url: '/en/products/intelligent-dns/'
+        - text: Image Processor
+          url: '/en/products/image-processor/'
+        - text: Image Processor
+          url: '/en/products/image-processor/'
+        - text: Load Balancer
+          url: '/en/products/load-balancer/'
+        - text: Network Layer Protection
+          url: '/en/products/network-layer-protection/'
+        - text: Real-Time Events
+          url: '/en/products/real-time-events/'
+        - text: Real-Time Metrics
+          url: '/en/products/real-time-metrics/'
+        - text: Web Application Firewall
+          url: '/en/products/real-time-metrics/'
+    - category_name: Documentation
+      links:
+        - text: First Steps
+          url: '/en/documentation/products/first-steps/'
+        - text: Products
+          url: '/en/products/'
+        - text: Use Cases
+          url: '/en/success-case/'
+        - text: API
+          url: 'https://api.azion.com/'
+        - text: How To
+          url: '/en/documentation/products/how-to/'
+        - text: Contracts
+          url: '/en/documentation/agreements/customer-agreement/'
+        - text: Changelog
+          url: '/en/documentation/products/changelog/'
+    - category_name: Help
+      links:
+        - text: Support
+          url: '/en/support/'
+        - text: Contact Sales
+          url: '/en/contact-sales/'
+        - text: System Status
+          url: 'https://status.azion.com/'
+        - text: Free Account
+          url: 'https://manager.azion.com/signup/'

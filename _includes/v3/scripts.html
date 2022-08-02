@@ -1,0 +1,64 @@
+<!-- core v2 -->
+{% capture cache_timestamp %}s222{% endcapture %}
+<script src="{{site.url}}/static/js/app/header.min.js?cache={{cache_timestamp}}"></script>
+<script src="{{site.url}}/static/js/mod/devtoolschange.min.js?cache={{cache_timestamp}}"></script>
+
+<script src="{{ site.url }}/static/trd3/liquidjs/liquid.min.js"></script>
+<script src="{{ site.url }}/static/js/app/azliquidjs/azliquidjs.min.js"></script>
+
+<script src="{{site.url}}/static/js/ui/components/dropdownToggle.js?cache={{cache_timestamp}}"></script>
+<script src="{{site.url}}/static/js/ui/components/stickyTopBar.js?cache={{cache_timestamp}}"></script>
+<script src="{{site.url}}/static/js/app/menu.min.js?cache={{cache_timestamp}}"></script>
+<script src="{{site.url}}/static/js/app/footer.min.js?cache={{cache_timestamp}}"></script>
+
+<!-- ALGOLIA -->
+<script src="{{ site.url }}/static/trd3/algolia/algoliasearch-lite.umd.min.js" integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk=" crossorigin="anonymous"></script>
+<script src="{{ site.url }}/static/trd3/algolia/instantsearch.production.min.js" integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM=" crossorigin="anonymous"></script>
+<!-- END ALGOLIA -->
+
+{% if page.layout == "page-documentation-md" or
+page.layout == "page-documentation" or
+page.layout == "page-api" or
+page.layout == "page-api-md" or page.layout == "page-for-developers" %}
+    <script src="{{site.url}}/static/trd3/prism/prism.min.js?cache={{cache_timestamp}}"></script>
+    <script src="{{ site.url }}/static/js/app/blank-attribute/context.min.js?cache={{cache_timestamp}}"></script>
+    <!-- v1-->
+    <script src="{{ site.url }}/static/trd3/jquery/jquery.v3.5.1.min.js"></script>
+    <script src="{{ site.url }}/static/trd3/foundation/foundation.min.js"></script>
+    <!-- end v1-->
+    <script src="{{site.url}}/static/js/ui/doc/context.min.js?cache={{cache_timestamp}}"></script>
+{% endif %}
+<script src="{{site.url}}/static/js/app/search.min.js?cache={{cache_timestamp}}"></script>
+
+<!-- CUSTOM SCRIPT -->
+{% for script in page.custom_script %}
+    <script src="{{site.url}}/{{script}}?cache={{cache_timestamp}}"></script>
+{% endfor %}
+
+{% for js in page.files.js %}
+    <script src="{{site.url}}/{{js}}?cache={{cache_timestamp}}"></script>
+{% endfor %}
+<!-- END CUSTOM SCRIPT -->
+
+
+{% include script-tracks.html %}
+
+<script type="text/javascript">
+    (function() {
+        var alreadyPrint = false;
+        window.addEventListener('devtoolschange', function (e) {
+            if(alreadyPrint) return;
+            console.log(`
+                       ////  /////////////  ///  /////////////  ///        ///
+                    //////         ////     //   //        //   /////     ///
+                 ////  ///      ////       ///  ///       ///  ///  ///  ///
+              ////     //    ////          //   //        //   //     /////
+            ///       ///  /////////////  ///  /////////////  ///      ///
+
+            {{ site.data.console.[site.lang].text }}
+            https://www.azion.com{% tl careers_jobs %}
+            `);
+            alreadyPrint = true;
+        });
+    })();
+</script>

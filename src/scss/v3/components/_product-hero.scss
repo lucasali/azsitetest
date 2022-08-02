@@ -1,0 +1,44 @@
+#productHero{
+    position: relative;
+    background-color: $color-dark-theme;
+    padding: clamp(1.5rem, 9vw, 9rem) 0
+        clamp(5.5rem, 9vw, 9rem);
+    @include media-breakpoint-up(sd){
+        background-image: url(http://127.0.0.1:4000/static/images/v3/products/hero-bg-dsktp.png);
+        background-repeat: no-repeat;
+        background-size: 84vw;
+        background-position: left bottom;
+    }
+    .content-wrap{
+        h1{
+            color: $color-super-light-theme;
+        }
+        p{
+            color: $color-gray-300;
+        }
+    }
+
+    .btn-wrap{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: rem(24);
+        @include media-breakpoint-up(sd){
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            margin-top: rem(56);
+        }
+        .btn{
+            @include media-breakpoint-down(md){
+                &:first-of-type{
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+    .intersectional-element{
+        @include media-breakpoint-down(md){
+            display: none !important;
+        }
+    }
+
+}

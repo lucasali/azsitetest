@@ -1,0 +1,14 @@
+{% include v3/components/algolia/index.html %}
+{% include v3/components/overlay.html %}
+<header id="azheader" class="azheader">
+    <div class="row align-itens-center">
+        <div class="col-lg-2 col-md-2 col-sm-1">
+            <a href="/{{ site.lang }}/" title="Azion Technologies" class="logo">
+                {% include v3/svg/logo-azion.svg %}
+            </a>
+        </div>
+        {% include v3/components/header/nav.html %}
+        {% include v3/components/header/search.html %}
+    </div>
+</header>
+{% include v3/components/header/nav-m.html %}

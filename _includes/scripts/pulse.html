@@ -1,0 +1,11 @@
+<script>
+    if (typeof window.addEventListener === "function") {
+        window.addEventListener("load", function() {
+            if (window.azpulse === undefined) {
+                var pulse = document.createElement("script");
+                pulse.src = "//client.azionrum.net/2082s/azion-pulse.js";
+                document.body.appendChild(pulse);
+            }
+        });
+    }
+</script>

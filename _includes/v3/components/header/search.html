@@ -1,0 +1,44 @@
+<div id="SearchContent"
+    class="col-slg-9 col-xlg-8 col-lg-7 col-md-6 col-sm-2 offset-lg-0 offset-md-2 offset-sm-1 navigation-secondary">
+    <form action="{% tl search-result %}" id="SearchForm" class="form-search">
+        <div class="wrap-input input-transparent">
+                <input type="text"
+                    name="q"
+                    id="searchHeaderInput"
+                    autocomplete="off"
+                    autocorrect="off"
+                    autocapitalize="none"
+                    spellcheck="false"
+                    required
+                    placeholder="{{ site.data.menu.[site.lang].form.placeholder }}">
+        </div>
+    </form>
+    <button id="CloseSearchBTN" aria-label="Close search" class="btn-close-search">
+        <i class="icon icon-close-search">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.75964 8.31134L3.29283 11.7781C2.90231 12.1687 2.90231 12.8018 3.29283 13.1924C3.68336 13.5829 4.31652 13.5829 4.70705 13.1924L7.99993 9.89947L11.2928 13.1924C11.6833 13.5829 12.3165 13.5829 12.707 13.1924C13.0976 12.8018 13.0976 12.1687 12.707 11.7781L9.24023 8.31134C9.24336 8.26558 9.24336 8.21964 9.24023 8.17388L12.707 4.70708C13.0976 4.31655 13.0976 3.68339 12.707 3.29286C12.3165 2.90234 11.6833 2.90234 11.2928 3.29286L7.99993 6.58575L4.70705 3.29286C4.31652 2.90234 3.68336 2.90234 3.29283 3.29286C2.90231 3.68339 2.90231 4.31655 3.29283 4.70708L6.75964 8.17388C6.7565 8.21964 6.7565 8.26558 6.75964 8.31134Z" />
+            </svg>
+        </i>
+    </button>
+    <div class="group-buttons">
+        {% for item in site.data.menu.[site.lang].head.buttons %}
+        <a class="btn {% if item.icon %}btn-icon{% endif %} {{ item.class }}" href="{{ item.href }}" title="{{ item.text }}">
+            {{ item.text }}
+            {% if item.icon %} {% include v3/components/btn-icon-double-arrow-right.html %} {% endif %}
+        </a>
+        {% endfor %}
+    </div>
+    <button id="SearchBTN" aria-label="Search" class="btn btn-tertiary-dark btn-search">
+        <i class="icon icon-search">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3905 12.5786H14.2939L20 18.2962L18.2962 20L12.5786 14.2939V13.3905L12.2699 13.0703C10.9663 14.191 9.27387 14.8656 7.43282 14.8656C3.32762 14.8656 0 11.538 0 7.43282C0 3.32762 3.32762 0 7.43282 0C11.538 0 14.8656 3.32762 14.8656 7.43282C14.8656 9.27387 14.191 10.9663 13.0703 12.2699L13.3905 12.5786ZM2.2869 7.43305C2.2869 10.2804 4.58536 12.5788 7.4327 12.5788C10.28 12.5788 12.5785 10.2804 12.5785 7.43305C12.5785 4.5857 10.28 2.28725 7.4327 2.28725C4.58536 2.28725 2.2869 4.5857 2.2869 7.43305Z" />
+            </svg>
+        </i>
+    </button>
+    <button id="BurgerBTN" aria-label="Menu" class="btn btn-menu-burguer" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</div>

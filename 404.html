@@ -1,0 +1,64 @@
+---
+layout: v3/page
+title:  metatags.error404.title
+description: metatags.error404.description
+og_image: metatags.error404.description
+meta_tag_robots_no_index: true
+custom_style:
+- static/css/pages/404.css
+---
+
+{% assign data = site.data.pages.notfound[site.lang] %}
+
+<div id="notFoundView" class="notfound-content">
+    <section class="search-content">
+        <div class="row">
+            <div class="col-lg-10 col-md-8 offset-lg-2 offset-md-1">
+                <div class="form-wrap">
+                    <h1>{{ data.form.title }}</h1>
+                    <p>{{ data.form.description }}</p>
+                    <form id="docSearchForm" class="form">
+                        <input type="text" name="q" id="tipue_search_input" required
+                            placeholder="{{ data.form.placeholder }}">
+                        <span class="btn btn-tertiary-light btn-search">
+                            <i class="icon icon-search">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.3905 12.5786H14.2939L20 18.2962L18.2962 20L12.5786 14.2939V13.3905L12.2699 13.0703C10.9663 14.191 9.27387 14.8656 7.43282 14.8656C3.32762 14.8656 0 11.538 0 7.43282C0 3.32762 3.32762 0 7.43282 0C11.538 0 14.8656 3.32762 14.8656 7.43282C14.8656 9.27387 14.191 10.9663 13.0703 12.2699L13.3905 12.5786ZM2.2869 7.43305C2.2869 10.2804 4.58536 12.5788 7.4327 12.5788C10.28 12.5788 12.5785 10.2804 12.5785 7.43305C12.5785 4.5857 10.28 2.28725 7.4327 2.28725C4.58536 2.28725 2.2869 4.5857 2.2869 7.43305Z">
+                                    </path>
+                                </svg>
+                            </i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 offset-md-2 offset-lg-0">
+                <picture>
+                    <img src="/static/images/404/404.svg" class="not-found-picture" alt="Status 404 - Not Found">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section class="list-link-content">
+        <div class="row">
+            <div class="links-wrap col-lg-16 col-md-8 {% if forloop.first == true %}offset-lg-2{% endif %} offset-md-1">
+            {% for list in data.list_of_links %}
+                <ul class="list-link">
+                    <h4>{{ list.category_name }}</h4>
+                    {% for link in list.links %}
+                    <li class="link">
+                        <a class="btn btn-icon btn-tertiary-light" href="{{ link.url }}">
+                            {{ link.text }}
+                            {% include v3/components/btn-icon-double-arrow-right.html %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+
+</div>

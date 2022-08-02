@@ -1,0 +1,172 @@
+<section class="table-cases">
+    <div class="row">
+        <div class="col-lg-12 col-md-8 col-sm-10 offset-lg-4 offset-md-1 no-gutters-sd no-gutters-md no-gutters-large">
+            <h1>
+                {{ site.data.pages.home.[site.lang].provide.heading_one }}
+            </h1>
+            {% for p in site.data.pages.home.[site.lang].provide.description %}
+            <p>
+                {{ p }}
+            </p>
+            {% endfor %}
+        </div>
+        <div class="col-lg-16 col-sd-8 col-sm-10 offset-sd-1 offset-lg-2 no-gutters">
+            <div class="labels">
+                {% for industry in site.data.pages.home.[site.lang].provide.table.industry %}
+                <button onclick="openCaseLabel(event, '{{ industry.id }}')"
+                    class="label chip chip-gray-700 {% if forloop.first == true %} active {% endif %}">{{ industry.title
+                    | capitalize}}</button>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-lg-18 col-sd-8 col-sm-10 offset-sd-1 offset-lg-1 no-gutters">
+            {% for industry in site.data.pages.home.[site.lang].provide.table.industry %}
+            <div id="{{ industry.id }}" class="case-table-content">
+                <div class="case-description">
+                    <div class="text-wrap">
+                        <p>
+                                {{ industry.description }}
+                        </p>
+                    </div>
+                </div>
+                <div class="table-trail">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <div class="title-wrap">
+                                        <i class="icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.5693 13.829V19.7526L12.1289 22.7188L9.40868 21.2357L6.68848 19.7526V13.829L12.1289 10.8717L17.5693 13.829Z"
+                                                    stroke="#4D4D4D" stroke-miterlimit="10" stroke-linecap="round" />
+                                                <path d="M12.129 5.05653L14.2959 6.23799L16.4628 7.41945"
+                                                    stroke="#4D4D4D" stroke-miterlimit="10" stroke-linecap="round" />
+                                                <path d="M6.74023 14.0399L8.90714 15.2213L11.074 16.4028"
+                                                    stroke="#4D4D4D" stroke-miterlimit="10" stroke-linecap="round" />
+                                                <path d="M17.6113 14.0399L15.4444 15.2213L13.2775 16.4028"
+                                                    stroke="#4D4D4D" stroke-miterlimit="10" stroke-linecap="round" />
+                                                <path d="M11.8714 4.94695L9.70449 6.12842L7.53759 7.30988"
+                                                    stroke="#4D4D4D" stroke-miterlimit="10" stroke-linecap="round" />
+                                                <path d="M17.6536 9.07912L17.6114 11.2929L17.5693 13.5066"
+                                                    stroke="#4D4D4D" stroke-miterlimit="10" stroke-linecap="round" />
+                                                <path d="M6.52472 8.97028L6.48259 11.184L6.44046 13.3978"
+                                                    stroke="#4D4D4D" stroke-miterlimit="10" stroke-linecap="round" />
+                                                <path
+                                                    d="M11.8713 4.96186L6.44041 2.00454L1 4.96186V10.8944L6.44041 13.8517"
+                                                    stroke="#4D4D4D" stroke-miterlimit="10" stroke-linecap="round" />
+                                                <path
+                                                    d="M23 10.8899V4.95732L17.5691 2L12.1287 4.95732V10.8899L17.5691 13.8472L23 10.8899Z"
+                                                    stroke="#4D4D4D" stroke-miterlimit="10" stroke-linecap="round" />
+                                            </svg>
+                                        </i>
+                                        <h3>{{ site.data.pages.home.[site.lang].provide.table.head.build }}</h3>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="title-wrap">
+                                        <i class="icon">
+                                            <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.0834 25.0735C18.3935 21.3909 22.2733 14.6344 22.2733 7.32823V7.32823C22.2733 7.09254 22.1482 6.87459 21.9446 6.7558L11.827 0.851074L1.70938 6.7558C1.50583 6.87459 1.38068 7.09254 1.38068 7.32823V7.32823C1.38068 14.6344 5.26052 21.3909 11.5706 25.0735L11.827 25.2232L12.0834 25.0735Z" stroke="#4D4D4D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="bevel"/>
+                                            </svg>
+                                        </i>
+                                        <h3>{{ site.data.pages.home.[site.lang].provide.table.head.secure }}</h3>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="title-wrap">
+                                        <i class="icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0)">
+                                                    <path d="M17.6338 9.24677L14.419 11.0951L11.2043 12.9434"
+                                                        stroke="#4D4D4D" stroke-width="1.5" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M1.50558 9.24677L4.72032 11.0951L7.93505 12.9434"
+                                                        stroke="#4D4D4D" stroke-width="1.5" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M9.43759 15.5397L9.50009 19.003L9.5626 22.4662"
+                                                        stroke="#4D4D4D" stroke-width="1.5" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M1.50569 18.1941V8.80351L9.68034 4.10278L17.855 8.80351V18.1941L9.68034 22.8948L1.50569 18.1941Z"
+                                                        stroke="#4D4D4D" stroke-width="1.5" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.5 2.5L13.3655 1.42744" stroke="#4D4D4D"
+                                                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M20 7.07256L21.8655 6" stroke="#4D4D4D" stroke-width="1.5"
+                                                        stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M20 17.0726L21.8655 16" stroke="#4D4D4D" stroke-width="1.5"
+                                                        stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </i>
+                                        <h3>{{ site.data.pages.home.[site.lang].provide.table.head.deliver }}</h3>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="title-wrap">
+                                        <i class="icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 2.00001C8.60142 2.00001 5.4493 3.8313 3.75 6.80062L1 11.6012L3.75 16.4018C5.4493 19.3711 8.60142 21.2024 12 21.2024C15.3986 21.2024 18.5507 19.3711 20.25 16.4018L23 11.6012L20.25 6.80062C18.5507 3.8313 15.4116 2.00001 12 2.00001Z"
+                                                    stroke="#4D4D4D" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </i>
+                                        <h3>{{ site.data.pages.home.[site.lang].provide.table.head.observe }}</h3>
+                                    </div>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td></td>
+                            {% for service in industry.service %}
+                            <td>
+                                {% for item in service.list %}
+                                <span>
+                                    {{ item }}
+                                </span>
+                                {% endfor %}
+                            </td>
+                            {% endfor %}
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    function openCaseLabel(evt, caseArea) {
+        var i, tableContent, labelLinks;
+
+        tableContent = document.getElementsByClassName("case-table-content");
+        for (i = 0; i < tableContent.length; i++) {
+            tableContent[i].style.display = "none";
+        }
+
+        labelLinks = document.getElementsByClassName("label");
+        for (i = 0; i < labelLinks.length; i++) {
+            labelLinks[i].className = labelLinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(caseArea).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>

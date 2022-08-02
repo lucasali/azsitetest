@@ -1,0 +1,164 @@
+---
+head:
+  form:
+    placeholder: Pesquisar
+  nav:
+  - text: Produtos
+    href: "/pt-br/produtos/"
+    dropdown:
+    - title: Criar
+      id: criar
+      icon: "/static/images/v3/icons/icon-build.svg"
+      links:
+      - text: Edge Application
+        href: "/pt-br/produtos/edge-application/"
+        class: category
+      - text: Application Acceleration
+        href: "/pt-br/produtos/application-acceleration/"
+      - text: Edge Caching
+        href: "/pt-br/produtos/edge-caching/"
+      - text: Edge Functions
+        href: "/pt-br/produtos/edge-functions/"
+      - text: Image Processor
+        href: "/pt-br/produtos/image-processor/"
+      - text: Load Balancer
+        href: "/pt-br/produtos/load-balancer/"
+    - title: Proteger
+      id: proteger
+      icon: "/static/images/v3/icons/icon-secure.svg"
+      links:
+      - text: Edge Firewall
+        href: "/pt-br/produtos/edge-firewall/"
+        class: category
+      - text: DDoS Protection
+        href: "/pt-br/produtos/ddos-protection/"
+      - text: Network Layer Protection
+        href: "/pt-br/produtos/network-layer-protection/"
+      - text: Web Application Firewall
+        href: "/pt-br/produtos/web-application-firewall/"
+      - text: Intelligent DNS
+        href: "/pt-br/produtos/intelligent-dns/"
+        class: category p-adjust
+    - title: Entregar
+      id: entregar
+      icon: "/static/images/v3/icons/icon-deliver.svg"
+      links:
+      - text: Edge Orchestrator
+        href: "/pt-br/produtos/edge-orchestrator/"
+        class: category
+      - text: Azion Edge Network
+        href: "/pt-br/produtos/edge-network/"
+        class: azion-edge-network
+    - title: Observar
+      id: observar
+      icon: "/static/images/v3/icons/icon-observe.svg"
+      links:
+      - text: Data Streaming
+        href: "/pt-br/produtos/data-streaming/"
+        class: category
+      - text: Edge Pulse
+        href: "/pt-br/produtos/edge-pulse/"
+        class: category p-adjust
+      - text: Real-Time Metrics
+        href: "/pt-br/produtos/real-time-metrics/"
+        class: category p-adjust
+      - text: Real-Time Events
+        href: "/pt-br/produtos/real-time-events/"
+        class: category p-adjust
+    highlights:
+    - title: Documentação
+      id: documentation
+      description: The help you need to build your serverless applications at the
+        edge with Azion
+      href: "/pt-br/documentacao/"
+      icon: "/static/images/v3/icons/icon-documentation.svg"
+    - title: Casos de Sucesso
+      id: success-stories
+      description: Find customer stories and success cases
+      href: "/pt-br/casos-de-sucesso/"
+      icon: "/static/images/v3/icons/icon-use-cases.svg"
+    - title: Suporte
+      id: support
+      description: Engineer-to-engineer support with the transparency you’ve come
+        to expect
+      href: "/pt-br/suporte/"
+      icon: "/static/images/v3/icons/icon-support.svg"
+  - text: Preços
+    href: "/pt-br/precos/"
+  - text: Sobre nós
+    href: "/pt-br/sobre-nos/"
+  - text: Recursos
+    href: ''
+    dropdown_resources:
+    - links:
+      - text: Documentação
+        href: "/pt-br/documentacao/"
+        class: category
+      - text: Primeiros Passos
+        href: "/pt-br/documentacao/produtos/primeiros-passos/"
+      - text: Produtos
+        href: "/pt-br/documentacao/produtos/"
+      - text: Casos de Uso
+        href: "/pt-br/documentacao/casos-de-uso/"
+      - text: API
+        href: https://api.azion.com/
+    - links:
+      - text: Recursos Gerais
+        href: "/pt-br/documentacao/"
+        class: category
+      - text: How To
+        href: "/pt-br/documentacao/produtos/how-to/"
+      - text: Contratos
+        href: "/pt-br/documentacao/contratos/"
+      - text: System Status
+        href: https://status.azion.com/
+      - text: Changelog
+        href: "/pt-br/documentacao/produtos/changelog/"
+    - links:
+      - text: Blog
+        href: "/pt-br/blog/"
+        class: category
+      - text: Compliance
+        href: "/pt-br/compliance/"
+        class: category
+      - text: Casos de Sucesso
+        href: "/pt-br/casos-de-sucesso/"
+        class: category
+  - text: Marketplace
+    href: '/pt-br/marketplace/'
+  buttons:
+  - text: Sign in
+    href: https://sso.azion.com/
+    icon: false
+    class: btn-tertiary-dark btn-link-menu
+  - text: Contato
+    href: "/pt-br/contate-vendas/"
+    icon: false
+    class: btn-tertiary-dark btn-link-menu
+  - text: conta grátis
+    icon: true
+    href: https://manager.azion.com/signup/
+    class: btn-secondary-dark btn-free-account
+sidebar:
+  nav_week:
+  - text: Carreiras
+    href: "/pt-br/carreiras/"
+    flag:
+      text: Estamos Contratando!
+  - text: Casos de sucesso
+    href: "/pt-br/casos-de-sucesso/"
+  - text: Política de privacidade
+    href: "/pt-br/documentacao/contratos/politica-de-privacidade/"
+  buttons:
+  - text: Contato
+    href: "/pt-br/contate-vendas/"
+    icon: true
+    class: btn-primary-light
+  - text: Sign in
+    href: https://sso.azion.com/
+    icon: true
+    class: btn-tertiary-light
+# top_bar_desktop: <span class="flag flag-primary">News:</span> Você está seguro com a gente. A Azion ampliou seus controles de compliance com PCI-DSS e SOC 2. | <a href='https://www.azion.com/pt-br/compliance' class='link-dark-theme'> Saiba mais.</a>
+# top_bar_mobile: <span class="flag flag-primary">News:</span>Você está seguro com a Azion. Temos compliance PCI e SOC 2. | <a href='https://www.azion.com/pt-br/compliance' class='link-dark-theme'> Saiba mais.</a>
+top_bar_desktop:  '<span class="flag flag-primary">News:</span> Desenvolvedores: o <a href="https://www.azion.com/pt-br/blog/aprimoramos-experiencia-do-desenvolvedor-com-azion-cli/">Azion CLI</a> chegou. Solte sua criatividade. Inove cada vez mais rápido. O que você vai criar agora?'
+top_bar_mobile:  '<span class="flag flag-primary">News:</span> Desenvolvedores: o <a href="https://www.azion.com/pt-br/blog/aprimoramos-experiencia-do-desenvolvedor-com-azion-cli/">Azion CLI</a> chegou. Solte sua criatividade. Inove cada vez mais rápido. O que você vai criar agora?'

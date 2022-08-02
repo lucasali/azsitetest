@@ -1,0 +1,68 @@
+<section class="hero">
+    <span class="bg1"></span>
+    <span class="bg2"></span>
+    <div class="row">
+        <div class="col-lg-11 col-md-5 col-sm-10 offset-lg-2 offset-md-1 {% if site.lang == 'es' %}no-gutters-large{% endif %}">
+            <h1>
+                {{ site.data.pages.home.[site.lang].hero.heading_one }}
+            </h1>
+            <!-- {{  site.hosturl }} -->
+            {% if site.hosturl == 'https://52082s.ha.azioncdn.net' %}
+                {% assign managerurl = 'https://stage-manager.azion.com/signup/' %}
+            {% else %}
+                {% assign managerurl = 'https://manager.azion.com/signup/' %}
+            {% endif %}
+            <form class="form-email" action="{{ managerurl }}" method="GET">
+                <!--
+                <div class="wrap-input input-transparent">
+                    <input type="email" name="email"
+                        placeholder="{{ site.data.pages.home.[site.lang].hero.form.placeholder }}">
+                </div>
+                -->
+                <div class="btn-wrap">
+                    <button type="submit" class="btn btn-icon btn-primary-dark">
+                        {% t v3.button.create_free_account.text %}
+                        {% include v3/components/btn-icon-double-arrow-right.html %}
+                    </button>
+                    <a href="{% tl contact %}" class="btn btn-icon btn-secondary-dark">
+                        {% t v3.button.talk_to_an_expert.text %}
+                        {% include v3/components/btn-icon-double-arrow-right.html %}
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div class="col-slg-5 col-xlg-5 col-lg-5 col-md-4 col-sm-10 offset-md-0 offset-sm-1 illustration-hero-content">
+            <div class="illustration-hero">
+                <picture>
+                    <source srcset="/static/images/v3/home/hero-img-desktop.svg" media="(min-width: 640px)">
+                    <img src="/static/images/v3/home/hero-img-mobile.svg" width="387" height="399" alt="Azion" />
+                </picture>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-20 col-sm-10 no-gutters">
+            <div class="logo-slider">
+                <div class="overlay-slide">
+                    <a href="/{{site.lang}}{{ site.data.pages.home.[site.lang].hero.button.read_success_case.href }}" class="btn btn-icon btn-tertiary-dark">
+                        {{ site.data.pages.home.[site.lang].hero.button.read_success_case.text }}
+                        {% include v3/components/btn-icon-double-arrow-right.html %}
+                    </a>
+                </div>
+                <div class="slide-track">
+                    {% for item in site.data.pages.home.[site.lang].hero.logo_slide %}
+                    <div class="slide">
+                        <img src="{{ item.logo }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="col-slg-16 col-xlg-16 col-lg-16 col-md-8 col-sm-10 offset-lg-2 offset-md-1">
+            <p class="hero-text">
+                {{ site.data.pages.home.[site.lang].hero.text_logo_slide }}
+            </p>
+        </div>
+    </div>
+
+</section>

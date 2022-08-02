@@ -1,0 +1,17 @@
+all:
+    title: "Todas as areas"
+engineering:
+    title: "Engenharia"
+    description: "Infraestrutura e R&D"
+revenue:
+    title: "Revenue"
+    description: "Sucesso do cliente, geração de demanda, inteligência de marketing, marketing, solução de receita, vendas"
+products:
+    title: "Produtos"
+    description: "Product Management, Product Marketing, Design, Education e Data Science"
+operations:
+    title: "Operações"
+    description: "Financeiro e People"
+security:
+    title: "Segurança"
+    description: "Segurança"

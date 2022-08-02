@@ -1,0 +1,540 @@
+@import "../v3/context";
+
+.careers-view-content {
+    .introduce-box {
+        background-color: $bg-dark;
+        position: relative;
+        align-itens: center;
+        background-repeat: no-repeat;
+        color: $color-gray-300;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        @include media-breakpoint-up(sd) {
+            padding-top: 0;
+            padding-bottom: 0;
+            height: calc(100vh - 57px);
+            display: flex;
+            background-image: url(/static/images/careers/illustration-main.svg);
+            background-position: 88% 52%;
+            background-size: 600px auto;
+            align-items: center;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: $color-super-light-theme;
+        }
+
+        p {
+            color: $color-gray-300;
+        }
+
+        .btn {
+            margin-top: 1rem;
+            margin-right: 0.5rem;
+            min-width: 46%;
+
+            @include media-breakpoint-up(sd) {
+                margin-right: 1rem;
+            }
+        }
+
+        figure,
+        .box-image {
+            padding: 0;
+            margin: 2rem 0 0;
+
+            @include media-breakpoint-up(sd) {
+                display: none;
+            }
+
+            img {
+                width: 100%;
+                max-width: 640px;
+            }
+        }
+    }
+
+    .our-values-content {
+        position: relative;
+        padding-top: 20px;
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 80px;
+        }
+
+        .nav-counter {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            z-index: 10;
+
+            @include media-breakpoint-up(sm) {
+                padding-bottom: 46px
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding-bottom: 60px
+            }
+
+            .bar {
+                position: absolute;
+                bottom: 0;
+                left: 1rem;
+                height: 1px;
+                min-width: 25%;
+                background-color: $color-primary;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                transition: all 1s ease;
+            }
+
+            .box-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #AAAAAA;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                margin: 0;
+
+                @include media-breakpoint-up(sm) {
+                    line-height: 27px;
+                    font-size: 18px;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    line-height: 57px;
+                    font-size: 24px;
+                }
+            }
+
+            .counter {
+                font-size: 20px;
+
+                @include media-breakpoint-up(sm) { font-size: 1rem; }
+                @include media-breakpoint-up(lg) { font-size: 1.25rem; }
+            }
+
+            span {
+                display: inline-block;
+                letter-spacing: 0;
+                margin: 0 -2px;
+
+                @include media-breakpoint-up(sm) {
+                    line-height: 27px;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    line-height: 57px;
+                }
+            }
+
+            .counter,
+            h1, h3, h4, h5, h6, h6 {
+                color: $color-dark-theme;
+            }
+
+            button {
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                border: none;
+
+                .btn-prev {}
+
+                .btn-next {}
+
+                .icon {
+                    position: relative;
+                    top: 2px;
+                    width: 8px;
+                    height: 18px;
+                }
+            }
+        }
+
+        .sticky-item {
+            height: 100vh;
+            position: sticky;
+            z-index: 7;
+            background-color: #FFFFFF;
+
+            @include media-breakpoint-up(sm) {
+                top: 20px;
+            }
+
+
+            @include media-breakpoint-up(lg) {
+                top: 0;
+            }
+
+            .box-image {
+                max-width: 75%;
+                margin: 0 auto;
+                border: solid 1px #FFFFFF;
+
+                img {
+                    max-width: 100%;
+                }
+
+                @include media-breakpoint-up(sm) {
+                    display: block;
+                }
+
+
+                @include media-breakpoint-up(lg) {
+                    display: none;
+                }
+            }
+
+            &.sticky-item-transparent {
+                height: 120px;
+            }
+
+            &.group-1 {
+                .value-content {
+                    @include media-breakpoint-up(lg) {
+                        background-image: url(/static/images/careers/image-employees-01.png);
+                    }
+                }
+            }
+            &.group-2 {
+                .value-content {
+                    @include media-breakpoint-up(lg) {
+                        background-image: url(/static/images/careers/image-employees-02.png);
+                    }
+                }
+            }
+            &.group-3 {
+                .value-content {
+                    @include media-breakpoint-up(lg) {
+                        background-image: url(/static/images/careers/image-employees-03.png);
+                    }
+                }
+            }
+            &.group-4 {
+                .value-content {
+                    @include media-breakpoint-up(lg) {
+                        background-image: url(/static/images/careers/image-employees-04.png);
+                    }
+                }
+            }
+
+            .value-content {
+                display: flex;
+                height: 100vh;
+                background-repeat: no-repeat;
+                background-position: right center;
+
+                @include media-breakpoint-up(lg) {
+                    align-items: center;
+                }
+            }
+
+            .box-wrap {
+                background-color: #FFFFFF;
+
+                @include media-breakpoint-up(sm) {
+                    padding: 40px 0 40px;
+                    text-align: center;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    max-width: 446px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .box-description {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .candidate-journey {
+        margin-bottom: 120px;
+
+        @include media-breakpoint-up(sm) {
+            background: #F9F9F9;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 618px;
+            background: rgb(30,30,30);
+            background: linear-gradient(90deg,
+                rgba(30,30,30,1) 49%,
+                rgba(255,255,255,1) 49%,
+                rgba(255,255,255,1) 50%,
+                rgba(249,249,249,1) 50%
+            );
+        }
+
+        .row {
+            @include media-breakpoint-up(lg) {
+                height: 618px;
+                align-items: center;
+            }
+        }
+
+        .content-description {
+            @include media-breakpoint-up(sm) {
+                padding: 40px 0 0;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: auto;
+                padding: 0;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                @include media-breakpoint-up(small) {
+                    color: $color-dark-theme;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    color: #FFFFFF;
+                }
+            }
+
+            .box-description,
+            .box-title,
+            .box-btn {
+                @include media-breakpoint-up(sm) {
+                    text-align: center;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    max-width: 36vw;
+                    text-align: left;
+                }
+            }
+
+            .box-description {
+                margin-top: 2rem;
+                margin-bottom: 4rem;
+
+                p {
+                    color: #AAAAAA;
+                }
+            }
+
+            .box-description,
+            .box-btn {
+                @include media-breakpoint-up(sm) {
+                    display: none;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                }
+            }
+        }
+
+
+        .content-illustration {
+            text-align: center;
+
+            @include media-breakpoint-up(sm) {
+                margin-top: 3rem;
+                padding-bottom: 60px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-top: 0;
+                padding-bottom: 0;
+            }
+
+            .box-description {
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .box-title,
+            .box-description {
+                margin: 0 auto;
+            }
+
+            .swiper-slide {
+                background-image: url(/static/images/careers/illustration-candidate-journey.svg);
+                background-repeat: no-repeat;
+                background-position: center 116px;
+                background-size: 633px auto;
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                width: 200px;
+                height: 340px;
+                top: 0;
+
+                &:after {
+                    background-repeat: no-repeat;
+                    content: '';
+                    width: 13px;
+                    height: 20px;
+                    position: relative;
+                }
+            }
+
+            .swiper-button-prev {
+                left: 0;
+                background: rgb(249,249,249);
+                background: linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(255,255,255,0) 60%);
+
+                &:after {
+                    left: -74px;
+                    background-image: none;
+                    background-image: url(/static/images/careers/icon-arrow-left-journey-slide.svg);
+                }
+            }
+
+            .swiper-button-next {
+                right: 0;
+                background: rgb(249,249,249);
+                background: linear-gradient(264deg, rgba(249,249,249,1) 0%, rgba(255,255,255,0) 60%);
+
+                &:after {
+                    right: -74px;
+                    background-image: none;
+                    background-image: url(/static/images/careers/icon-arrow-right-journey-slide.svg);
+                };
+            }
+
+            .box-btn {
+                @include media-breakpoint-up(sm) {
+                    display: block;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .swipper-master {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .swiper-container-careers {
+        width: calc(100% - 110px);
+        position: relative;
+        left: 55px;
+        height: 310px;
+
+        .swiper-slide {
+            display: block;
+            height: 300px;
+            box-shadow: 0px 1.2px 2.5px #AAAAAA;
+            position: relative;
+            top: 6px;
+            overflow: hidden;
+            padding: 26px;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+            .title {
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 500;
+                color: $color-dark-theme;
+                text-align: left;
+
+                &:after {
+                    display: none;
+                };
+            }
+
+
+            .description {
+                line-height: 20px;
+                font-size: 14px;
+                margin: 12px 0 0;
+            }
+
+            a {
+                font-size: 14px;
+                padding: 0 26px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                display: block;
+                line-height: 54px;
+                border-top: solid 2px #EBEBEB;
+            }
+        }
+    }
+
+    .swiper-button-next-careers,
+    .swiper-button-prev-careers {
+        width: 40px;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        background-color: #FFFFFF;
+
+        .icon {
+            position: relative;
+            left: 12px;
+            top: 150px;
+        }
+    }
+
+    .swiper-button-next-careers {
+        right: 0;
+    }
+
+    .swiper-button-prev-careers {
+        left: 0;
+    }
+
+    .pick-team-content {
+        padding-bottom: 120px;
+
+        .box-container {
+            position: relative;
+        }
+
+        .box-title {
+            strong {
+                font-weight: map-get($font-weight, 'medium');
+            }
+        }
+
+        .box-title,
+        .box-description {
+            text-align: center;
+        }
+
+        .box-description {
+            p {
+                font-size: 32px;
+                color: $color-dark-theme;
+            }
+        }
+
+        .box-btn {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .illustration-right-secondary {
+            bottom: 0;
+            right: 0;
+        }
+
+        .illustration-right-primary { top: 0; }
+    }
+}

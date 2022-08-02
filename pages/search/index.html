@@ -1,0 +1,63 @@
+---
+layout: v3/page
+namespace: search-result
+
+title:  metatags.search.title
+description: metatags.search.description
+og_image: metatags.search.description
+meta_tag_robots_no_index: true
+
+files:
+  css:
+    - "static/css/pages/search.css"
+  js:
+   - "static/js/ui/search/context.js"
+
+permalink: /search-result/
+permalink_pt-br: /resultado-da-pesquisa/
+permalink_es: /resultado-de-la-investigacion/
+---
+
+{% assign data = site.data.pages.notfound[site.lang].list_of_links %}
+
+<div id="searchPage" class="search-page-content">
+    <section id="searchpagebox"></section>
+    <section class="search-content">
+        <div class="row">
+            <div class="col-lg-10 col-md-8- col-sm-4 offset-lg-5 offset-md-1">
+                <h4 class="bd_sub">site</h4>
+                <div id="hits-page-search-site"></div>
+
+                <h4 class="bd_sub">documentation</h4>
+                <div id="hits-page-search-doc"></div>
+
+                <h4 class="bd_sub">blog</h4>
+                <div id="hits-page-search-blog"></div>
+
+                <h4 class="bd_sub">success stories</h4>
+                <div id="hits-page-search-success-stories"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="list-link-content">
+        <div class="row">
+            <div class="links-wrap col-lg-16 col-md-8 {% if forloop.first == true %}offset-lg-2{% endif %} offset-md-1">
+            {% for list in data %}
+                <ul class="list-link">
+                    <h5>{{ list.category_name }}</h5>
+                    {% for link in list.links %}
+                    <li class="link">
+                        <a class="btn btn-icon btn-tertiary-light" href="{{ link.url }}">
+                            {{ link.text }}
+                            {% include v3/components/btn-icon-double-arrow-right.html %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+
+</div>

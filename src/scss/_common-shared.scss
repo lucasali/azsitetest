@@ -1,0 +1,25 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@at-root {
+    @-ms-viewport {
+        width: device-width;
+    } // stylelint-disable-line at-rule-no-vendor-prefix
+}
+
+@import "v3/context";
+
+@import 'settings';
+@import 'helper';
+
+@import 'foundation';
+@include foundation-global-styles;
+@include foundation-typography;
+
+/* Azion CORE V2 */
+@import '_common-v2';
+/* END Azion CORE */
+
+@import "template/_base";
+@import "template/style-guide";
+

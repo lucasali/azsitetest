@@ -1,0 +1,62 @@
+///////////////////
+// COLOR PALLETE //
+///////////////////
+
+$color-primary-Alpha: rgba(243,101,43, 0.2);
+$color-black           : var(--azc-black, #000000);
+$color-white           : var(--azc-white, #FFFFFF);
+$color-white-two       : var(--azc-white-two, #F9F9F9);
+$color-gray-light      : var(--azc-silver, #AAAAAA);
+$color-dove-gray       : var(--azc-dove-gray, #646464);
+$color-gray            : var(--azc-gray, #888888);
+$color-gray-semilight  : var(--azc-gray-semilight,#DFDFDF);
+$color-silver          : var(--azc-silver, #C8C8C8);
+$color-silver-chalice  : var(--azc-silver-chalice, #B1B1B1);
+$color-gallery         : var(--azc-gallery, #EBEBEB);
+$color-alabaster       : var(--azc-alabaster, #F7F7F7);
+$color-alabaster-solid : var(--azc-alabaster-solid, #FAFAFA);
+$color-alabaster-light : var(--azc-alabaster-light, #FBFBFB);
+$color-alabaster-approx: var(--azc-alabaster-approx, #FCFCFC);
+$color-surface         : var(--azc-surface, #FFFFFF);
+$color-primary         : var(--azc-primary, #F3652B);
+$color-secondary       : var(--azc-secondary, #1E1E1E);
+$color-error           : var(--azc-error, #FF4141);
+$color-success         : var(--azc-success, #8BC249);
+$color-warning         : var(--azc-warning, #FEC111);
+$color-on-error        : var(--azc-on-error, #C83030);
+$color-on-surface      : var(--azc-on-surface, #FFFFFF);
+$color-on-primary      : var(--azc-on-primary, #DA4F2B);
+$color-on-secondary    : var(--azc-on-secondary, #1E1E1E);
+$color-new-blue        : var(--azc-new-blue, #3A82FF);
+$color-orange-light    : var(--azc-orange-light, #F9B295);
+
+$color-primary-Alpha: rgba(243,101,43, 0.2);
+
+
+///////////////
+// TYPOGRAPH //
+///////////////
+
+$font-weight: (
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+    'medium-bold': 600,
+    'bold': 700
+);
+
+$font-size-text-large: 1.25rem; // 20px;
+$font-size-text: 1rem; // 16 px;
+$font-size-text-small: 0.875rem; // 14 px;
+$font-size-text-xsmall: 0.75rem; // 12px;
+
+
+///////////////////
+// CUSTOM COLORS //
+///////////////////
+
+$text-description: $color-silver;
+$color-dove-gray-light: $color-gallery;
+
+$bg-light: $color-alabaster;
+$bg-dark: $color-on-secondary;

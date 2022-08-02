@@ -1,0 +1,75 @@
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+@if $enable-grid-classes {
+    .row {
+        @include make-row();
+
+        &.align-itens-center {
+            align-items: center;
+        }
+    }
+
+    // Remove the negative margin from default .row, then the horizontal padding
+    // from all immediate children columns (to prevent runaway style inheritance).
+    .no-gutters {
+        > [class*="col-"] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    [class*="col-"] {
+        &.no-gutters {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    // Narrow and Condensed are inpirated on Carbon IBM Design System
+    // https://www.carbondesignsystem.com/guidelines/2x-grid/implementation/#grid-modes
+
+    .narrow {
+        > [class*="col-"] {
+            padding-left: 0;
+        }
+    }
+
+    [class*="col-"] {
+        &.narrow {
+            padding-left: 0;
+        }
+    }
+
+    .condensed {
+        > [class*="col-"] {
+            padding-right: 1px;
+            padding-left: 1px;
+        }
+    }
+
+    [class*="col-"] {
+        .condensed {
+            padding-right: 1px;
+            padding-left: 1px;
+        }
+    }
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@if $enable-grid-classes {
+    // @include make-grid-columns();
+    @include make-grid-columns-azion(
+        $grid-columns-large,
+        $grid-columns-mobile,
+        $mobile-breakpoints,
+        $small-breakpoints,
+        $large-breakpoints,
+        $grid-gutter-width,
+        $grid-breakpoints
+    );
+}

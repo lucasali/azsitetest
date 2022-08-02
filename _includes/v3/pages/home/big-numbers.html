@@ -1,0 +1,73 @@
+<div class="col-lg-8 col-sd-4 col-sm-10 offset-sd-1 offset-lg-2 no-gutters-sm no-gutters-md narrow-l-sd narrow-l-large">
+    <div class="azion-big-numbers bg-dark">
+        <div class="title-wrap ">
+            <h2 class="bd_sub">{{ site.data.pages.home.[site.lang].big_numbers.heading_one }}</h2>
+        </div>
+        <ul id="big-numbers-wrap" class="big-numbers-wrap">
+            {% for item in site.data.pages.home.[site.lang].big_numbers.list %}
+            <li class="big-number">
+                {% if item.pre-label %}
+                <span>{{ item.pre-label }}</span>
+                {% endif %}
+                <span class="number" data-target="{{ item.number }}">{{ item.number }}</span>
+                {% if item.label %}
+                <span>{{ item.label }}</span>
+                {% endif %}
+                <p class="description">{{ item.description }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<script>
+    class AnimatedCounter {
+        constructor(settings) {
+            const { selector, speed } = settings;
+            this.selector = selector;
+            this.speed = speed || 2000;
+            this.counters = document.querySelectorAll(this.selector);
+            this.isLoaded = false;
+            this.init();
+        }
+        init() {
+            const iObserver = new IntersectionObserver(items => {
+                if (items[0].isIntersecting && !this.isLoaded) {
+                    let { counters } = this;
+                    counters.forEach((counter) => {
+                        counter.innerHTML = '';
+                        const target = +counter.getAttribute("data-target");
+                        animate(counter, 0, target, this.speed);
+                        function animate(counter, initVal, lastVal, duration) {
+                            let startTime = null;
+                            let currentTime = Date.now();
+                            const step = (currentTime) => {
+                                if (!startTime) {
+                                    startTime = currentTime;
+                                }
+                                const progress = Math.min((currentTime - startTime) / duration, 1);
+                                counter.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+                                if (progress < 1) {
+                                    window.requestAnimationFrame(step);
+                                }
+                                else {
+                                    window.cancelAnimationFrame(window.requestAnimationFrame(step));
+                                }
+                            };
+                            window.requestAnimationFrame(step);
+                        }
+                    });
+                    this.isLoaded = true;
+                }
+            });
+            iObserver.observe(document.getElementById('big-numbers-wrap'));
+        }
+    }
+    document.addEventListener("DOMContentLoaded", init);
+    function init() {
+        new AnimatedCounter({
+            selector: ".number",
+            speed: 2000,
+        });
+    }
+</script>

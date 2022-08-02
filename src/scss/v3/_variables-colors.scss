@@ -1,0 +1,56 @@
+/////////////////////
+// GENERIC COLORS //
+////////////////////
+$color-dark-theme:  var(--azc-dark-theme, #1E1E1E); // gray almost black
+$color-light-theme: var(--azc-light-theme, #F2F2F2); // almost white
+$color-light-alabaster: var(--azc-light-theme, #F7F7F7); // almost white
+$color-super-light-theme: var(--azc-super-light-theme, #FFFFFF); // white
+
+$color-primary: var(--azc-primary, #F3652B); // orange
+$color-primary-variant: var(--azc-primary-variant, #CC5500); // orange stronger
+
+$color-secondary: var(--azc-secondary, #132AF2); // blue
+$color-secondary-variant: var(--azc-secondary-variant, #0E1FB2); // blue stronger
+
+$color-success: var(--azc-success, #8BC249); // green
+
+$color-warning: var(--azc-warning, #FEC111); // yellow
+
+$color-error: var(--azc-error, #FF4141); // red
+$color-on-error: var(--azc-on-error, #C83030); //red stronger
+
+
+///////////////
+// GAY SCALE //
+///////////////
+$color-gray-800: var(--az-gray-800, #333333);
+$color-gray-700: var(--az-gray-700, #4D4D4D);
+$color-gray-600: var(--az-gray-600, #666666);
+$color-gray-500: var(--az-gray-500, #808080);
+$color-gray-400: var(--az-gray-400, #999999);
+$color-gray-300: var(--az-gray-300, #B2B2B2);
+$color-gray-200: var(--az-gray-200, #CCCCCC);
+$color-gray-100: var(--az-gray-100, #E5E5E5);
+$color-gray-50: var(--az-gray-50, $color-light-theme);
+
+$color-dove-gray: var(--azc-dove-gray, #646464); // from old system //
+
+
+///////////////////////
+// TYPOGRAPHY COLORS //
+///////////////////////
+$text-super-light: var(--azc-text-super-light, $color-super-light-theme);
+$text-light: var(--azc-text-light, $color-gray-300);
+$text-dark: var(--azc-text-dark, $color-dark-theme);
+$text: var(--azc-text, $color-gray-600);
+
+$text-link: var(--azc-text-link, $color-primary);
+$text-link-variant: var(--azc-text-link-variant, $color-primary-variant);
+
+
+////////////////////////////////
+// BACKGROUNDS CUSTOM COLORS //
+//////////////////////////////
+$bg-dark: $color-dark-theme;
+$bg-light: $color-light-theme;
+$bg-super-light: $color-super-light-theme;

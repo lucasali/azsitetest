@@ -1,0 +1,37 @@
+lowercase:
+    talk_to_an_expert:
+        text: falar com um expert
+        url: "/pt-br/contate-vendas/"
+    create_free_account:
+        text: criar conta grátis
+        url: https://manager.azion.com/signup/
+    free_account:
+        text: conta grátis
+        url: https://manager.azion.com/signup/
+    check_pricing:
+        text: ver preços
+        url: "/pt-br/precos/"
+    check_documentation:
+        text: ver documentação
+        url: "/pt-br/documentacao/"
+    read_customer_success_stories:
+        text: confira nossos casos de sucesso
+        url: "/pt-br/casos-de-sucesso/"
+    read_more:
+        text: ler mais
+        url: ''
+    learn_more_marketplace:
+        text: "saiba mais sobre marketplace"
+        url: "/pt-br/marketplace/"
+    check_all_features:
+        text: ver todas funcionalidades
+        url: ''
+    download_forrester_report:
+        text: "baixe o relatório completo"
+        url: "/pt-br/blog/azion-listada-no-forrester-new-wave-edge-development-platforms/"
+    become_partner:
+      text: "seja um parceiro"
+      url: "/pt-br/marketplace/seja-um-parceiro/"
+    try_for_free:
+      text: "experimente grátis"
+      url: "https://manager.azion.com/signup/"

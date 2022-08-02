@@ -1,0 +1,15 @@
+.intersectional-element{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    left: 50%;
+    bottom: -44px;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    width: rem(88);
+    height: rem(88);
+    border-radius: 50%;
+    background-color: $color-super-light-theme;
+    box-shadow: 0px 103.564px 82.8508px rgba(0, 0, 0, 0.07), 0px 43.2664px 34.6131px rgba(0, 0, 0, 0.0503198), 0px 23.1323px 18.5058px rgba(0, 0, 0, 0.0417275), 0px 12.9678px 10.3742px rgba(0, 0, 0, 0.035), 0px 6.88708px 5.50966px rgba(0, 0, 0, 0.0282725), 0px 2.86587px 2.29269px rgba(0, 0, 0, 0.0196802);
+}

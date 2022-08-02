@@ -1,0 +1,47 @@
+.Trash-1000
+
+# NodeJS files
+yarn.lock
+npm-debug.log
+package-lock.json
+npm-shrinkwrap.json
+node_modules/
+
+# site
+.jekyll-metadata
+_site/
+public/
+_public/
+
+static/images/uploads/doc
+
+# site documentation
+_i18n/pt-br/_posts/documentation/products
+_i18n/en/_posts/documentation/products
+_i18n/pt-br/pages/docs/documentation/products
+_i18n/en/pages/docs/documentation/products
+# end site documentation
+
+
+
+# IDEs metadata
+.vs
+.project
+nbproject
+sftp-config.json
+# IDEs metadata
+
+
+# vim tmp files
+~*
+._*
+*~
+*.swp
+*.swo
+# end vim tmp files
+
+
+# macos files
+.DS_Store
+./**/*/.DS_Store
+# end macos files

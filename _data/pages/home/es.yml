@@ -1,0 +1,329 @@
+---
+hero:
+  heading_one: La manera más fácil <br class='br-en'/>de<span id='typing'></span>
+    <br class='br-en'/> aplicaciones modernas en cualquier lugar
+  text_logo_slide: Del prototipo a la escala empresarial y sin tareas operativas;
+    <strong>solo código</strong>.
+  form:
+    placeholder: Tu e-mail corporativo
+  logo_slide:
+  - logo: "/static/images/v3/home/logo-walmart.png"
+    name: Walmart
+  - logo: "/static/images/v3/home/logo-coca-cola.png"
+    name: Coca-Cola
+  - logo: "/static/images/v3/home/logo-vtex.png"
+    name: VTEX
+  - logo: "/static/images/v3/home/logo-rocket-chat.png"
+    name: Rocket.chat
+  - logo: "/static/images/v3/home/logo-radware.png"
+    name: Radware
+  - logo: "/static/images/v3/home/logo-samsung.png"
+    name: Samsung
+  - logo: "/static/images/v3/home/logo-panasonic.png"
+    name: Panasonic
+  - logo: "/static/images/v3/home/logo-motorola.png"
+    name: Motorola
+  - logo: "/static/images/v3/home/logo-crate-and-barrel.png"
+    name: Crate & Barrel
+  - logo: "/static/images/v3/home/logo-calvin-klein.png"
+    name: Calvin Klein
+  - logo: "/static/images/v3/home/logo-walmart.png"
+    name: Walmart
+  - logo: "/static/images/v3/home/logo-coca-cola.png"
+    name: Coca-Cola
+  - logo: "/static/images/v3/home/logo-vtex.png"
+    name: VTEX
+  - logo: "/static/images/v3/home/logo-rocket-chat.png"
+    name: Rocket.chat
+  - logo: "/static/images/v3/home/logo-radware.png"
+    name: Radware
+  - logo: "/static/images/v3/home/logo-samsung.png"
+    name: Samsung
+  - logo: "/static/images/v3/home/logo-panasonic.png"
+    name: Panasonic
+  - logo: "/static/images/v3/home/logo-motorola.png"
+    name: Motorola
+  - logo: "/static/images/v3/home/logo-crate-and-barrel.png"
+    name: Crate & Barrel
+  - logo: "/static/images/v3/home/logo-calvin-klein.png"
+    name: Calvin Klein
+  button:
+    read_success_case:
+      text: casos de éxito de nuestros clientes
+      href: "/casos-de-exito/"
+manager:
+  heading_one: Azion es una plataforma de edge full-stack que <span>simplifica</span>
+    y <span>agiliza</span> la forma en la que construyes mejores aplicaciones.
+  description: Aprovecha nuestras 100 edge locations globales o usa Azion para orquestar
+    tu propia implementación en multicloud, on-premise o en dispositivos remotos.
+cloud_edge:
+  heading_one: Vivimos en una economía <s>globalizada</s> hiperconectada que exige
+    experiencias impecables. ¿Tus aplicaciones están preparadas?
+  first_paragraph: Una experiencia en línea impecable significa velocidad y confiabilidad
+    sin comprometer la seguridad y la conformidad. La plataforma flexible de Azion
+    te permite atender las demandas de una economía hiperconectada, en cualquier lugar
+    del mundo. Con la plataforma descentralizada de Azion, tus aplicaciones están
+    altamente distribuidas en cada país en el que operas.
+  destak_paragraph: Construye el futuro ¡ahora!
+  link: https://www.azion.com/es/blog/cloud-computing-versus-edge-computing-cual-es-mejor-para-mi-negocio/
+  list:
+    label: CLOUD NO ES SUFICIENTE
+    cloud:
+    - Centralizada
+    - Tareas operativas intensas
+    - Vendor Lock-In
+    - Seguridad básica
+    - Conformidad limitada
+    edge:
+    - Distribuida
+    - Sin tareas operativas
+    - Estándares abiertos
+    - Centrada en la seguridad
+    - Conformidad local
+    paragraph: Edge es más rápido, más barato, más confiable y te ayuda a cumplir
+      tus requerimientos locales de conformidad.
+provide:
+  heading_one: Azion proporciona mucho más que solo una gran experiencia de usuario...
+  description:
+  - 'Facilitamos nuevas tecnologías y casos de uso para aplicaciones, seguridad, redes,
+    streaming de video y juegos, inteligencia artificial, IoT, 5G y todo lo que sea
+    necesario. La poderosa plataforma full-stack de Azion permite que te concentres
+    en lo que mejor sabes hacer: construir.</br><b>Vamos a descubrir todo lo que puedes
+    hacer.</b>'
+  table:
+    head:
+      build: Construir
+      secure: Proteger
+      deliver: Suministrar
+      observe: Observar
+    industry:
+    - title: retail
+      id: retail
+      description: Optimiza la experiencia de usuario y la seguridad a escala, desde
+        lo digital hasta lo físico. Lleva tu eficiencia al límite y reduce drásticamente
+        el tiempo de comercialización.
+      service:
+      - title: Build
+        list:
+        - Modernización de aplicaciones
+        - Segmentación de usuarios
+        - Pruebas A/B
+        - Medios de Pago
+      - title: Secure
+        list:
+        - Protección contra ataques DDoS
+      - title: Deliver
+        list:
+        - Estrategia multicloud
+        - Evita el vendor lock-in
+        - Infraestructura global completamente gestionada
+      - title: Monitorear
+        list:
+        - Análisis de intentos de phishing
+        - Detección de fraudes con tarjetas de crédito
+    - title: finanzas
+      id: finanzas
+      description: Optimiza la seguridad y la conformidad —online y offline​​—, al
+        tiempo que proporcionas una confiabilidad sin precedentes. Construye un enfoque
+        de seguridad moderno con zero-trust en el núcleo.
+      service:
+      - title: Build
+        list:
+        - Políticas de acceso basadas en geolocalización
+      - title: Secure
+        list:
+        - Protección contra robo de cuentas de usuarios
+        - Implementación de seguridad zero-trust
+      - title: Deliver
+        list:
+        - Estrategia multicloud
+        - Evita el vendor lock-in
+        - Infraestructura global completamente gestionada
+      - title: Observe
+        list:
+        - Monitoreo continuo de conformidad
+        - Inteligencia de amenazas en tiempo real
+    - title: medios
+      id: medios
+      description: Optimiza la experiencia de usuario a escala. Construye una audiencia
+        global comprometida con un desempeño de milisegundos para cualquier dispositivo,
+        en cualquier ubicación.
+      service:
+      - title: Build
+        list:
+        - Contenido personalizado
+        - Experiencias de medios enriquecidos en el edge
+      - title: Secure
+        list:
+        - Paywalls eficientes con JWT
+      - title: Deliver
+        list:
+        - Estrategia multicloud
+        - Evita el vendor lock-in
+        - Infraestructura global completamente gestionada
+      - title: Monitorear
+        list:
+        - Monitoreo del desempeño del contenido
+        - Métricas de solicitudes y páginas
+    - title: educación
+      id: educacion
+      description: Proporciona experiencias de aprendizaje enriquecidas en cualquier
+        lugar, con la conformidad y seguridad necesarios para innovar, así como para
+        crecer más rápido.
+      service:
+      - title: Build
+        list:
+        - Desarrollo de aplicaciones para e-learning
+        - Incorporación de experiencias para los estudiantes
+      - title: Secure
+        list:
+        - Protección para los datos de los estudiantes
+      - title: Deliver
+        list:
+        - Estrategia multicloud
+        - Evita el vendor lock-in
+        - Infraestructura global completamente gestionada
+      - title: Monitorear
+    - title: tecnología
+      id: tecnologia
+      description: Construye aplicaciones más rápidas y confiables para sacarle el
+        máximo partido a la innovación. Irrumpe los mercados globales con un desempeño
+        de milisegundos y conformidad local en cualquier lugar, y paga solo por lo
+        que usas.
+      service:
+      - title: Build
+        list:
+        - Lógica de negocios en el edge con funciones
+        - RESTful API que usan múltiples endpoints
+        - Aplicaciones web que funcionan como nativas
+      - title: Secure
+        list:
+        - Protección de microservicios
+      - title: Deliver
+        list:
+        - Estrategia multicloud
+        - Evita el vendor lock-in
+        - Infraestructura global completamente gestionada
+      - title: Observe
+        list:
+        - Monitoreo de microservicios e infraestructura
+        - Mayor desempeño para conseguir mejores reseñas de las aplicaciones
+    - title: salud
+      id: salud
+      description: Optimiza la conformidad y la innovación. Permite que los datos
+        de los pacientes estén seguros y disponibles para producir mejores resultados
+        clínicos y construir el futuro de la atención médica.
+      service:
+      - title: Build
+        list:
+        - Aplicaciones centradas en el paciente
+        - Aplicaciones de telemedicina rentables
+        - Experiencias personalizadas y rápidas para los pacientes
+        - Construcción de aplicaciones tan rápido como cambien las necesidades de
+          los pacientes
+      - title: Secure
+        list:
+        - Protección para los datos de los pacientes
+        - Protección para investigaciones sobre medicamentos
+        - Disponibilidad de portales de salud
+        - Seguridad de acceso a API de terceros
+      - title: Deliver
+        list:
+        - Estrategia multicloud
+        - Evita el vendor lock-in
+        - Infraestructura global completamente gestionada
+      - title: Observe
+        list:
+        - Observabilidad del uso de la aplicación por parte del paciente
+        - Insights sobre la disponibilidad y el desempeño en tiempo real
+    - title: telecom
+      id: telecom
+      description: Irrumpe la economía de redes con una pila edge-native y simplificada,
+        lista para usarse en 5G, que transforma tu infraestructura de edge con software.
+      service:
+      - title: Build
+        list:
+        - Optimización del suministro de contenido
+        - Mejor enrutamiento de tráfico
+        - Filtros de tráfico malicioso
+        - Mejores soluciones de red para IoT y 5G
+        - 'Transformación digital: migración a la nube y consolidación de data center'
+      - title: Secure
+        list:
+        - Protección contra ataques DDoS
+        - Microperímetros seguros para los componentes de la red
+      - title: Deliver
+        list:
+        - Estrategia multicloud
+        - Evita el vendor lock-in
+        - Infraestructura global completamente gestionada
+      - title: Observe
+        list:
+        - Insights sobre el tráfico en todos los nodos en tiempo real
+    - title: robótica
+      id: robotica
+      description: Define workloads (cargas de trabajo) complejas y una orquestación
+        sin intervención y de gran fiabilidad que va más allá de la fábrica.
+      service:
+      - title: Build
+        list:
+        - Aplicaciones de baja latencia para dispositivos de IoT
+        - GTM de aplicaciones más rápido para procesos de cambio
+        - Escalado continuo (en milisegundos)
+        - Pago de acuerdo con el uso (pay-per-use) de computación serverless
+        - Sistemas de automatización inteligentes
+        - Sistemas eficientes en tiempo real
+        - Mayor eficiencia de la planta
+      - title: Secure
+        list:
+        - Infraestructura segura y serverless de forma predeterminada
+        - API seguras
+      - title: Deliver
+        list:
+        - Estrategia multicloud
+        - Evita el vendor lock-in
+        - Infraestructura global completamente gestionada
+      - title: Observe
+        list:
+        - Streaming de datos de IoT en tiempo real
+big_numbers:
+  heading_one: Azion en cifras
+  list:
+  - number: "100"
+    pre-label: "+"
+    label: k
+    description: tiendas en línea de todo el mundo confían en Azion
+  - number: "20"
+    pre-label: "+"
+    label: M
+    description: de estudiantes de Educación a distancia usan Azion
+  - number: "200"
+    pre-label: "+"
+    label: B
+    description: de solicitudes de servicios financieros atendidas al mes
+  - number: "100"
+    pre-label: "+"
+    description: edge locations
+  - number: "20"
+    pre-labe: "+"
+    label: k
+    description: edge applications activas
+    pre-label: "+"
+  - number: "10"
+    label: Tb/s
+    description: de capacidad de red
+blog:
+  label: BLOG
+  list:
+  - heading_one: 'Cloud Computing versus Edge Computing: ¿cuál es mejor para mi negocio?'
+    description: En una economía hiperconectada, las marcas y compañías han cambiado
+      la forma en la que se relacionan y se comunican con sus clientes...
+    href: https://www.azion.com/es/blog/cloud-computing-versus-edge-computing-cual-es-mejor-para-mi-negocio/
+  - heading_one: Lleva la computación al edge con el modelo serverless
+    description: En los últimos años, el modelo serverless y la edge computing han
+      pasado rápidamente al primer plano de muchas discusiones tecnológicas, debido
+      a la amplia adopción...
+    href: https://www.azion.com/es/blog/lleva-la-computacion-al-edge-con-el-modelo-serverless/
+accelerate_app:
+  label: EMPIEZA AHORA
+  heading_one: Acelera la modernización de tus aplicaciones.

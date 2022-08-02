@@ -1,0 +1,29 @@
+<div class="col-lg-8 col-sd-4 col-md-8 col-sm-10 offset-sd-0 offset-md-1 narrow-r-large">
+    <div class="card-wrap">
+        {% for article in site.data.pages.home.[site.lang].blog.list %}
+        <article class="card">
+            <div class="card-content">
+                <div class="bd_sub">
+                    <a href="{{ article.href }}" title="{{ site.data.pages.home.[site.lang].blog.label }} | {{ article.heading_one }}">
+                        {{ site.data.pages.home.[site.lang].blog.label }}
+                    </a>
+                </div>
+                <a href="{{ article.href }}" title="{{ article.heading_one }}">
+                    <h3 class="card-title">
+                        {{ article.heading_one }}
+                    </h3>
+                </a>
+                <p class="card-description">
+                    {{ article.description }}
+                </p>
+            </div>
+            <div class="card-button">
+                <a class="btn btn-icon btn-tertiary-light" href="{{ article.href }}" title="{% t v2.button.learn_more.text %} | {{ article.heading_one }}">
+                    {% t v2.button.learn_more.text %}
+                    {% include v3/components/btn-icon-double-arrow-right.html %}
+                </a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>

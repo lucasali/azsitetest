@@ -1,0 +1,41 @@
+a.chip,
+button.chip,
+.chip {
+    display: inline-block;
+    border-radius: 100px;
+    padding: rem(15);
+    margin: 0 1rem;
+    font-size: #{"max(min(1.5vw, 1.5rem), 1rem)"};
+    line-height: 1rem;
+    letter-spacing: -0.01em;
+    transition: background-color 0.1s ease-in;
+    &:hover {
+        cursor: pointer;
+    }
+
+    &-gray-700 {
+        border: 1px solid $color-gray-700;
+        background-color: $color-light-theme;
+        color: $color-gray-700;
+        &:hover {
+            border-color: $color-dark-theme;
+            background-color: $color-gray-600;
+            color: $color-super-light-theme;
+        }
+        &.active {
+            background-color: $color-dark-theme;
+            color: $color-super-light-theme;
+        }
+    }
+    &-gray-300 {
+        border: 1px solid $color-gray-300;
+        background-color: transparent;
+        color: $color-gray-300;
+        &.active,
+        &:hover {
+            border-color: $color-super-light-theme;
+            background-color: $color-super-light-theme;
+            color: $color-dark-theme;
+        }
+    }
+}

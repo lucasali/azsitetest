@@ -1,0 +1,147 @@
+.illustration-content {
+    padding: clamp(4.125rem, 7.5vw, 7.5rem) 0 clamp(3.46rem, 6vw, 6rem);
+    text-align: center;
+    .title-content {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+
+            span {
+                border: solid 1px $color-primary;
+                display: inline-block;
+                border-radius: 100px;
+                padding: 0 0.75rem;
+                line-height: 120%;
+            }
+        }
+    }
+
+    .description-content {
+        margin: 2vw auto 3.5vw;
+    }
+
+    .rtm-picture {
+        position: relative;
+        height: 154.88vw;
+        @include media-breakpoint-up("sd") {
+            height: 64.59vw;
+        }
+        .rtm-1,
+        .rtm-2,
+        .rtm-3,
+        .rtm-4,
+        .rtm-5,
+        .rtm-6,
+        .rtm-7,
+        .rtm-8 {
+            position: absolute;
+            height: auto;
+            border-radius: 1.61522px;
+            box-shadow: 0px 139.112px 111.289px rgba(0, 0, 0, 0.07),
+                0px 58.1175px 46.494px rgba(0, 0, 0, 0.0503198),
+                0px 31.0724px 24.858px rgba(0, 0, 0, 0.0417275),
+                0px 17.4189px 13.9352px rgba(0, 0, 0, 0.035),
+                0px 9.25107px 7.40086px rgba(0, 0, 0, 0.0282725),
+                0px 3.84958px 3.07966px rgba(0, 0, 0, 0.0196802);
+            @include media-breakpoint-up("sd") {
+                border-radius: 4px;
+            }
+        }
+        .rtm-1 {
+            top: 60.62vw;
+            left: 2.5vw;
+            z-index: 4;
+            width: 94.68vw;
+            @include media-breakpoint-up("sd") {
+                top: 29.77vw;
+                left: 38.1vw;
+                z-index: 1;
+                width: 43.7vw;
+            }
+        }
+        .rtm-2 {
+            top: 41.56vw;
+            left: 41.87vw;
+            z-index: 5;
+            width: 39.06vw;
+            @include media-breakpoint-up("sd") {
+                top: 20.92vw;
+                left: 69.67vw;
+                width: 19.39vw;
+            }
+        }
+        .rtm-3 {
+            top: 95.93vw;
+            right: 2.5vw;
+            z-index: 3;
+            width: 60.52vw;
+            @include media-breakpoint-up("sd") {
+                top: 49.14vw;
+                left: 49.63vw;
+                right: unset;
+                z-index: unset;
+                width: 38.38vw;
+            }
+        }
+        .rtm-4 {
+            top: 124.325vw;
+            right: 7.64vw;
+            z-index: 1;
+            width: 34.85vw;
+            @include media-breakpoint-up("sd") {
+                top: 49.91vw;
+                left: 30.51vw;
+                right: unset;
+                width: 17.26vw;
+            }
+        }
+        .rtm-5 {
+            top: 12.18vw;
+            left: 2.5vw;
+            width: 57.33vw;
+            z-index: 1;
+            @include media-breakpoint-up("sd") {
+                top: 9.91vw;
+                left: 10vw;
+                z-index: unset;
+                width: 28.39vw;
+            }
+        }
+        .rtm-6 {
+            top: 97.18vw;
+            left: 2.5vw;
+            width: 49.46vw;
+            @include media-breakpoint-up("sd") {
+                top: 25.27vw;
+                left: 10vw;
+                width: 24.5vw;
+            }
+        }
+        .rtm-7 {
+            top: 0;
+            right: 0;
+            width: 58.12vw;
+            @include media-breakpoint-up("sd") {
+                top: 0;
+                left: 41.87vw;
+                right: unset;
+                width: 39.83vw;
+            }
+        }
+        .rtm-8 {
+            top: 41.56vw;
+            left: 2.5vw;
+            width: 35.38vw;
+            @include media-breakpoint-up("sd") {
+                top: 1.84vw;
+                left: 17.84vw;
+                width: 17.52vw;
+            }
+        }
+    }
+}

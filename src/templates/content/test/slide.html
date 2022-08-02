@@ -1,0 +1,16 @@
+<div class="swiper">
+    <div class="swiper-wrapper swiper-square-brand">
+        {% for item in itens %}
+        <div class="swiper-slide">
+            <div class="box-description">
+                <div class="box-title">
+                    <h3 class="third-title">{{ item.title }}</h3>
+                </div>
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="swiper-pagination"></div>
+</div>

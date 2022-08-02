@@ -1,0 +1,192 @@
+<style rel="stylesheet" type="text/css">
+    .grid-overlayer {
+        overflow: hidden;
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        z-index: 999999;
+    }
+
+    .grid-overlayer.grid-enabled {
+        display: block;
+    }
+
+    .grid-overlayer .c {
+        height: 100vh;
+        background-color: rgba(255, 203, 219, 0.25) !important;
+        color: transparent;
+    }
+
+    .grid-overlayer [class*="col-"] {
+        outline: solid 1px rgba(255, 203, 219, 0.12) !important;
+    }
+
+    .grid-outline-enabled header [class*="col-"],
+    .grid-outline-enabled main [class*="col-"],
+    .grid-outline-enabled footer [class*="col-"] {
+        outline: solid 1px rgba(255, 0, 0, 0.5);
+    }
+
+    .grid-outline-enabled * {
+        outline: solid 1px rgba(255, 0, 0, 0.5);
+    }
+
+    .grid-outline-enabled * * {
+        outline: solid 1px rgba(200, 235, 46, 0.5);
+    }
+</style>
+
+<section id="gridoverlayer" class="grid-overlayer">
+    <div class="row">
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">1 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">2 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">3 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">4 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">5 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">6 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">7 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">8 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">9 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">10 of 20</div>
+        </div>
+
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">11 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">12 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">13 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">14 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">15 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">16 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">17 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">18 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">19 of 20</div>
+        </div>
+        <div class="col-max-1 col-slg-1 col-xlg-1 col-lg-1 col-md-1 col-sm-1">
+            <div class="c">20 of 20</div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    (function () {
+        function AzGrid() {
+            var PUBLIC = this;
+            var PRIVATE = {
+                element: document.getElementById('gridoverlayer'),
+                enablebyqs: /azg=1/gi.test(window.location.search),
+                enableoutlinebyqs: /azgoutline=1/gi.test(window.location.search)
+            };
+
+            PRIVATE.enableOutline = function () {
+                document.body.classList.add('grid-outline-enabled');
+            };
+
+            PRIVATE.disableOutline = function () {
+                document.body.classList.remove('grid-outline-enabled');
+            };
+
+            PRIVATE.isOutlineEnable = function () {
+                return document.body.classList.contains('grid-outline-enabled');
+            };
+
+            PRIVATE.outlineToogle = function () {
+                PRIVATE.isOutlineEnable() ? PRIVATE.disableOutline() : PRIVATE.enableOutline();
+            };
+
+            PRIVATE.enable = function () {
+                if (PRIVATE.isGridEnabled()) return;
+                PRIVATE.element.classList.add('grid-enabled');
+            };
+
+            PRIVATE.disable = function () {
+                if (!PRIVATE.isGridEnabled()) return;
+                PRIVATE.element.classList.remove('grid-enabled');
+            };
+
+            PRIVATE.isGridEnabled = function () {
+                return PRIVATE.element.classList.contains('grid-enabled');
+            };
+
+            PRIVATE.gridToogle = function () {
+                PRIVATE.isGridEnabled() ? PRIVATE.disable() : PRIVATE.enable();
+            };
+
+            PRIVATE.keyDownCode = function (e) {
+                return (window.navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) && e.keyCode;
+            };
+
+            PRIVATE.key = {
+                bind: {
+                    g: function (e) {
+                        if (PRIVATE.keyDownCode(e) == 71) {
+                            e.preventDefault();
+                            PRIVATE.gridToogle();
+                        }
+                    },
+                    b: function (e) {
+                        if (PRIVATE.keyDownCode(e) == 66) {
+                            e.preventDefault();
+                            PRIVATE.outlineToogle();
+                        }
+                    }
+                }
+            };
+
+            PUBLIC.disable = PRIVATE.disable;
+            PUBLIC.enable = PRIVATE.enable;
+
+            PUBLIC.disableOutline = PRIVATE.disableOutline;
+            PUBLIC.enableOutline = PRIVATE.enableOutline;
+
+            if (PRIVATE.enablebyqs) PRIVATE.enable();
+            if (PRIVATE.enableoutlinebyqs) PRIVATE.enableOutline();
+
+            document.addEventListener('keydown', function (e) {
+                PRIVATE.key.bind.g(e); // grid
+                PRIVATE.key.bind.b(e); // border content
+            }, false)
+
+            return PUBLIC;
+        };
+
+        window.azg = new AzGrid();
+    })();
+</script>
