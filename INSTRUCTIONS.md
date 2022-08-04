@@ -4,17 +4,17 @@
     <img src ="https://media.istockphoto.com/vectors/books-swap-exchange-or-crossing-vector-illustration-with-hand-gives-vector-id1328717786?b=1&k=20&m=1328717786&s=612x612&w=0&h=dX-gTpYmeTHV-jYLuKkn_oAtBtYh9JOdc_GKVMZYW68=" />
 </p>
 
-Here you can find the Azion interview technical test! If you have any question please send a e-mail for your recruiter!
+Here you can find the Azion interview technical test! If you have any question please send an e-mail to your recruiter!
 
 
 ## TEST GOAL
 
-The object of test is:
+The goals of this test are:
 
-- Auto Learning process
-- Logic thinking
-- HTML, CSS em JavaScript habilities
-- Hability to work on existing production project
+- Self-learning process
+- Logical thinking
+- HTML, CSS, JavaScript abilities
+- Ability to work on existing production project
 
 You will server the following URL:
 - main page: `http://localhost:4000/[lang]/careers/jobs/`
@@ -25,12 +25,12 @@ You will server the following URL:
     - `http://localhost:4000/[lang]/careers/jobs/?area=Revenue`
     - `http://localhost:4000/[lang]/careers/jobs/?area=Security`
 
-You will need just to code 1 page and reuse after you use the filter search!
+You will need to code one page and reuse after you use the filter search!
 
 
 ## CHALLENGE
 
-The challenge is code only 1 page, it is the careers jobs page, https://www.azion.com/en/careers/jobs .
+The challenge is to code the careers jobs page, https://www.azion.com/en/careers/jobs .
 This page contains:
 
 - Filter
@@ -42,29 +42,28 @@ This page contains:
 
 ## FILES TO WORK
 
-You will have specifics empty files to write code to avoid unnecessary complex!
+You will have specifics empty files to write code to avoid unnecessary complexity.
 The files are:
 
 - src/scss/pages/careers-job.scss
     - in this file you will write the page stylesheet
 - src/js/ui/careers/jobs.js
-    - in this file you will write all the behavior necessary to interactive page
+    - in this file you will write all the behavior necessary to the interactive page
 
-> **TIP**: The HTML files you will write are into _i18n folders, you will need to understand how Jekyll works.
+> **TIP**: The HTML files you will write are into _i18n folders; you will need to understand how Jekyll works.
 
 
-## HOW TO CONSTRUCT THE HTML PAGE
+## HOW TO BUILD THE HTML PAGE
 
-The home page and the careers home page are enable and working, you will use then to understand how the site are working!
+The home page and the careers home page are enabled and working. You will use them to understand how the site is working.
 
-The API communication to build a page you will not write, you can read the file `src/js/mod/data/api.js`, in this file we have the API communicatin with the backend to GET the necessary data! To engine templates we are using liquid, you will use to render the page! We have written into `src/js/app/azliquidjs/azliquidjs.js`
+You will not write the API communication in order to build a page. You can read the file `src/js/mod/data/api.js`, in this file we have the API communicatin with the backend to GET the necessary data. We are using liquid for engine templates you will use to render the page. We have written into `src/js/app/azliquidjs/azliquidjs.js`
 
 The API methods are:
-
 - window.azcareers.pull.categories
     - to GET the sidebar categories
 - window.azcareers.pull.jobs
-    - call the specific jobs by categorie
+    - call the specific jobs by category
 
 To build a responsive page we are using the scss functions `@include media-breakpoint-up() or  @include media-breakpoint-down()`, the ranges are:
 
@@ -80,23 +79,23 @@ $grid-breakpoints: (
 ) !default;
 ```
 
-> Into https://www.azion.com/en?azg=1 you can use to understand how the grid it is working
+> You can use https://www.azion.com/en?azg=1 to understand how the grid is working
 
-Use use:
-- 4 collumns to mobile viewport
-- 10 collumns to middle/tablet viewport
-- 20 collumns to desktop
+We use:
+- 4 columns to mobile viewport
+- 10 columns to middle/tablet viewport
+- 20 columns to desktop
 
 ## HELPERS
 
 You can use this URL: https://52082s.ha.azioncdn.net/en/careers/jobs
-to use to reverse engineering to look the API requests commented above!
+to reverse engineer the API requests commented above.
 
-> TIP: In this enviroment the JS are not minified!
+> TIP: In this enviroment the JS are not minified.
 
 
 
-Below we have an example of the usage of methods you will use! This example it is a part of production code, I suggest just use to study to start your own code!
+Below we have an example of the usage of methods you will use! This example is part of production code. We suggest you use it only to study and start your own code.
 
 ``` javascript
  function renderAppend(tplName, department, querie) {
@@ -139,12 +138,12 @@ Below we have an example of the usage of methods you will use! This example it i
 
 ## AVAILABLE PAGES
 
-Localhost you will be able to study the available pages, they are!
+Localhost where you will be able to study the available pages:
 
 - http://localhost:4000/en
-    - The home of website
+    - Website home
 - http://localhost:4000/en/careers
-    - The careers portal home
+    - Careers portal home
 
 Use this page to understand:
 - Jekyll Front-Matters
